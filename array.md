@@ -26,3 +26,11 @@ App.forEach((item)=>{
 })
 ```
 ![image](https://github.com/user-attachments/assets/73d46218-074d-4f5d-8ec6-ad17b781f250)
+# Loop Iteration 
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+for(i=0;i<App.length;i=i+1){
+    console.log((i+1) +" "+App[i])
+}
+```
+![image](https://github.com/user-attachments/assets/58e63cda-e26f-409e-a518-7a80bb789e76)
