@@ -88,7 +88,7 @@ console.log(res1)
 console.log(res)
 ```
 ![image](https://github.com/user-attachments/assets/ac141468-21b0-4ba0-acd4-4a7782ce7108)
-- slice()
+- **slice()**
   >It is used to fetch the part of the given string. It allows us to assign positive as well negative index.
 ```
 const str = 'The quick brown fox jumps over the lazy dog.';
@@ -105,3 +105,27 @@ console.log(str.slice(-4));
 console.log(str.slice(-9, -5));
 // Expected output: "lazy"
 ````
+- **toLowerCase()**
+- >It converts the given string into lowercase letters.
+```
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+console.log(sentence.toLowerCase());
+//// Expected output: "the quick brown fox jumps over the lazy dog."
+```
+- **toUpperCase()**
+  >It converts the given string into the uppercase letter.
+```
+ const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+ console.log(sentence.toUpperCase());
+//// Expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+```
+- **trim()**
+ >It trims the white space from the left and right sides of the string.
+```
+const greeting = '   Hello world!   ';
+console.log(greeting);
+// Expected output: "   Hello world!   ";
+console.log(greeting.trim());
+// Expected output: "Hello world!";
+```
