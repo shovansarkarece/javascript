@@ -105,3 +105,18 @@ App.reverse();
 console.log(App)
 ```
 ![image](https://github.com/user-attachments/assets/88bf640c-e7d7-4939-bcaa-75e42d2a5cdd)
+
+- JAVASCRIPT ARRAY SLICE()
+  >The JavaScript array slice() method extracts the part of the given array and returns it.
+  >>This method doesn't change the original array
+
+```
+let ostadApp=["Android","IOS","Windows","Mac","Web"]
+let res=ostadApp.slice(1,3); //// 1,2-->(n-1)-->(3-1)-->2
+let res1=ostadApp.slice(1,4); //// 1,2,3-->(n-1)-->(4-1)-->3
+let res2=ostadApp.slice(1,5); //// 1,2,3,4-->(n-1)-->(5-1)-->4
+console.log(res);
+console.log(res1);
+console.log(res2);
+```
+![image](https://github.com/user-attachments/assets/9b67b325-ad30-46a2-876c-5280aa882205)
