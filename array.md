@@ -129,4 +129,5 @@ numbers.sort()////-->By default, sort() method follows the ascending order.
 numbers.reverse()////-->But if we want to get the array in descending order then reverse it 
 console.log(numbers);
 ```
-![image](https://github.com/user-attachments/assets/1991a344-785e-47d0-bd1b-79c4d504d40e)
+![image](https://github.com/user-attachments/assets/05c1d3db-ea80-41e3-a86e-f5315e9d1f63)
+
