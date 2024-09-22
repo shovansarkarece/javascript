@@ -1,7 +1,7 @@
 # String
 -The JavaScript string is an object that represents a sequence of characters
 # String Method()
-- charAt()
+- **charAt()**
   >It provides the char value present at the specified index.
 ```
 ////*******String Method *************/
