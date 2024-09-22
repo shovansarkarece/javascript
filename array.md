@@ -88,3 +88,11 @@ let res=App.pop()
 console.log(res)
 ////Output:Web
 ```
+- JAVASCRIPT ARRAY  PUSH()
+  >The JavaScript array push() method adds one or more elements to the end of the given array.
+```
+let ostadApp=["Android","IOS","Windows","Mac","Web"]
+let res=ostadApp.push("Apple")
+console.log(ostadApp)
+```
+![image](https://github.com/user-attachments/assets/0ca87219-e9e1-424d-b444-cbe2ae134b48)
