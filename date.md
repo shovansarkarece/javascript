@@ -7,9 +7,9 @@ let date=new Date()
 console.log(date.getDate())
 ```
 
-// console.log(date.getMinutes())
-// console.log(date.getMonth())
-// console.log(date.getSeconds())
+
+
+
 // console.log(date.getUTCDate())
 // console.log(date.getUTCDay())
 // console.log(date.getUTCFullYear())
@@ -43,10 +43,22 @@ console.log(date.getMilliseconds())
 ```
 ## getMinutes()
 >It returns the integer value between 0 and 59 that represents the minutes on the basis of local time.
+```
+let date=new Date()
+console.log(date.getMinutes())
+```
 ## getMonth()
 >It returns the integer value between 0 and 11 that represents the month on the basis of local time.
+```
+let date=new Date()
+console.log(date.getMonth())
+```
 ## getSeconds()
 >It returns the integer value between 0 and 60 that represents the seconds on the basis of local time.
+```
+let date=new Date()
+console.log(date.getSeconds())
+```
 ## getUTCDate()
 >It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of universal time.
 ## getUTCDay()
