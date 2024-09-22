@@ -1,0 +1,17 @@
+# Array
+>JavaScript array is an object that represents a collection of similar type of elements
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+let city=["Dhaka","Rajshahi","Rangpur"]
+let numbers=[1,40,50,40,3,2]
+/////In js Array's index always start from 0
+console.log(App)//-->Return whole array
+console.log(App[0])//-->Aray's Index start from 0
+console.log(App[1])//-->Aray's Index 1
+console.log(city)//-->Return whole array
+console.log(city[0])//-->Aray's Index start from 0 
+console.log(city[1])//-->Aray's Index 1
+console.log(numbers)//-->Return whole array
+console.log(numbers[0])//-->Aray's Index start from 0 
+console.log(numbers[1])//-->Aray's Index 1
+```
