@@ -99,6 +99,9 @@ console.log(ostadApp)
 
 - JAVASCRIPT ARRAY REVERSE()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
+```
 let App=["Android","IOS","Windows","Mac","Web"]
 App.reverse();
 console.log(App)
+```
+![image](https://github.com/user-attachments/assets/88bf640c-e7d7-4939-bcaa-75e42d2a5cdd)
