@@ -68,3 +68,12 @@ console.log(res3)
 ```
 ![image](https://github.com/user-attachments/assets/632ee5c5-5f11-4999-9134-cdcec1de9527)
 
+- JAVASCRIPT ARRAY INDEXOF()
+>The JavaScript array indexOf() method is used to search the position of a particular element in a given array. 
+>>This method is case-sensitive.
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+let res=App.indexOf("Web")
+console.log(res)
+////Output:4
+```
