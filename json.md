@@ -7,4 +7,5 @@ let peoples=[
     {name:"ostad3", age:"36"}
 ]
 console.log(peoples[0]['age'])
+Output:34
 ```
