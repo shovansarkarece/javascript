@@ -8,16 +8,15 @@ console.log(Math.abs(-90))///==>90
 ### max()
 It returns maximum value of the given numbers.
 ```
-console.log(Math.pow(2,3))
-console.log(Math.sqrt(16))
-
-console.log(Math.max(1,2,3))
+console.log(Math.pow(2,3))////==>8
+console.log(Math.sqrt(16))////==>8
+console.log(Math.max(1,2,3))////==>3
 
 ```
 ### min()
 It returns minimum value of the given numbers.
 ```
-console.log(Math.min(1,2,3))
+console.log(Math.min(1,2,3))////==>1
 ```
 ### random()
 It returns random number between 0 (inclusive) and 1 (exclusive).
