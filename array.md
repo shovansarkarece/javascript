@@ -87,18 +87,15 @@ console.log(res1);
 let ar=[5,22,19,25,34]
 let res=ar.findIndex(x=>x>20);
 console.log(res);
-////Output:25(Always first element's index will return)
+////Output:1(Always first element's index will return)
 ```
 - ***Example-2 ****
 ```
 let ar1=[5,25,19,22,34]
 let res1=ar1.findIndex(x=>x>20);
 console.log(res1);
-////Output:25(Always first element's index will return)
+////Output:1(Always first element's index will return)
 ```
-
-
-
 - JAVASCRIPT ARRAY INCLUDES()
   >The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.
 ```
