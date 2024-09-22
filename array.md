@@ -15,3 +15,7 @@ console.log(numbers)//-->Return whole array
 console.log(numbers[0])//-->Aray's Index start from 0 
 console.log(numbers[1])//-->Aray's Index 1
 ```
+![image](https://github.com/user-attachments/assets/05f415b2-07f8-4daa-9ab4-b65e0385f8f5)
+
+# Loop Over Array
+- For Each Loop
