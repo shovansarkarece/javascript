@@ -130,4 +130,25 @@ numbers.reverse()////-->But if we want to get the array in descending order then
 console.log(numbers);
 ```
 ![image](https://github.com/user-attachments/assets/05c1d3db-ea80-41e3-a86e-f5315e9d1f63)
-
+# JAVASCRIPT ARRAY SPLICE()
+>The JavaScript array splice() method is used to add/remove the elements to/from the existing array. 
+>>It returns the removed elements from an array.
+>>>*****The splice() method also modifies the original array.*****
+- **Syntax:array.splice(index,removecount,item)**
+```
+let arr =["A","B","C","D","E"]
+//////Example of Splice in terms of deletion
+let res=arr.splice(2,2,"P","Q")////==>It means we can select from index 2 
+////and susbstitute 2 elemenet at the place of C,D with P,Q
+console.log(res);
+console.log(arr);
+```
+#### Another Example of Splice in terms of deletion
+```
+let arr1 =["A","B","C","D","E"]
+//////Example of Splice in terms of deletion
+let res2=arr1.splice(2,2,)////==>It means we can select from index 2 
+////and delete 2 elements from index 2
+console.log(res2);
+console.log(arr1);//////As we know splice() method, will change our main array.
+```
