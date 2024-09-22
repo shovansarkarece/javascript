@@ -53,3 +53,18 @@ let nameArray=Array.from(nameString)
 console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
+- JAVASCRIPT ARRAY INCLUDES()
+  >The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.
+```
+let ostadApp=["Android","IOS","Windows","Mac","Web"]
+let res=ostadApp.includes("Apple");
+let res1=ostadApp.includes("WEB");
+let res2=ostadApp.includes("WeB");
+let res3=ostadApp.includes("Web");
+console.log(res)
+console.log(res1)
+console.log(res2)
+console.log(res3)
+```
+![image](https://github.com/user-attachments/assets/632ee5c5-5f11-4999-9134-cdcec1de9527)
+
