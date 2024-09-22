@@ -35,3 +35,5 @@ for(i=0;i<App.length;i=i+1){
 ```
 ![image](https://github.com/user-attachments/assets/58e63cda-e26f-409e-a518-7a80bb789e76)
 # Array Helping Methods
+- JAVASCRIPT ARRAY CONCAT()
+  >The JavaScript array concat() method combines two or more arrays and returns a new string.
