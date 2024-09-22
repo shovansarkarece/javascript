@@ -66,7 +66,7 @@ console.log(res1)
    >>substring()==>substr and substring() both the method are same but substring() method first index where we want to cut
     >>>till the last index.Assume we have a String "Hello world" which consist of 12 charecter.Now we want "world" which starts
      >>>>from 6th index and it up to the 10th index then we pass substring(6,10)==> which return world but in substr(6,5) because
-       >>>>>>world consist of 5 charecter that's the main difference.
+       world consist of 5 charecter that's the main difference.
 #### **Both substr and substring() will change the main string**
 ```
 // let text="Hello world"
