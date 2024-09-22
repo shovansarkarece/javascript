@@ -88,3 +88,20 @@ console.log(res1)
 console.log(res)
 ```
 ![image](https://github.com/user-attachments/assets/ac141468-21b0-4ba0-acd4-4a7782ce7108)
+- slice()
+  >It is used to fetch the part of the given string. It allows us to assign positive as well negative index.
+```
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+console.log(str.slice(31));
+// Expected output: "the lazy dog."
+
+console.log(str.slice(4, 19));
+// Expected output: "quick brown fox"
+
+console.log(str.slice(-4));
+// Expected output: "dog."
+
+console.log(str.slice(-9, -5));
+// Expected output: "lazy"
+````
