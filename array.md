@@ -143,6 +143,8 @@ let res=arr.splice(2,2,"P","Q")////==>It means we can select from index 2
 console.log(res);
 console.log(arr);
 ```
+![image](https://github.com/user-attachments/assets/9b3708eb-2d85-4afd-9f86-f9bf93640fa7)
+
 #### Another Example of Splice in terms of deletion
 ```
 let arr1 =["A","B","C","D","E"]
@@ -152,3 +154,5 @@ let res2=arr1.splice(2,2,)////==>It means we can select from index 2
 console.log(res2);
 console.log(arr1);//////As we know splice() method, will change our main array.
 ```
+![image](https://github.com/user-attachments/assets/da014796-5293-48df-8ff9-b566746f4d83)
+
