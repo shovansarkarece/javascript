@@ -19,3 +19,10 @@ console.log(numbers[1])//-->Aray's Index 1
 
 # Loop Over Array
 - For Each Loop
+```
+let ostadApp=["Android","IOS","Windows","Mac","Web"]
+ostadApp.forEach((item)=>{
+    console.log(item)
+})
+```
+![image](https://github.com/user-attachments/assets/73d46218-074d-4f5d-8ec6-ad17b781f250)
