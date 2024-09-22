@@ -80,3 +80,11 @@ let res=App.indexOf("Web")
 console.log(res)
 ////Output:4
 ```
+- JAVASCRIPT ARRAY POP()
+  >The JavaScript array pop() method removes the last element from the given array and return that element.
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+let res=App.pop()
+console.log(res)
+////Output:Web
+```
