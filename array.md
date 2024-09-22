@@ -20,8 +20,8 @@ console.log(numbers[1])//-->Aray's Index 1
 # Loop Over Array
 - For Each Loop
 ```
-let ostadApp=["Android","IOS","Windows","Mac","Web"]
-ostadApp.forEach((item)=>{
+let App=["Android","IOS","Windows","Mac","Web"]
+App.forEach((item)=>{
     console.log(item)
 })
 ```
