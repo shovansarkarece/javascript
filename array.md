@@ -120,3 +120,13 @@ console.log(res1);
 console.log(res2);
 ```
 ![image](https://github.com/user-attachments/assets/9b67b325-ad30-46a2-876c-5280aa882205)
+- JAVASCRIPT ARRAY SORT()
+>The JavaScript array sort() method is used to arrange the array elements in some order.
+>>By default, sort() method follows the ascending order.
+```
+let numbers=[30,55,44,20,77];
+numbers.sort()////-->By default, sort() method follows the ascending order.
+numbers.reverse()////-->But if we want to get the array in descending order then reverse it 
+console.log(numbers);
+```
+![image](https://github.com/user-attachments/assets/1991a344-785e-47d0-bd1b-79c4d504d40e)
