@@ -37,3 +37,13 @@ for(i=0;i<App.length;i=i+1){
 # Array Helping Methods
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
+```
+let first=['a','b','c']
+let second=['d','e','f']
+let res=first.concat(second)
+console.log(res)
+```
+![image](https://github.com/user-attachments/assets/4181e9ed-b680-41cb-bb2e-4eb1c3cd9cf2)
+- JAVASCRIPT ARRAY FROM()
+>The from() method creates a new array that holds the shallow copy from an array or iterable object.
+>>When applied to a string, each word gets converted to an array element in the new array
