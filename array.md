@@ -73,6 +73,9 @@ console.log(res3)
 >>This method is case-sensitive.
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
+let res=App.pop()
+console.log(res)
+let App=["Android","IOS","Windows","Mac","Web"]
 let res=App.indexOf("Web")
 console.log(res)
 ////Output:4
