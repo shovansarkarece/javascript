@@ -63,6 +63,7 @@ console.log(res1)
 ```
 - **substr()**
   >substr()==>It is used to fetch the part of the given string on the basis of the specified starting position and length.
+  >substring()==>It is used to fetch the part of the given string on the basis of the specified index.
    >>substring()==>substr and substring() both the method are same but substring() method first index where we want to cut
     >>>till the last index.Assume we have a String "Hello world" which consist of 12 charecter.Now we want "world" which starts
      >>>>from 6th index and it up to the 10th index then we pass substring(6,10)==> which return world but in substr(6,5) because
