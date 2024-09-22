@@ -47,3 +47,9 @@ console.log(res)
 - JAVASCRIPT ARRAY FROM()
 >The from() method creates a new array that holds the shallow copy from an array or iterable object.
 >>When applied to a string, each word gets converted to an array element in the new array
+```
+let nameString="Independence is the right of human being"
+let nameArray=Array.from(nameString)
+console.log(nameArray)
+```
+![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
