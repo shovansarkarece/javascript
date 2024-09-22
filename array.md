@@ -53,6 +53,33 @@ let nameArray=Array.from(nameString)
 console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
+- **JAVASCRIPT ARRAY FILTER()**
+>The JavaScript array filter() method filter and extract the element of an array that satisfying the provided condition.
+```
+let marks=[20,37,40,45,50,30,10,5]
+function check(value){
+    return value>30;
+}
+console.log(marks.filter(check));
+```
+![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
+- **JAVASCRIPT ARRAY FIND()**
+>The JavaScript array find() method returns the first element of the given array that satisfies the provided function condition.
+- ** Example-1 **
+```
+let ar=[5,22,19,25,34]
+let res=ar.find(x=>x>20);
+console.log(res);
+////Output:22(Always first element will return)
+```
+- ** Example-2 **
+```
+let ar1=[5,25,19,22,34]
+let res1=ar1.find(x=>x>20);
+console.log(res1);
+////Output:25(Always first element will return)
+```
+
 - JAVASCRIPT ARRAY INCLUDES()
   >The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.
 ```
