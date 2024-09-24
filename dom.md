@@ -29,3 +29,7 @@
 ![image](https://github.com/user-attachments/assets/13c01bd5-c41c-492a-8e92-1be0bc54bf64)
 # Output:
 ![image](https://github.com/user-attachments/assets/4d8a2696-276c-4278-92a5-c3367ede8e61)
+# HTML DOM FINDING FORM INPUT VALUE
+![image](https://github.com/user-attachments/assets/97724314-ac3f-43ab-93bc-a2b35e018f19)
+# Output:
+![image](https://github.com/user-attachments/assets/04548868-4353-4cd4-941c-1caed0fd02ed)
