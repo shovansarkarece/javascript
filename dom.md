@@ -44,14 +44,14 @@
 ![image](https://github.com/user-attachments/assets/e8ef657a-03e4-41c5-9cdf-88e98f7aa8d5)
 # Output
 ![image](https://github.com/user-attachments/assets/0f751cbe-ed97-4e41-b391-80395add5319)
-
+# DOM CHANGING ATTRIBUTE VALUE -1
 ![image](https://github.com/user-attachments/assets/b6824557-8192-4444-a4e3-23d71cb4b3df)
 ![image](https://github.com/user-attachments/assets/c9b2f233-7bd5-4f45-8989-d846efb172af)
 # Output
 ![image](https://github.com/user-attachments/assets/2f798626-441c-46b8-ba91-58a42157bde5) 
 #### Our Image size is changed
 ![image](https://github.com/user-attachments/assets/9498c646-f5d2-48b2-9003-624a9addeeca)
-# DOM CHANGING ATTRIBUTE VALUE
+# DOM CHANGING ATTRIBUTE VALUE -2
 ![image](https://github.com/user-attachments/assets/dd847b8e-2ecf-4540-94f6-be0e1525024f)
 
 # Output
