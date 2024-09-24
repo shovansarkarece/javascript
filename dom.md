@@ -11,3 +11,9 @@
 # getElementsByName
 > getElementsByName returns an array which captured by array indexing like [ ]
 ![image](https://github.com/user-attachments/assets/629e1973-c25a-4189-b902-70f7c45b718f)
+# Display all name value pairs of cookies in a document
+![image](https://github.com/user-attachments/assets/18bc4bfc-9d0c-4787-9fe5-2ee02916e408)
+# Display the domain name of the server that loaded the document
+![image](https://github.com/user-attachments/assets/4391dddb-7850-47df-b0d8-230521cbfa3a)
+# Display the date and time the document was last modified
+![image](https://github.com/user-attachments/assets/305a7511-3150-4919-b9c1-18c283ef1047)
