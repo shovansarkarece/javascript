@@ -33,3 +33,12 @@
 ![image](https://github.com/user-attachments/assets/97724314-ac3f-43ab-93bc-a2b35e018f19)
 # Output:
 ![image](https://github.com/user-attachments/assets/04548868-4353-4cd4-941c-1caed0fd02ed)
+# DOM HTML CSS MANUPULATION
+![image](https://github.com/user-attachments/assets/fa3eebcd-db3b-423d-862d-f24f928c3d7f)
+![image](https://github.com/user-attachments/assets/ee5d4eff-8891-4f6d-b459-61029ea409b5)
+# Output
+![image](https://github.com/user-attachments/assets/eedcf706-e0ba-4e30-8b45-75684cfe2190)
+![image](https://github.com/user-attachments/assets/5f6d8968-6635-4e3c-820d-2a55c654106a)
+![image](https://github.com/user-attachments/assets/7fa55143-62bb-4e49-b017-418b583fd77b)
+
+
