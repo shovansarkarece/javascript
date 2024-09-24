@@ -52,10 +52,12 @@
 #### Our Image size is changed
 ![image](https://github.com/user-attachments/assets/9498c646-f5d2-48b2-9003-624a9addeeca)
 # DOM CHANGING ATTRIBUTE VALUE -2
+![image](https://github.com/user-attachments/assets/b6824557-8192-4444-a4e3-23d71cb4b3df)
 ![image](https://github.com/user-attachments/assets/dd847b8e-2ecf-4540-94f6-be0e1525024f)
 
 # Output
 ![image](https://github.com/user-attachments/assets/2f798626-441c-46b8-ba91-58a42157bde5) 
 #### Our Image is changed
 ![image](https://github.com/user-attachments/assets/57e2cb37-a1a0-4974-ba3e-089569cacb3d)
-
+# DOM QUERY SELECTOR
+![image](https://github.com/user-attachments/assets/4b6afccf-8fa0-4932-8d16-f26ceafd0d32)
