@@ -23,3 +23,9 @@
 ![image](https://github.com/user-attachments/assets/a26033e7-fbbe-4223-9667-fef4a79383ba)
 # Replace the content of a document
 ![image](https://github.com/user-attachments/assets/4d3db020-c06f-4ef1-9682-7b36f92b5c0d)
+# Open a new window, and add some content
+![image](https://github.com/user-attachments/assets/564b6417-115d-4ecd-b90d-bb08f5e081b3)
+# Display the number of elements with a specific tag name
+![image](https://github.com/user-attachments/assets/13c01bd5-c41c-492a-8e92-1be0bc54bf64)
+# Output:
+![image](https://github.com/user-attachments/assets/4d8a2696-276c-4278-92a5-c3367ede8e61)
