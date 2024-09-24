@@ -17,3 +17,9 @@
 ![image](https://github.com/user-attachments/assets/4391dddb-7850-47df-b0d8-230521cbfa3a)
 # Display the date and time the document was last modified
 ![image](https://github.com/user-attachments/assets/305a7511-3150-4919-b9c1-18c283ef1047)
+# Display the title of a document
+![image](https://github.com/user-attachments/assets/a5ae0b91-c3ce-40b8-bed6-808f151b4122)
+# Display the full URL of a document
+![image](https://github.com/user-attachments/assets/a26033e7-fbbe-4223-9667-fef4a79383ba)
+# Replace the content of a document
+![image](https://github.com/user-attachments/assets/4d3db020-c06f-4ef1-9682-7b36f92b5c0d)
