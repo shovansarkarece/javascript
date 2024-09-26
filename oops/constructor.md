@@ -21,3 +21,12 @@ class Person {
 }
 const person1 = new Person('I am a constructor');
 ```
+# Example-3
+```
+class MyClass{
+        constructor(a,b){
+            console.log(a+b)
+}
+}
+const myclass=new MyClass(50,50)
+```
