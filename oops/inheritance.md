@@ -48,3 +48,18 @@ class Son extends Father{
 const SonObj = new Son();
 console.log(SonObj.getName());
 ```
+# Example-3(Inheritance with super() keyword)
+```
+class Father{
+    constructor(){
+        console.log("Father constructor");
+    }
+}
+class Son extends Father{
+    constructor(){
+        super() // Permission
+        console.log("Son constructor");
+    }
+}
+let father=new Father();
+```
