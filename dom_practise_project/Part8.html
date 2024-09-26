@@ -1,0 +1,50 @@
+<!-- Make a counter APP Using DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>0</h1>
+
+
+
+<button onclick="Add()">Add Number</button>
+<ul>
+
+</ul>
+
+
+<script>
+  function Add(){
+    // Create A List Item
+
+    Plus()
+    let item=document.createElement("li");
+    let num=document.getElementsByTagName('h1')[0].innerText
+
+    item.innerText=num
+
+    let MyList=document.getElementsByTagName('ul')[0]
+    MyList.appendChild(item)
+
+
+  }
+
+
+  function Plus(){
+    let h1Element=document.getElementsByTagName('h1')[0]
+    let h1Value=parseInt(h1Element.innerText)
+    let newValue=h1Value+1
+    h1Element.innerText=newValue
+  }
+
+
+</script>
+
+
+</body>
+</html>

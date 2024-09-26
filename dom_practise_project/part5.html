@@ -1,0 +1,51 @@
+<!-- Login Form Take User Name & Password -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img id="imgID" src="./img/off.jpg">
+<button onclick="ON()">ON</button>
+<button onclick="OFF()">OFF</button>
+
+<button id="ToggleID" onclick="Toggle()">Light OFF</button>
+
+
+<script>
+////If we want to do thism on and off operation in one button then we will use this function which name is 
+////Toggle()
+    function Toggle() {
+        let imgElement=document.getElementById("imgID")
+        let toggleBtn=document.getElementById("ToggleID")
+        if (toggleBtn.innerText==="Light OFF"){
+            toggleBtn.innerText="Light ON"
+            imgElement.src="./img/on.jpg"
+        }
+        else {
+            toggleBtn.innerText="Light OFF"
+            imgElement.src="./img/off.jpg"
+        }
+
+
+
+    }
+
+    
+    function ON(){
+        let imgElement=document.getElementById("imgID")
+        imgElement.src="./img/on.jpg"
+    }
+    
+    function OFF(){
+        let imgElement=document.getElementById("imgID")
+        imgElement.src="./img/off.jpg"
+    }
+    
+</script>
+
+</body>
+</html>

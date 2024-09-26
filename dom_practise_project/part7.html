@@ -1,0 +1,34 @@
+<!-- Make A Light on off project using image src attribute & Query Selector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>0</h1>
+<button onclick="Plus()">+</button>
+<button onclick="Minus()">-</button>
+
+
+
+<script>
+  function Plus(){
+    let h1Element=document.getElementsByTagName('h1')[0]
+    let h1Value=parseInt(h1Element.innerText)
+    let newValue=h1Value+1
+    h1Element.innerText=newValue
+  }
+  function Minus(){
+    let h1Element=document.getElementsByTagName('h1')[0]
+    let h1Value=parseInt(h1Element.innerText)
+    let newValue=h1Value-1
+    h1Element.innerText=newValue
+  }
+</script>
+
+
+</body>
+</html>

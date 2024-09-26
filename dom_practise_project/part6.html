@@ -1,0 +1,60 @@
+<!-- Make A Light on off project using image src attribute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<img id="imgID" src="./img/off.jpg">
+<button onclick="ON()">ON</button>
+<button onclick="OFF()">OFF</button>
+
+<button id="ToggleID" onclick="Toggle()">Light OFF</button>
+
+
+<script>
+
+    function Toggle() {
+        let imgElement=document.querySelector("#imgID")
+        let toggleBtn=document.querySelector("#ToggleID")
+        if (toggleBtn.innerText==="Light OFF"){
+            toggleBtn.innerText="Light ON"
+            imgElement.src="./img/on.jpg"
+        }
+        else {
+            toggleBtn.innerText="Light OFF"
+            imgElement.src="./img/off.jpg"
+        }
+
+
+
+    }
+
+    
+    function ON(){
+        let imgElement=document.querySelector("#imgID")
+        imgElement.src="./img/on.jpg"
+    }
+    
+    function OFF(){
+        let imgElement=document.querySelector("#imgID")
+        imgElement.src="./img/off.jpg"
+    }
+
+
+    /*
+
+      let imgElement=document.querySelector("#imgID")  // #imgID for ID
+      let imgElement=document.querySelector(".imgClass")  // .imgClass for Class
+      let imgElement=document.querySelector("img")  // img for Tag Name
+
+
+     */
+
+</script>
+
+</body>
+</html>

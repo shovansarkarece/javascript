@@ -1,0 +1,37 @@
+<!-- Change Text ON-OFF Using Dom---Using Id attribute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 class="h1Class">......</h1>
+    <h1 class="h1Class">......</h1>
+    <h1 class="h1Class">......</h1>
+
+    <button onclick="ON()">ON</button>
+    <button onclick="OFF()">OF</button>
+
+
+
+    <script>
+        function ON(){
+            let h1Element=document.getElementsByClassName("h1Class")[2]
+            h1Element.innerText="ON"
+        }
+
+        function OFF(){
+            let h1Element=document.getElementsByClassName("h1Class")[2]
+            h1Element.innerText="OFF"
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
