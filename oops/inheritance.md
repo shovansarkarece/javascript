@@ -63,7 +63,7 @@ class Son extends Father{
 }
 let father=new Father();
 ```
-# Example-4(Inheritance with ststic keyword)
+# Example-4(Inheritance with static keyword)
 ```
 class Father{
     static addTwo(){
