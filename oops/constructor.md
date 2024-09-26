@@ -12,8 +12,8 @@ class Person {
 }
 const person1 = new Person();
 ```
-```
 # Example-2
+```
 class Person {
     constructor(msg) {
         console.log(msg)
