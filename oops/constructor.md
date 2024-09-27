@@ -33,7 +33,7 @@ class Father{
 class Son extends Father{    
 }
 new Father("This is constructor parameter from Father")
-new Son("This is constructor parameter from Father")
+new Son("This is constructor parameter from Son")
 ```
 # Example-4(Parameterized Constructor)
 ```
@@ -44,6 +44,70 @@ class MyClass{
 }
 const myclass=new MyClass(50,50)
 ```
+# Example-5
+## Constructor inside only child class(super() method required)
+```
+class Father{
+}
+class Son extends Father{    
+        constructor(){
+        super();
+        console.log("I am constructor of Son Class")
+}
+}
+new Son()
+```
+# Example-6
+## Constructor inside only child class pass parameter
+```
+class Father{
+}
+class Son extends Father{    
+        constructor(msg){
+        super();
+        console.log(msg)
+}
+}
+new Son("This is constructor parameter from Son")
+```
+# Example-7
+## Constructor inside both parent and child class 
+> IF both have constructor then according to call of class constructor will be called
+>> But in this case,if the child constructor called then only child able to call both the parent class and it's own class using super() method
+>>> Finally as per the rule, the parent is unable to access child class which is the principle of oops methodology.
+```
+class Father{
+    constructor(){
+    console.log("I am Father Constructor")
+}
+}
+class Son extends Father{    
+        constructor(){
+        super();
+        console.log("I am a Son constructor")
+}
+}
+new Son()
+new Father()
+```
+# Example-7
+## Constructor inside both parent and child classes both are passing parameter
+```
+class Father{
+    constructor(msg_parent){
+    console.log("I am Father Constructor")
+}
+}
+class Son extends Father{    
+        constructor(msg_child){
+        super();
+        console.log("I am a Son constructor")
+}
+}
+new Son("This is constructor parameter from Son")
+new Father("This is constructor parameter from Father")
+```
+# Example-8
 # Change class properties value using constructor
 ```
 class Person{
