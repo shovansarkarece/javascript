@@ -14,7 +14,7 @@ console.log(Person.first_name)
 console.log(Person.age)
 ```
 # Redeclairing Class with same class name by using class expression
-## creating class using class expression
+## Creating class using class expression
 - A class can be declared once only. If we try to declare class more than one time it throws an error.
 ```
 let Person=class {
