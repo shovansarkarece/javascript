@@ -4,6 +4,7 @@
 - b) Constructor can take parameter
 - c) Constructor method can't return any result
 # Example-1(Default Constructor)
+### Constructor inside only parent class
 ```
 class Person {
     constructor() {
@@ -22,6 +23,19 @@ class Person {
 const person1 = new Person('I am a constructor');
 ```
 # Example-3(Parameterized Constructor)
+## Constructor inside only parent class pass parameters
+```
+class Father{
+    constructor(msg){
+    console.log(msg)
+}
+}
+class Son extends Father{    
+}
+new Father("This is constructor parameter from Father")
+new Son("This is constructor parameter from Father")
+```
+# Example-4(Parameterized Constructor)
 ```
 class MyClass{
         constructor(a,b){
