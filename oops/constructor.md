@@ -30,3 +30,7 @@ class MyClass{
 }
 const myclass=new MyClass(50,50)
 ```
+# Change class properties value using constructor
+### Execution flow of constructor
+![image](https://github.com/user-attachments/assets/d229b6ba-6e1c-451f-ad8d-c994d1d18aca)
+![image](https://github.com/user-attachments/assets/fbafdb4c-1e46-4801-9ee7-ceacb1ce1351)
