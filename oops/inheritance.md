@@ -78,3 +78,19 @@ class Son extends Father{
 Son.addTwo();
 Father.addTwo();
 ```
+# Example-5(Inheritance with static keyword)
+```
+class Father{
+    static greetParent(){
+        return "Hello, I am the Father"
+    }
+}
+class Son extends Father{
+        static greetchild(){
+        return "Hello, I am the Son"
+    }
+}
+console.log(Son.greetParent());
+console.log(Son.greetchild());
+console.log(Father.greetParent());
+```
