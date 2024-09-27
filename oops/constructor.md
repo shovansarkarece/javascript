@@ -3,7 +3,7 @@
 - a) Constructor execute automatically when object is created
 - b) Constructor can take parameter
 - c) Constructor method can't return any result
-# Example-1
+# Example-1(Default Constructor)
 ```
 class Person {
     constructor() {
@@ -12,7 +12,7 @@ class Person {
 }
 const person1 = new Person();
 ```
-# Example-2
+# Example-2(Parameterized Constructor)
 ```
 class Person {
     constructor(msg) {
@@ -21,7 +21,7 @@ class Person {
 }
 const person1 = new Person('I am a constructor');
 ```
-# Example-3
+# Example-3(Parameterized Constructor)
 ```
 class MyClass{
         constructor(a,b){
