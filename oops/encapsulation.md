@@ -5,4 +5,7 @@
 - c) Data Protection
 - d)Controlled Access
 - e)Enhance Maintainability
-#### Achieved Encapsulation using Different Methodology
+#### Achieved Encapsulation using Different and following Methodology
+- a) Encapsulation Using Closures
+- b) Using Constructor Functions
+- c) Using ES6 Classes.
