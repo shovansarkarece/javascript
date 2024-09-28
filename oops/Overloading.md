@@ -14,8 +14,15 @@ class MyClass{
   myMethod(p1,p2,p3){
   if(arguments.length===1){
     console.log("Recieved one argument:",p1)
+  }
+  else if(arguments.length===2){
+    console.log("Recieved two argument:",p1,p2)
+  }
+   else if(arguments.length===3){
+    console.log("Recieved three argument:",p1,p2,p3)
 }
 }
 }
-
+let Obj=new MyClass();
+Obj.myMethod(10);
 ```
