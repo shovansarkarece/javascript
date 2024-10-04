@@ -31,4 +31,8 @@ return result; // optional return statement
 // function sum(a, b) {
 //   return a + b;
 // }
+/////Function Calling
+// console.log(sum(5, 5));
+// console.log(sum(15, 50));
+// console.log(sum(25, 750));
 ```
