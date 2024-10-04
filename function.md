@@ -26,3 +26,9 @@ return result; // optional return statement
 // var sum3 = a + b;
 // console.log(sum3);
 ```
+### lets make a reusable code
+```
+// function sum(a, b) {
+//   return a + b;
+// }
+```
