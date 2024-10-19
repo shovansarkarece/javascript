@@ -23,14 +23,25 @@ console.log(str);
 # Tricky Interview Questions
 ```
 console.log(10 + "20");
+//Output:1020
 console.log(9 - "5");
+//Output:4
 console.log("Java" + "Script");
+//Output:JavaScript
 console.log(" " + " ");
+//Output:
 let sum = " " + 0;
+//Output:
 console.log(typeof sum);
+//Output:string
 console.log("vinod" - "thapa");
+//Output:NaN
 console.log(true + true);
+//Output:2
 console.log(true + false);
+//Output:1
 console.log(false + true);
+//Output:1
 console.log(false - true);
+//Output:-1
 ```
