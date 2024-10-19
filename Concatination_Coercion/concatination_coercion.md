@@ -21,6 +21,7 @@ console.log(str);
 #### Output:510
 
 # Tricky Interview Questions
+```
 console.log(10 + "20");
 console.log(9 - "5");
 console.log("Java" + "Script");
@@ -32,3 +33,4 @@ console.log(true + true);
 console.log(true + false);
 console.log(false + true);
 console.log(false - true);
+```
