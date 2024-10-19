@@ -13,13 +13,14 @@ console.log(str);
 - **It is a fundamental part of JavaScript and can be used to make code more readable and efficient.**
 - **There are two types of coercion in JavaScript: implicit and explicit. Implicit coercion happens automatically, while explicit coercion is done manually by the programmer.**
 - **It's worth noting that type coercion can lead to unexpected results, so it's essential to be aware of how JavaScript handles these situations.**
+#### Example
+```
+ let sum = "5" + 10;
+ console.log(sum);
+```
+#### Output:510
 
-// let sum = "5" + 10;
-// console.log(sum);
-
-//* ============================
-//* Tricky Interview Questions
-//* ============================
+# Tricky Interview Questions
 console.log(10 + "20");
 console.log(9 - "5");
 console.log("Java" + "Script");
