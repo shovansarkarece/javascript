@@ -12,3 +12,6 @@
 - **Logical operators**
 - **String operators**
 - **Conditional (ternary) operator**
+
+![image](https://github.com/user-attachments/assets/1ae216ff-9f37-4003-871e-901329f9d78c)
+
