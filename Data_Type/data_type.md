@@ -66,121 +66,140 @@ console.log(bigNumber);
 ### Real-life Comparison: 
 - **If you have an empty lunchbox (null), it means you decided not to put any food in it. If you have a closed lunchbox (undefined), it means you haven't checked or filled it yet.**
 
-//? 2: What is the purpose of typeof operator in JavaScript❓
+### 2) What is the purpose of typeof operator in JavaScript❓
+```
+ var myName = 1;
+ console.log(myName);
+ console.log(typeof myName);
+```
+### 3)What is the result of `typeof null` in JavaScript❓
+```
+ var badMemories = null;
+ console.log(badMemories);
+ console.log(typeof null);
+- **Null is data type and it's abug that when it's type of shown us a object.**
+```
+### 4)What are primitive data types in JavaScript❓
+![image](https://github.com/user-attachments/assets/1635af43-ece6-4dd6-adb8-f061bea69196)
 
-// var myName = 1;
-// console.log(myName);
-// console.log(typeof myName);
+### 5)Convert a string to a number?
+- **We just need to add the '+' sign before the string.**
+- **Example:**
+```
+ var myFavNum = "10";
+ console.log(typeof +myFavNum);
+ console.log(typeof Number(myFavNum));
+```
+### 6)Convert a number to a string?
+- **We just need to add an empty string after the number**
+- **Example:**
+```
+ var str = 5;
+//Procedure-1
+ console.log(String(str));
+ console.log(typeof(str));
+//Procedure-2
+ console.log(typeof (str + " "));
+```
+### 7)Explain the concept of truthy and falsy values in JavaScript. Provide examples.❓
+- **In JavaScript, values are either considered "truthy" or "falsy" when evaluated in a boolean context.**
 
-//? 3: What is the result of `typeof null` in JavaScript❓
-// var badMemories = null;
-// console.log(badMemories);
-// console.log(typeof null);
+- **Truthy values are treated as true when used in conditions. Examples include:**
+- **👉 true**
+- **👉 Any non-empty string ("hello")**
+- **👉 Any non-zero number (42)**
+- **👉 Arrays and objects, even if they're not empty**
 
-//? 4: What are primitive data types in JavaScript❓
+- **Falsy values are treated as false in boolean contexts. Examples include:**
+- **👉 false**
+- **👉 0 (zero)**
+- **👉 '' (an empty string)**
+- **👉 null**
+- **👉 undefined**
+- **👉 NaN (Not a Number)**
 
-//? 5: Convert a string to a number?
-// We just need to add the '+' sign before the string
-// Example:
-// var myFavNum = "10";
-// console.log(typeof +myFavNum);
-// console.log(typeof Number(myFavNum));
+### 8)To check if a non-empty string is truthy or falsy in JavaScript, we can directly use if statement.
+```
+ var myName = -5;
+ if (true) {
+   console.log("this is truthy value");
+ } else {
+   console.log("its a falsy value");
+ }
+```
 
-//? 6: Convert a number to a string?
-// We just need to add an empty string after the number
-// Example:
+## parseInt & parseFloat Section 
+- **parseInt and parseFloat are both functions in JavaScript used for converting strings to numbers, but they have different use cases.**
 
-// var str = 5;
-// console.log(typeof str);
+### parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
+- ***Example-1**
+```
+ const myString = "42";
+ const myNumber = parseInt(myString);
+ console.log(myNumber); // Output: 42
+```
+- ***Example-2**
+```
+ const myString = "42.5";
+ const myNumber = parseInt(myString);
+ console.log(myNumber); // Output: 42
+```
+### parseFloat: Definition: parseFloat is used to parse a string and convert it to a floating-point number (decimal number).
+```
+ const myString = "42.5";
+ const myNumber = parseFloat(myString);
+ console.log(myNumber); // Output: 42.5
+```
 
-//? 7: Explain the concept of truthy and falsy values in JavaScript. Provide examples.❓
-//* In JavaScript, values are either considered "truthy" or "falsy" when evaluated in a boolean context.
+#### Key Differences:
+- **parseInt is used for converting to integers and ignores anything after the decimal point.**
+- **parseFloat is used for converting to floating-point numbers, preserving the decimal part.**
+- **Both functions will attempt to convert as much of the string as possible until an invalid character is encountered.**
 
-//? Truthy values are treated as true when used in conditions. Examples include:
-// 👉 true
-// 👉 Any non-empty string ("hello")
-// 👉 Any non-zero number (42)
-// 👉 Arrays and objects, even if they're not empty
-
-// Falsy values are treated as false in boolean contexts. Examples include:
-// 👉 false
-// 👉 0 (zero)
-// 👉 '' (an empty string)
-// 👉 null
-// 👉 undefined
-// 👉 NaN (Not a Number)
-
-//? 8: To check if a non-empty string is truthy or falsy in JavaScript, we can directly use if statement.
-
-// var myName = -5;
-// if (true) {
-//   console.log("this is truthy value");
-// } else {
-//   console.log("its a falsy value");
-// }
-
-//* ==========  Data Types End Section ==========
-
-//todo ---------------- todo Bonus ----------------------
-
-//* ========== parseInt & parseFloat Section ==========
-//? parseInt and parseFloat are both functions in JavaScript used for converting strings to numbers, but they have different use cases.
-
-//* parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
-// const myString = "42";
-// const myNumber = parseInt(myString);
-// console.log(myNumber); // Output: 42
-
-// const myString = "42.5";
-// const myNumber = parseInt(myString);
-// console.log(myNumber); // Output: 42
-
-//* parseFloat: Definition: parseFloat is used to parse a string and convert it to a floating-point number (decimal number).
-// const myString = "42.5";
-// const myNumber = parseFloat(myString);
-// console.log(myNumber); // Output: 42.5
-
-//TODO  Key Differences:
-//? parseInt is used for converting to integers and ignores anything after the decimal point.
-//? parseFloat is used for converting to floating-point numbers, preserving the decimal part.
-//? Both functions will attempt to convert as much of the string as possible until an invalid character is encountered.
-
-//! Here are more examples
-// console.log(parseInt("123"));
+##### Here are more examples
+```
+ console.log(parseInt("123"));
 // // 123 (default base-10)
-// console.log(parseInt("123", 10));
+ console.log(parseInt("123", 10));
 // // 123 (explicitly specify base-10)
-// console.log(parseInt("   123 "));
+ console.log(parseInt("   123 "));
 // // 123 (whitespace is ignored)
-// console.log(parseInt("077"));
-// console.log(parseFloat("077"));
+ console.log(parseInt("077"));
+ console.log(parseFloat("077"));
 // // 77 (leading zeros are ignored)
-// console.log(parseInt("1.9"));
-// +console.log(parseFloat("1.9"));
+ console.log(parseInt("1.9"));
+ +console.log(parseFloat("1.9"));
 // 1 (decimal part is truncated)
 
 //! When we will not get an Output
-// console.log(parseInt("&123"));
-// console.log(parseInt("-123"));
-// console.log(parseInt("xyz"));
+ console.log(parseInt("&123"));
+ // //Nan
+ console.log(parseInt("-123"));
+  // //Nan
+ console.log(parseInt("xyz"));
+  // //Nan
 // NaN (input can't be converted to an integer)
-
-//? What is the purpose of the NaN value in JavaScript❓
-//? NaN stands for "Not a Number" and is returned when a mathematical operation doesn't yield a valid number.
-//? Also, to check whether a value is number or not we can use isNaN() function.
-
+```
+#### What is the purpose of the NaN value in JavaScript❓
+- **NaN stands for "Not a Number" and is returned when a mathematical operation doesn't yield a valid number.**
+- **Also, to check whether a value is number or not we can use isNaN() function.**
+##### Here are more examples
+```
 // console.log(isNaN("vinod"));
+////true
 // console.log(parseInt("xyz"));
+///NaN
 // console.log(parseInt("@#$"));
-
-// //! NaN === NaN, Why is it false ❓
+///NaN
+```
+##### Another examples(NaN === NaN, Why is it false ❓)
+```
 // if (NaN == NaN) {
 //   console.log("both are equal ");
 // } else {
 //   console.log("not equal");
 // }
-
-//* ========== parseInt & parseFloat End Section ==========
+```
 
 
 
