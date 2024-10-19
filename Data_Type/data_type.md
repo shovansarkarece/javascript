@@ -132,13 +132,13 @@ console.log(bigNumber);
 - **parseInt and parseFloat are both functions in JavaScript used for converting strings to numbers, but they have different use cases.**
 
 ### parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
-- ***Example-1**
+- **Example-1**
 ```
  const myString = "42";
  const myNumber = parseInt(myString);
  console.log(myNumber); // Output: 42
 ```
-- ***Example-2**
+- **Example-2**
 ```
  const myString = "42.5";
  const myNumber = parseInt(myString);
