@@ -89,3 +89,13 @@ const result = 55 * "hello" ❓
 //console.log(result);
 ```
 #### Output:NaN
+### String Operators
+- **There are a few ways to concatenate strings in JavaScript. The most common way is to use the + operator. For example, to concatenate the strings "Hello" and "World", you would use the following code:**
+- **Example:**
+```
+ var str1 = "Hello";
+ var str2 = "World ";
+ var str3 = str1 + Str2;
+ console.log(str3);
+```
+#### Output:HelloWorld
