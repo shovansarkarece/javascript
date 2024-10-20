@@ -208,50 +208,63 @@ console.log(+"5");
 ```
 #### Output:3 
 #### Output:5
-//? Unary Negation (-): Negates its operand, converting non-numbers into numbers and then negating them.
-// console.log(-5);
-// console.log(-"3");
+#### Unary Negation (-): Negates its operand, converting non-numbers into numbers and then negating them.
+```
+ console.log(-5);
+ console.log(-"3");
+```
+#### Output:-5 
+#### Output:-3
+#### Prefix Increment (++x) and Prefix Decrement (--x): 
+- **In prefix form, the value of the operand is first incremented or decremented, and then the result is returned.**
+```
+ var x = 5;
+ var y = --x;
+ console.log(y);
+ console.log(x);
+```
+#### Output:4
+#### Output:4
+#### Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
+```
+ var x = 5;
+ var y = x++;
+ console.log(y);
+ console.log(x);
+```
+#### Output:5
+#### Output:6
+- **The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.**
+#### 7)Conditional (ternary) operator
 
-//? Prefix Increment (++x) and Prefix Decrement (--x): In prefix form, the value of the operand is first incremented or decremented, and then the result is returned.
-// var x = 5;
-// var y = --x;
-// console.log(y);
-// console.log(x);
+![image](https://github.com/user-attachments/assets/87df19ba-9ca0-487d-9120-8611c81d56fe)
 
-//? Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
-// var x = 5;
-// var y = x++;
-// console.log(y);
-// console.log(x);
+- **`syntax: condition ? expressionIfTrue : expressionIfFalse;`**
+- **write a program to check if the candidates isEligibleForDrive or not? Age must be equal to or greater then 18.**
+```
+ var age = 19;
+ var result = age >= 18 ? "Yes" : "No";
+ console.log(result);
+```
+#### Output:Yes
+##### Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
+```
+ var score = 99;
+ var result = score >= 60 ? "Pass" : "Fail";
+ console.log(result);
+```
+#### Output:Pass
+#### Combined Interview Questions
+```
+console.log(typeof ("5" - 3));
+console.log(2 < 12 < 5);
+console.log("20" + 10 + 10);
+```
+#### Output:
 
-//todo The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.
+![image](https://github.com/user-attachments/assets/71adce63-66e8-4841-a2bc-a1a1f80b6fc2)
 
-//* ===================================
-//* 7: Conditional (ternary) operator
-//* ====================================
 
-//? syntax: condition ? expressionIfTrue : expressionIfFalse;
 
-// ! write a program to check if the candidates isEligibleForDrive or not? Age must be equal to or greater then 18.
-
-// var age = 19;
-// var result = age >= 18 ? "Yes" : "No";
-// console.log(result);
-
-//! Q: Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
-
-// var score = 99;
-// var result = score >= 60 ? "Pass" : "Fail";
-// console.log(result);
-
-//* ===================================
-//*  Combined Interview Questions
-//* ====================================
-
-// console.log(typeof ("5" - 3));
-
-// console.log(2 < 12 < 5);
-
-// console.log("20" + 10 + 10);
 
 
