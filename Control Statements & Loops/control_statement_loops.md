@@ -364,6 +364,26 @@ for (initialization; condition; iteration) {
 - **4    *    *    *    *    -**
 - **5    *    *    *    *    \***
 #### Solution:
+- **Step-1**
+
+![image](https://github.com/user-attachments/assets/2a2580c5-ac27-4074-bfad-58755ef2786d)
+
+- **Step-2**
+
+![image](https://github.com/user-attachments/assets/61ccc075-4cd1-4fc0-bb9e-0bd917e1d60d)
+
+- **Step-3**
+
+![image](https://github.com/user-attachments/assets/9e6b0319-aed8-4b70-8299-51300511581b)
+
+- **Step-4**
+
+![image](https://github.com/user-attachments/assets/ce307082-a01e-4581-bdf6-32da2c50182c)
+
+- **Step-5**
+
+![image](https://github.com/user-attachments/assets/c8ba2e89-efbb-408c-a4de-6f9b907a9f0b)
+
 ```
  for (var i = 1; i <= 5; i++) {
    var pattern = "";
