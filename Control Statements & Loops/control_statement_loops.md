@@ -362,7 +362,7 @@ for (initialization; condition; iteration) {
 - **2    *    *    -    -    -**
 - **3    *    *    *    -    -**
 - **4    *    *    *    *    -**
-- **5    *    *    *    *    ***
+- **5    *    *    *    *    \***
 #### Solution:
 ```
  for (var i = 1; i <= 5; i++) {
