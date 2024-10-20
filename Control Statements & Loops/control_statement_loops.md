@@ -39,12 +39,9 @@
    console.log("kambhal oodo so jawo");
  }
 ```
-//* ===============================
-//* Interview Question
-//* ===============================
 
-//! Requirements:
-//? If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.
+### Interview Question
+- **If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.**
 //? If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
 //? If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
 //? If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.
