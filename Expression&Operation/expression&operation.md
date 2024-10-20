@@ -104,3 +104,7 @@ const result = 55 * "hello" ❓
  console.log(str3);
 ```
 #### Output: HelloWorld
+####  InterView Question
+- **Example:**
+``` console.log("5" + 3);```
+#### Output: 53
