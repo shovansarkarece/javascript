@@ -258,6 +258,7 @@ console.log(+"5");
 ```
 console.log(typeof ("5" - 3));
 console.log(2 < 12 < 5);
+///The main logic is from left to right which is 2<12-->true and true means 1 which is again compared to 1<5, Which is also true. Finally, the output will be 1.
 console.log("20" + 10 + 10);
 ```
 #### Output:
