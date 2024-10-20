@@ -42,31 +42,31 @@
 
 ### Interview Question
 - **If the person is 18 years or older, a citizen, and registered to vote, display a message saying they are eligible to vote.**
-//? If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.
-//? If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.
-//? If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.
-//? Extended voting eligibility checker with additional conditions
-
-// Assume the user's age, citizenship status, and registration status as inputs
-// let userAge = 19;
-// let isCitizen = true; // Assume true for citizen, false for non-citizen
-// let isRegistered = true; // Assume false for not registered, true for registered
-// //! Check eligibility using if...else statements with multiple conditions
-
-// if (userAge >= 18) {
-//   if (isCitizen) {
-//     if (isRegistered) {
-//       console.log("You are eligible to vote");
-//     } else {
-//       console.log("You are not eligible due to registration status");
-//     }
-//   } else {
-//     console.log("you are not eligible due to citizenship status");
-//   }
-// } else {
-//   console.log("You are not eligible to vote (Younger)");
-// }
-
+- **If the person is younger than 18, not a citizen, or not registered to vote, display a message saying they are not eligible to vote.**
+- **If the person is 18 or older but not a citizen, display a message saying they are not eligible due to citizenship status.**
+- **If the person is 18 or older, a citizen, but not registered to vote, display a message saying they are not eligible due to registration status.**
+- **Extended voting eligibility checker with additional conditions**
+#### Solution
+```
+ ////Assume the user's age, citizenship status, and registration status as inputs
+ let userAge = 19;
+ let isCitizen = true; // Assume true for citizen, false for non-citizen
+ let isRegistered = true; // Assume false for not registered, true for registered
+ ////! Check eligibility using if...else statements with multiple conditions
+ if (userAge >= 18) {
+   if (isCitizen) {
+     if (isRegistered) {
+       console.log("You are eligible to vote");
+     } else {
+       console.log("You are not eligible due to registration status");
+     }
+   } else {
+     console.log("you are not eligible due to citizenship status");
+   }
+ } else {
+   console.log("You are not eligible to vote (Younger)");
+ }
+```
 //* ===============================
 //* Interview Questions
 //* ===============================
