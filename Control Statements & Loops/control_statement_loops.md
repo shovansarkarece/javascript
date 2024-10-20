@@ -384,6 +384,7 @@ for (initialization; condition; iteration) {
 
 ![image](https://github.com/user-attachments/assets/c8ba2e89-efbb-408c-a4de-6f9b907a9f0b)
 
+### Pattern COde Below:
 ```
  for (var i = 1; i <= 5; i++) {
    var pattern = "";
