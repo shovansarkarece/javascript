@@ -233,34 +233,37 @@ if (num === 0) {
 ### Syntax of Do-While Loop
 ![image](https://github.com/user-attachments/assets/adf25d3e-dadb-4044-a196-ceb98bd742e9)
 
-#### Do...While Loop: 
-- **A do...while loop in JavaScript is similar to a while loop, but it guarantees that the loop body will be executed at least once before checking the loop condition.**
+#### Do-While Loop: 
+- **A do-while loop in JavaScript is similar to a while loop, but it guarantees that the loop body will be executed at least once before checking the loop condition.**
 - **The loop continues to execute while the specified condition is true, and it terminates when the condition becomes false.**
-
-// Syntax: do {
-//   // Code to be executed at least once
-// } while (condition);
-
-//* Simple do...while loop to count from 1 to 10 🧑‍💻
-
-// var num = 1;
-// while (num <= 10) {
-//   console.log(num);
-//   num++;
-// }
-
+#### Syntax: 
+```
+do {
+   // Code to be executed at least once
+ } while (condition);
+```
+#### Simple do...while loop to count from 1 to 10 🧑‍💻**
+```
+ var num = 1;
+ while (num <= 10) {
+   console.log(num);
+   num++;
+ }
+```
+#### Another Example
+```
 // var num = 1;
 // do{
 //     console.log(num);
 //     num++;
 // }while (num <= 10)
+```
+## Common Use Cases:
+- **When we want to guarantee the execution of the loop body at least once.**
+- **When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.**
 
-//? Common Use Cases:
-//? When you want to guarantee the execution of the loop body at least once.
-//? When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.
-
-//? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
-
+- **Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻**
+```
 // let userInput;
 // let positiveNumber;
 // do {
@@ -268,3 +271,107 @@ if (num === 0) {
 //   positiveNumber = parseFloat(userInput);
 // } while (isNaN(positiveNumber) || positiveNumber < 0);
 // console.log("You entered a valid positive number:", positiveNumber);
+```
+# For Loop
+
+![image](https://github.com/user-attachments/assets/fe4ccbe3-be19-4db5-9c9e-a33e3b284788)
+
+![image](https://github.com/user-attachments/assets/07ea0e59-89eb-4f1c-b4ab-af0f7d5bab12)
+
+- **For Loop: A for loop in JavaScript is a control flow statement that allows you to repeatedly execute a block of code a specified number of times.**
+- **It's particularly useful when you know the exact number of iterations needed.**
+
+#### Example: 
+```
+for (initialization; condition; iteration) {
+//   // Code to be executed in each iteration
+// }
+```
+- **Initialization: Executed before the loop starts. Often used to initialize a counter variable.**
+- ** Condition: Evaluated before each iteration. If false, the loop terminates.**
+- ** Iteration: Executed after each iteration. Typically used to update the loop control variable.**
+#### Simple for loop to count from 1 to 10
+```
+ var num = 1;
+ do {
+   console.log(num);
+   num++;
+ } while (num <= 10);
+ for (var num = 1; num <= 10; num++) {
+   console.log(num);
+ }
+```
+#### Key Point:
+- **The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.**
+- **The code for (;;) {} represents an infinite loop in JavaScript. This construct is commonly used when you want a loop to run indefinitely or until a break statement is encountered within the loop.**
+- **It's equivalent to while (true) {}.**
+- **use case: Game Development:**
+- **In game development, an infinite loop can be used to continuously update and render game frames until a specific condition (e.g., game over) is met.**
+#### Example: 
+```
+// for (;;) {
+//   // Update game logic and render frames
+// }
+```
+#### Common Use Cases:
+- **When you know the exact number of iterations needed.**
+- **Iterating over elements in an array.**
+- **Performing a task a specific number of times.**
+#### Practice :
+- **Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻**
+```
+ var sum = 0;
+ debugger;
+ for (var num = 1; num <= 10; num++) {
+   var sum = sum + num;
+ }
+ console.log(sum);
+```
+- **Generating a Times Table:🧑‍💻**
+- **Example 3: Generating a times table of 5 with a for loop.**
+```
+ var num = 1;
+ while (num <= 10) {
+   console.log("5 * " + num + " = " + 5 * num);
+//   //   console.log(`5 * ${num} = ${5 * num}`);
+   num++;
+ }
+/////Using for loop
+ for (var num = 1; num <= 10; num++) {
+   console.log("5 * " + num + " = " + 5 * num);
+ }
+```
+#### ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
+- **1)Program To check if a year is a leap year🧑‍💻**
+- **If a year is divisible by 4 and not divisible by 100, or**
+- **If a year is divisible by 400,**
+- **then it is a leap year. Otherwise, it is not a leap year.**
+```
+ var year = 2020;
+ if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+   console.log(year, "it's a leap year");
+ } else {
+   console.log(year, "it's not a leap year");
+ }
+```
+- **2)Drawing Patterns with Asterisks: 🧑‍💻**
+
+- **       i\j  1    2    3    4    5**
+- **       ----------------------------**
+- **       1    *    -    -    -    -**
+- **       2    *    *    -    -    -**
+- **       3    *    *    *    -    -**
+- **       4    *    *    *    *    -**
+- **       5    *    *    *    *    ***
+#### Solution:
+```
+ for (var i = 1; i <= 5; i++) {
+   var pattern = "";
+   for (var j = 1; j <= i; j++) {
+     pattern = pattern + " *";
+   }
+   console.log(pattern);
+ }
+```
+
+
