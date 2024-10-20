@@ -21,7 +21,7 @@
 ```
  var myFavNum = 15;
 // Assigns the value 15 to the variable myFavNum
- var channelName = 'tecnical'
+ var channelName = 'technical'
 ```
 ### 2)Arithmetic operators
 - **Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.**
@@ -33,6 +33,7 @@ var y = 10;
 var sum = x + y;
 console.log(sum);
 ```
+#### Output:15
 - **Subtraction (-): Subtracts the right operand from the left operand.**
 - **Example:**
 ```
@@ -41,6 +42,7 @@ console.log(sum);
 // var difference = a - b;
 // console.log(difference);
 ```
+#### Output:3
 - **Multiplication (*): Multiplies two values or variables.**
 - **Example:**
 ```
@@ -50,6 +52,7 @@ console.log(sum);
 // var product = p * q;
 // console.log(product);
 ```
+#### Output:24
 - **Division (/): Divides the left operand by the right operand.**
 - **Example:**
 ```
@@ -58,6 +61,7 @@ console.log(sum);
 // var quotient = m / n;
 // console.log(quotient);
 ```
+#### Output:5
 - **Modulus (%): Returns the remainder when the left operand is divided by the right operand.**
 - **Example:**
 ```
@@ -66,7 +70,8 @@ console.log(sum);
 // var remainder = c % d;
 // console.log(remainder);
 ```
-#### InterView Question
+#### Output:2
+#### Interview Question
 - **What will be the Output 🤔💭**
 - **Example:**
 ```
@@ -81,14 +86,14 @@ console.log(result);
  var result = 0.1 + 0.2;
  console.log(result.toFixed(2));
 ```
-#### when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
+#### When working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
 - **Example:**
 ```
 const result = 55 * "hello" ❓
 // var result = 55 * "hello";
 //console.log(result);
 ```
-#### Output:NaN
+#### Output: NaN
 ### String Operators
 - **There are a few ways to concatenate strings in JavaScript. The most common way is to use the + operator. For example, to concatenate the strings "Hello" and "World", you would use the following code:**
 - **Example:**
@@ -98,4 +103,4 @@ const result = 55 * "hello" ❓
  var str3 = str1 + Str2;
  console.log(str3);
 ```
-#### Output:HelloWorld
+#### Output: HelloWorld
