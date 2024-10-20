@@ -197,3 +197,74 @@ if (num === 0) {
 - **Question: How does the switch statement handle the flow of control based on the value of areaOfShapes?**
 - **The switch statement evaluates the value of areaOfShapes and executes the code block corresponding to the matching case. The break statements ensure that only the relevant code block is executed.**
 
+# While Loop
+![image](https://github.com/user-attachments/assets/ab861d8b-f5a9-463b-98c5-9daab05ea25f)
+#### Syntax of While Loop
+![image](https://github.com/user-attachments/assets/fc455d14-c0b1-4af0-bf0b-532740a44e4b)
+#### While Loop: 
+ - **A while loop in JavaScript is a control structure that repeatedly executes a block of code as long as a specified condition remains true. The loop continues iterating while the condition is true, and it terminates when the condition becomes false.**
+```
+ while (condition) {
+//   // Code to be executed as long as the condition is true
+// }
+```
+##### Simple while loop to count from 1 to 10 🧑‍💻
+```
+ var num = 1;
+ while (num <= 10) {
+   console.log(num);
+   num++;
+ }
+```
+##### let's create a table of 5
+ - **5*1 = 5**
+ - **5*2 = 10**
+ - **5*2 = 10**
+```
+ var num = 1;
+ while (num <= 10) {
+   console.log("5 * " + num + " = " + 5 * num);
+      console.log(`5 * ${num} = ${5 * num}`);
+   num++;
+ }
+```
+# Do-While Loop
+![image](https://github.com/user-attachments/assets/9a52fc6e-41e9-43c5-8849-09617580ecd7)
+### Syntax of Do-While Loop
+![image](https://github.com/user-attachments/assets/adf25d3e-dadb-4044-a196-ceb98bd742e9)
+
+#### Do...While Loop: 
+- **A do...while loop in JavaScript is similar to a while loop, but it guarantees that the loop body will be executed at least once before checking the loop condition.**
+- **The loop continues to execute while the specified condition is true, and it terminates when the condition becomes false.**
+
+// Syntax: do {
+//   // Code to be executed at least once
+// } while (condition);
+
+//* Simple do...while loop to count from 1 to 10 🧑‍💻
+
+// var num = 1;
+// while (num <= 10) {
+//   console.log(num);
+//   num++;
+// }
+
+// var num = 1;
+// do{
+//     console.log(num);
+//     num++;
+// }while (num <= 10)
+
+//? Common Use Cases:
+//? When you want to guarantee the execution of the loop body at least once.
+//? When the number of iterations is not known beforehand, and you want to validate the condition after the first iteration.
+
+//? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
+
+// let userInput;
+// let positiveNumber;
+// do {
+//   userInput = prompt("enter any positive number");
+//   positiveNumber = parseFloat(userInput);
+// } while (isNaN(positiveNumber) || positiveNumber < 0);
+// console.log("You entered a valid positive number:", positiveNumber);
