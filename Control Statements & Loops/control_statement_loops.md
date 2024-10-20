@@ -129,33 +129,29 @@ if (num === 0) {
    //  Code to be executed if none of the cases match
  }
 ```
-//todo let's see the example
-//! Explain how the switch statement works and what will be the output when the variable day is set to different values.
+#### Explain how the switch statement works and what will be the output when the variable day is set to different values.
+```
+ var day = "Friday";
 
-// var day = "Friday";
+ switch (day) {
+   case "Monday":
+     console.log("today is monday");
+     break;
 
-// switch (day) {
-//   case "Monday":
-//     console.log("today is monday");
-//     break;
+   case "Friday":
+     console.log("omg lets have party today");
+     break;
 
-//   case "Friday":
-//     console.log("omg lets have party today");
-//     break;
+   case "Sunday":
+     console.log("Lets go to movie");
+     break;
 
-//   case "Sunday":
-//     console.log("Lets go to movie");
-//     break;
-
-//   default:
-//     console.log("no condition match");
-// }
-
-//?=========================
-// ? Challenge time
-//? ==========================
-
-//! Write a JavaScript switch statement that takes a variable areaOfShapes representing different shapes, and based on its value, calculates and logs the area of the corresponding shape. Consider three shapes: 'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the side length. If the provided shape is not recognized, log a message saying, 'Sorry the shape is not available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to 5 and 10, respectively. Ensure that the correct area (25 in this case) is logged to the console.
+   default:
+     console.log("no condition match");
+ }
+```
+### Challenge time
+> Write a JavaScript switch statement that takes a variable areaOfShapes representing different shapes, and based on its value, calculates and logs the area of the corresponding shape. Consider three shapes: >>'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the side length. If the provided >>>shape is not recognized, log a message saying, 'Sorry the shape is not available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to 5 and 10, respectively. Ensure that >>>>the correct area (25 in this case) is logged to the console.
 
 // var areaOfShapes = "square";
 // var a = 5;
