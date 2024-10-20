@@ -108,3 +108,53 @@ const result = 55 * "hello" ❓
 - **Example:**
 ``` console.log("5" + 3);```
 #### Output: 53
+
+### 4) Comparison Operators
+- **Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).**
+- **Equal (==): Checks if two values are equal, performing type coercion if necessary.**
+```console.log(5 == "5");```
+#### Output:true
+### Strict Equal (===):
+- **Checks if two values are equal without performing type coercion.**
+```console.log(5 === "5");```
+#### Output:false
+### Not Equal (!=   👉 ! =):
+- **Checks if two values are not equal, performing type coercion if necessary.**
+```console.log(5 != 5);```
+#### Output:false
+### Greater Than (>):
+- **Checks if the value on the left is greater than the value on the right.**
+- **Example: 10 > 5 evaluates to true.**
+```console.log(5 > 2);```
+#### Output:true
+### Less Than (<):
+- **Checks if the value on the left is less than the value on the right.**
+- **Example: 5 < 10 evaluates to true.- **
+```console.log(5 < 10);```
+#### Output:true
+### Greater Than or Equal To (>=):
+- **Checks if the value on the left is greater than or equal to the value on the right.**
+- **Example: 10 >= 10 evaluates to true.**
+```console.log(10 <= 10);```
+#### Output:true
+### Less Than or Equal To (<=):
+- **Checks if the value on the left is less than or equal to the value on the right.**
+- **Example: 5 <= 10 evaluates to true.**
+```console.log(5 >= 10);```
+#### Output:false
+//* ===================================
+//*  InterView Question
+//* ====================================
+
+//! What is the difference between == and === operators in JavaScript❓
+//? The equality == operator is a comparison operator that compares two values and returns true if they are equal. The strict equality === operator is also a comparison operator, but it compares two values and returns true only if they are equal and of the same type.
+// ex.
+// let num1 = 1;
+// let num2 = "1";
+
+// if (num1 === num2) {
+//   console.log("equal");
+// } else {
+//   console.log("not equal");
+// }
+
