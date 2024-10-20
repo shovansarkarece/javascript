@@ -23,66 +23,69 @@
 // Assigns the value 15 to the variable myFavNum
  var channelName = 'tecnical'
 ```
-
-//* ===================================
-//* 2: Arithmetic operators
-//* ====================================
-
-//? Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.
-
-//? Addition (+): Adds two values or variables.
-// Example:
-// var x = 5;
-// var y = 10;
-// var sum = x + y;
-// console.log(sum);
-
-//? Subtraction (-): Subtracts the right operand from the left operand.
-// Example:
+### 2)Arithmetic operators
+- **Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.**
+- **Addition (+): Adds two values or variables.**
+- **Example:**
+```
+var x = 5;
+var y = 10;
+var sum = x + y;
+console.log(sum);
+```
+- **Subtraction (-): Subtracts the right operand from the left operand.**
+- **Example:**
+```
 // var a = 10;
 // var b = 7;
 // var difference = a - b;
 // console.log(difference);
-
-//? Multiplication (*): Multiplies two values or variables.
+```
+- **Multiplication (*): Multiplies two values or variables.**
+- **Example:**
+```
 // Example:
 // var p = 4;
 // var q = 6;
 // var product = p * q;
 // console.log(product);
-
-//? Division (/): Divides the left operand by the right operand.
-// Example:
+```
+- **Division (/): Divides the left operand by the right operand.**
+- **Example:**
+```
 // var m = 15;
 // var n = 3;
 // var quotient = m / n;
 // console.log(quotient);
-
-//? Modulus (%): Returns the remainder when the left operand is divided by the right operand.
-// Example:
+```
+- **Modulus (%): Returns the remainder when the left operand is divided by the right operand.**
+- **Example:**
+```
 // var c = 17;
 // var d = 5;
 // var remainder = c % d;
 // console.log(remainder);
-
-//* ===================================
-//* Challenge Time
-//* ====================================
-
-//! What will be the Output 🤔💭
-// var result = "hello" / 2 ❓
-// var result = "hello" / 2;
-// console.log(result);
-
-//* ===================================
-//*  InterView Question
-//* ====================================
-
-//! var result = 0.1 + 0.2 ❓ 🤔💭
-// var result = 0.1 + 0.2;
-// console.log(result.toFixed(2));
-// when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
-
-//const result = 55 * "hello" ❓
+```
+#### InterView Question
+- **What will be the Output 🤔💭**
+- **Example:**
+```
+var result = "hello" / 2 ❓
+var result = "hello" / 2;
+console.log(result);
+```
+#### Output:NaN
+- **Example:**
+```
+ var result = 0.1 + 0.2 ❓ 🤔💭
+ var result = 0.1 + 0.2;
+ console.log(result.toFixed(2));
+```
+#### when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
+- **Example:**
+```
+const result = 55 * "hello" ❓
 // var result = 55 * "hello";
 //console.log(result);
+```
+#### Output:NaN
