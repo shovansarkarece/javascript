@@ -155,6 +155,7 @@ const result = 55 * "hello" ❓
    console.log("not equal");
  }
 ```
+#### Output:
 ### 5)Logical operators in JavaScript
 
 - **There are three main logical operators: && (logical AND), || (logical OR), and ! (logical NOT).**
@@ -167,33 +168,90 @@ const result = 55 * "hello" ❓
  var y = 10;
  console.log(x > 0 && y < 0);
 ```
+#### Output:false
 ### Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
 ![image](https://github.com/user-attachments/assets/3a3562d0-682d-4a72-8ba0-cc3418ef1870)
 - **Example:**
-// var a = 15;
-// var b = 0;
-// console.log(a > 10 || b > 10);
-
+```
+ var a = 15;
+ var b = 0;
+ console.log(a > 10 || b > 10);
+```
+#### Output:true
 ### Logical NOT (!):
-//? Returns true if the operand is false, and false if the operand is true.
+- **Returns true if the operand is false, and false if the operand is true.**
 - **Example:**
-// var isOpen = false;
-// console.log(!isOpen);
-
-//* ===================================
-//*  InterView Question
-//* ====================================
-
-//? Combining logical operators allows you to create complex conditions:
-//! Q: Write a program that determines if a person is eligible to drive based on their age being greater than or equal to 18 and having a valid driver's license❓
-
-// var age = 19;
-// var hadDrivingLicense = false;
-
+```
+ var isOpen = false;
+ console.log(!isOpen);
+```
+#### Output:true
+###  InterView Question
+#### Combining logical operators allows you to create complex conditions:
+- **Write a program that determines if a person is eligible to drive based on their age being greater than or equal to 18 and having a valid driver's license❓**
+```
+ var age = 19;
+ var hadDrivingLicense = false;
 // // age > 18
 // // age == 18
-// console.log(age >= 18 && hadDrivingLicense);
-
+ console.log(age >= 18 && hadDrivingLicense);
+```
+#### Output:false
 //! How would the result change if hasDriverLicense was set to false❓
+
+### 6)Unary operator
+- **Unary operators in JavaScript are operators that work with only one operand. They perform various operations such as negation, incrementing, decrementing, type conversion, and more.**
+- **Unary Plus (+): Converts its operand into a number. If the operand is not already a number, it attempts to convert it.**
+```
+console.log(+3);
+console.log(+"5");
+```
+#### Output:3 
+#### Output:5
+//? Unary Negation (-): Negates its operand, converting non-numbers into numbers and then negating them.
+// console.log(-5);
+// console.log(-"3");
+
+//? Prefix Increment (++x) and Prefix Decrement (--x): In prefix form, the value of the operand is first incremented or decremented, and then the result is returned.
+// var x = 5;
+// var y = --x;
+// console.log(y);
+// console.log(x);
+
+//? Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
+// var x = 5;
+// var y = x++;
+// console.log(y);
+// console.log(x);
+
+//todo The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.
+
+//* ===================================
+//* 7: Conditional (ternary) operator
+//* ====================================
+
+//? syntax: condition ? expressionIfTrue : expressionIfFalse;
+
+// ! write a program to check if the candidates isEligibleForDrive or not? Age must be equal to or greater then 18.
+
+// var age = 19;
+// var result = age >= 18 ? "Yes" : "No";
+// console.log(result);
+
+//! Q: Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
+
+// var score = 99;
+// var result = score >= 60 ? "Pass" : "Fail";
+// console.log(result);
+
+//* ===================================
+//*  Combined Interview Questions
+//* ====================================
+
+// console.log(typeof ("5" - 3));
+
+// console.log(2 < 12 < 5);
+
+// console.log("20" + 10 + 10);
 
 
