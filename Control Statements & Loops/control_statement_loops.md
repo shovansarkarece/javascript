@@ -67,22 +67,21 @@
    console.log("You are not eligible to vote (Younger)");
  }
 ```
-//* ===============================
-//* Interview Questions
-//* ===============================
-//! 1: Write a program to check if a number is even or odd.
+#### Interview Questions
+- **1)Write a program to check if a number is even or odd.**
+```
 var num = "7";
 if (num % 2 === 0) {
   console.log("Num is even");
 } else {
   console.log("Num is odd");
 }
-
-//! 2: Write a program to check if a number is prime.
-//todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
-//? All prime numbers greater than 2 are odd.
-//? However, not all odd numbers are prime.
-
+```
+- **2)Write a program to check if a number is prime.**
+- **Prime numbers are numbers that have only 2 factors: 1 and themselves.**
+- **All prime numbers greater than 2 are odd.**
+- **However, not all odd numbers are prime.**
+```
 var num = 13;
 var isPrime = true;
 
@@ -98,8 +97,9 @@ if (isPrime) {
 } else {
   console.log("Num is not prime");
 }
-
-//! 3: Write a program to check if a number is positive, negative, or zero.
+```
+- **3)Write a program to check if a number is positive, negative, or zero.**
+```
 var num = -10;
 if (num === 0) {
   console.log("NUm is zero");
@@ -108,3 +108,4 @@ if (num === 0) {
 } else {
   console.log("NUm is negative ");
 }
+```
