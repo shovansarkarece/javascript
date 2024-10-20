@@ -156,10 +156,11 @@ const result = 55 * "hello" ❓
  }
 ```
 ### 5)Logical operators in JavaScript
-![image](https://github.com/user-attachments/assets/3a3562d0-682d-4a72-8ba0-cc3418ef1870)
+
 - **There are three main logical operators: && (logical AND), || (logical OR), and ! (logical NOT).**
 
 ### Logical AND (&&): Returns true if both operands are true, otherwise, it returns false.
+![image](https://github.com/user-attachments/assets/e007c4f0-1650-4174-9f66-5c5b2999f23e)
 - **Example:**
 ```
  var x = 5;
@@ -167,6 +168,7 @@ const result = 55 * "hello" ❓
  console.log(x > 0 && y < 0);
 ```
 ### Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
+![image](https://github.com/user-attachments/assets/3a3562d0-682d-4a72-8ba0-cc3418ef1870)
 - **Example:**
 // var a = 15;
 // var b = 0;
@@ -194,4 +196,4 @@ const result = 55 * "hello" ❓
 
 //! How would the result change if hasDriverLicense was set to false❓
 
-![image](https://github.com/user-attachments/assets/e007c4f0-1650-4174-9f66-5c5b2999f23e)
+
