@@ -142,19 +142,56 @@ const result = 55 * "hello" ❓
 - **Example: 5 <= 10 evaluates to true.**
 ```console.log(5 >= 10);```
 #### Output:false
+### InterView Question
+#### What is the difference between == and === operators in JavaScript❓
+- **The equality == operator is a comparison operator that compares two values and returns true if they are equal. The strict equality === operator is also a comparison operator, but it compares two values and returns true only if they are equal and of the same type.**
+- **Example:**
+```
+ let num1 = 1;
+ let num2 = "1";
+ if (num1 === num2) {
+   console.log("equal");
+ } else {
+   console.log("not equal");
+ }
+```
+### 5)Logical operators in JavaScript
+![image](https://github.com/user-attachments/assets/3a3562d0-682d-4a72-8ba0-cc3418ef1870)
+- **There are three main logical operators: && (logical AND), || (logical OR), and ! (logical NOT).**
+
+### Logical AND (&&): Returns true if both operands are true, otherwise, it returns false.
+- **Example:**
+```
+ var x = 5;
+ var y = 10;
+ console.log(x > 0 && y < 0);
+```
+### Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
+- **Example:**
+// var a = 15;
+// var b = 0;
+// console.log(a > 10 || b > 10);
+
+### Logical NOT (!):
+//? Returns true if the operand is false, and false if the operand is true.
+- **Example:**
+// var isOpen = false;
+// console.log(!isOpen);
+
 //* ===================================
 //*  InterView Question
 //* ====================================
 
-//! What is the difference between == and === operators in JavaScript❓
-//? The equality == operator is a comparison operator that compares two values and returns true if they are equal. The strict equality === operator is also a comparison operator, but it compares two values and returns true only if they are equal and of the same type.
-// ex.
-// let num1 = 1;
-// let num2 = "1";
+//? Combining logical operators allows you to create complex conditions:
+//! Q: Write a program that determines if a person is eligible to drive based on their age being greater than or equal to 18 and having a valid driver's license❓
 
-// if (num1 === num2) {
-//   console.log("equal");
-// } else {
-//   console.log("not equal");
-// }
+// var age = 19;
+// var hadDrivingLicense = false;
 
+// // age > 18
+// // age == 18
+// console.log(age >= 18 && hadDrivingLicense);
+
+//! How would the result change if hasDriverLicense was set to false❓
+
+![image](https://github.com/user-attachments/assets/e007c4f0-1650-4174-9f66-5c5b2999f23e)
