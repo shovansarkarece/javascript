@@ -26,3 +26,6 @@
 ## confirm()
 - **displays the confirm dialog box containing message with ok and cancel button.**
 ![image](https://github.com/user-attachments/assets/1c05794b-30d2-4e00-adc4-37403b4f525e)
+## prompt()
+- **displays a dialog box to get input from the user.**
+![image](https://github.com/user-attachments/assets/a504cb46-5ae3-415d-9090-3968c56a4efa)
