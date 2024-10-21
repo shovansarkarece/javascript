@@ -29,3 +29,6 @@
 ## prompt()
 - **displays a dialog box to get input from the user.**
 ![image](https://github.com/user-attachments/assets/a504cb46-5ae3-415d-9090-3968c56a4efa)
+## open()
+- **opens the new window.**
+![image](https://github.com/user-attachments/assets/294f8205-22a9-4617-bc01-0a0693f082c4)
