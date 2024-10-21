@@ -254,7 +254,20 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
       //console.log(htmlBody);
       ////Example of document.head
       let htmlHead = document.head;
-      console.log(htmlHead);
+      //console.log(htmlHead);
+      ////Example of document.childNodes-->return NodeList
+      // let bodyChild = htmlBody.childNodes;
+      // console.log(bodyChild);
+      ////Example of document.children-->return HTML Collection
+      let bodyChild = htmlBody.children;
+      //console.log(bodyChild);
+      let firstChild = htmlBody.firstElementChild;
+       console.log(firstChild);
+       let firstChild = htmlBody.firstChild;
+       console.log(firstChild);
+       let lastChild = htmlBody.lastChild;
+      // let lastChild = htmlBody.lastElementChild;
+      console.log(lastChild);
     </script>
   </body>
 </html>
@@ -265,7 +278,17 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/6ceef7d8-944d-40a6-b340-28df144172ca)
 #### Output:document.head
 ![image](https://github.com/user-attachments/assets/45835947-aae3-4d70-8d4d-8e2e949f1770)
-
+#### Output:document.body.childNodes-->return NodeList
+- **childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.**
+![image](https://github.com/user-attachments/assets/0f139190-11fc-4eba-8c2c-e47fd7a26f3c)
+#### Output:document.body.children-->return HTML Collection
+![image](https://github.com/user-attachments/assets/ce5a4bb6-15ff-4ea4-a826-927a30df1db5)
+#### Output:document.body.firstElementChild;
+![image](https://github.com/user-attachments/assets/ae905242-3fa7-48ae-adce-debec5c8cd76)
+#### Output:document.body.lastChild/lastElementChild
+![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
+#### Output: nextSibling,previousElementSibling,parentElement
+![image](https://github.com/user-attachments/assets/b99c55b3-c283-40ef-b8d9-ac217271d26c)
 
 // getElementById(id)
 // getElementsByClassName(className)
