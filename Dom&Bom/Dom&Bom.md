@@ -23,3 +23,6 @@
 ### alert()
 - **displays the alert box containing message with ok button.**
 ![image](https://github.com/user-attachments/assets/d1136e7e-dce4-49ca-8155-bc00d2fac132)
+## confirm()
+- **displays the confirm dialog box containing message with ok and cancel button.**
+![image](https://github.com/user-attachments/assets/1c05794b-30d2-4e00-adc4-37403b4f525e)
