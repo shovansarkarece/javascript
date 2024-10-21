@@ -33,8 +33,8 @@
 - **opens the new window.**
 ![image](https://github.com/user-attachments/assets/294f8205-22a9-4617-bc01-0a0693f082c4)
 ## close()
-- **cl
+- **closes the current window.**
 
 https://github.com/user-attachments/assets/b8893843-3801-4f9f-8740-4ce5e1024450
 
-oses the current window.**
+
