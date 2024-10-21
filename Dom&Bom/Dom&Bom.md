@@ -209,25 +209,64 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 - **Here is a types of nodes in js:**
 
-- **1)Element node:  An HTML tag, the tree building blocks.**
+- **Element node:  An HTML tag, the tree building blocks.**
 
-- **2)Text node:  In the DOM tree, text content, including new lines, spaces, and tabs, is treated as text nodes.**
+- **Text node:  In the DOM tree, text content, including new lines, spaces, and tabs, is treated as text nodes.**
 
-- **)Attribute node: An attribute of an element.**
+- **Attribute node: An attribute of an element.**
 
-- **)Comment node: Represent comments within the HTML document.**
+- **Comment node: Represent comments within the HTML document.**
 
-- **)Processing instruction node:  A processing instruction node, such as <? xml-stylesheet … ?>.**
+- **Processing instruction node:  A processing instruction node, such as <? xml-stylesheet … ?>.**
 
-- **)Document node:  A document node.**
+- **Document node:  A document node.**
 
-- **)Document type node: A document type node, such as <! DOCTYPE html>.**
+- **Document type node: A document type node, such as <! DOCTYPE html>.**
 
-//* ==============================
-//* DOM Properties and Methods
-//* ==============================
-//! DOM Properties:
-// document
+ # DOM Properties and Methods
+
+##  DOM Properties:
+### 1)document
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Best JS Course</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Best JS Course</h1>
+    <p>Understanding The DOM Tree Structure</p>
+    <hr />
+    <p>It's easy. Helps JS to communicate with HTML</p>
+
+    <!-- * Let's see DOM Navigation -->
+    <script>
+     ////Example of document
+      let parent = document;
+      console.log(parent);
+      ////Example of document.body
+      let htmlBody = document.body;
+      //console.log(htmlBody);
+      ////Example of document.head
+      let htmlHead = document.head;
+      console.log(htmlHead);
+    </script>
+  </body>
+</html>
+```
+#### Output:document
+![image](https://github.com/user-attachments/assets/7a77d321-5b04-43ce-a897-047ef42d1cf7)
+#### Output:document.body
+![image](https://github.com/user-attachments/assets/6ceef7d8-944d-40a6-b340-28df144172ca)
+#### Output:document.head
+![image](https://github.com/user-attachments/assets/45835947-aae3-4d70-8d4d-8e2e949f1770)
+
+
 // getElementById(id)
 // getElementsByClassName(className)
 // getElementsByTagName(tagName)
