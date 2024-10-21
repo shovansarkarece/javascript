@@ -32,6 +32,8 @@
 ## open()
 - **opens the new window.**
 ![image](https://github.com/user-attachments/assets/294f8205-22a9-4617-bc01-0a0693f082c4)
+
+https://github.com/user-attachments/assets/fb5cd41b-f225-4822-b34b-70a8a470d5a5
 ## close()
 - **closes the current window.**
 
