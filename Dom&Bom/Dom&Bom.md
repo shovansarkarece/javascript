@@ -268,6 +268,12 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
        let lastChild = htmlBody.lastChild;
       // let lastChild = htmlBody.lastElementChild;
       console.log(lastChild);
+       let nextSibling = firstChild.nextElementSibling;
+      console.log(nextSibling);
+      let previousSibling = nextSibling.previousElementSibling;
+      console.log(previousSibling)
+      let parentNode = previousSibling.parentElement;
+      console.log(parentNode);
     </script>
   </body>
 </html>
