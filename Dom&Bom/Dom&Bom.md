@@ -176,10 +176,30 @@ https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 ////index.js
 ```
 
-
-
-
 https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
+
+### 4)screen Object:
+#### window.screen.width and window.screen.height (Properties):
+- **Represent the width and height of the user's screen.**
+- **Example: console.log(window.screen.width).**
+
+#### window.screen.availWidth and window.screen.availHeight (Properties):
+- **Represent the available width and height of the user's screen (excluding taskbars).**
+- **Example: console.log(window.screen.availWidth).**
+
+#### window.screen.colorDepth (Property):
+- **Returns the number of bits used to represent the color of each pixel.**
+- **Example: console.log(window.screen.colorDepth).**
+
+#### window.screen.orientation (Property):
+- **Returns the current orientation of the user's screen.**
+- **Example: console.log(window.screen.orientation).**
+
+#### window.screen.pixelDepth (Property):
+- **Returns the number of bits used to represent each pixel.**
+- **Example: console.log(window.screen.pixelDepth).**
+#### Combined Example
+![image](https://github.com/user-attachments/assets/0314a0b8-d3a0-4371-8fa7-205b03a8accb)
 
 
 
