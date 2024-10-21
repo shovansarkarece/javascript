@@ -42,4 +42,4 @@ https://github.com/user-attachments/assets/b8893843-3801-4f9f-8740-4ce5e1024450
 ### history Object:
 - **Represents the session history, allowing navigation through the browser history.**
 - **Example: window.history.back(), window.history.forward().**
-- ** Most of the cases we are using window.history.back(), window.history.forward(),window.history.go()
+- **Most of the cases we are using window.history.back(), window.history.forward(),window.history.go().**
