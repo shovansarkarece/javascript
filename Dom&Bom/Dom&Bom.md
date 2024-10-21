@@ -18,6 +18,7 @@
 ![image](https://github.com/user-attachments/assets/066c3e99-8212-4957-8b72-b8dd19c8383e)
 # window.any_property==anyproperty
 - **It means if we don't write any property like window.property,which is exactly same as property means if we want we can ignore window.**
+ 
 ![image](https://github.com/user-attachments/assets/831f8351-f9cf-4000-aec9-1ac6c5aeb703)
 ### alert()
 - **displays the alert box containing message with ok button.**
