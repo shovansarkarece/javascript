@@ -176,6 +176,10 @@ https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 ////index.js
 ```
 
-https://github.com/user-attachments/assets/0fb3b176-ba9e-4dd4-8568-721e3ba0725b
+
+
+
+https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
+
 
 
