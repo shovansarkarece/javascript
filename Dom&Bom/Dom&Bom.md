@@ -100,19 +100,26 @@ https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 #### window.location.href (Property):
 - **Returns or sets the complete URL of the current page.**
 - **Example: ```console.log(window.location.href).```**
+#### Output:
+![image](https://github.com/user-attachments/assets/8e6d66bb-969d-4730-bbf8-25490e513735)
 
 #### window.location.hostname (Property):
 - **Returns the domain name of the web host.**
 - **Example: ```console.log(window.location.hostname).```**
+#### Output:
+![image](https://github.com/user-attachments/assets/0f10f816-a560-49e5-8a37-a855056400c6)
 
 #### window.location.assign(url) (Method):
 - **Navigates to the specified URL.**
+- **Assigns a new URL to the current window, effectively navigating to a new page.**
 - **Example: ```window.location.assign("https://www.example.com").```**
 
 #### window.location.reload(forceReload) (Method):
 - **Reloads the current page.**
-- **Example: ```window.location.reload(true).```**
-
+- **Syntax: ```window.location.reload(true).```**
+#### window.location.replace()(Method):
+- **It will replace the existing page and we are unable to back that page.
+- - **Syntax: ```window.location.replace()```
 #### window.location.search (Property):
 - **Returns the query string part of the URL.**
 - **Example: ```console.log(window.location.search)```**
@@ -168,3 +175,7 @@ https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 </html>
 ////index.js
 ```
+
+https://github.com/user-attachments/assets/0fb3b176-ba9e-4dd4-8568-721e3ba0725b
+
+
