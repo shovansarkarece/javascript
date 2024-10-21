@@ -43,7 +43,77 @@ https://github.com/user-attachments/assets/b8893843-3801-4f9f-8740-4ce5e1024450
 - **Represents the session history, allowing navigation through the browser history.**
 - **Example: window.history.back(), window.history.forward().**
 - **Most of the cases we are using window.history.back(), window.history.forward(),window.history.go().**
-
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1>JS Window Obj</h1>
+    <!--? ========== Start Window Property ========== -->
+    <button
+      onclick="window.open('https://thapatechnical.shop/courses', '_blank')">
+      Navigate
+    </button>
+    <!--? ========== End Window Property ========== -->
+    <!--? ========== Start History ========== -->
+    <h1>JavaScript History Object</h1>
+    <button onclick="history.back()">Go Back</button>
+    <button onclick="history.forward()">Go Forward</button>
+    <button onclick="history.go(-1)">Move Backward or forward</button>
+    <!--? ========== End History ========== -->
+    <!--? ========== Start Location ========== -->
+    <h1>JavaScript Location Object</h1>
+    <button onclick="location.reload()">Reload the Page</button>
+    <button
+      onclick="window.location.replace('https://www.thapatechnical.com/')">
+      Navigate Page using replace
+    </button>
+    <!--* Purpose: Assigns a new URL to the current window, effectively navigating to a new page. -->
+    <button onclick="location.assign('https://kodyfier.com/')">
+      Navigate Page with Assign
+    </button>
+    <!--? ========== End Location ========== -->
+    <!--? ========== Start Screen ========== -->
+    <h1>JavaScript Screen Object</h1>
+    <p>We will see in console.</p>
+    <!--? ========== End Screen ========== -->
+    <script>
+      window.alert("welcome to the js course ");
+    </script>
+  </body>
+</html>
+////index.js
+```
 https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 
+### location Object:
 
+#### window.location.href (Property):
+- **Returns or sets the complete URL of the current page.**
+- **Example: ```console.log(window.location.href).```**
+
+#### window.location.hostname (Property):
+- **Returns the domain name of the web host.**
+- **Example: ```console.log(window.location.hostname).```**
+
+#### window.location.assign(url) (Method):
+- **Navigates to the specified URL.**
+- **Example: ```window.location.assign("https://www.example.com").```**
+
+#### window.location.reload(forceReload) (Method):
+- **Reloads the current page.**
+- **Example: ```window.location.reload(true).```**
+
+#### window.location.search (Property):
+- **Returns the query string part of the URL.**
+- **Example: ```console.log(window.location.search)```**
+- **o/p = "?name=John&age=25"**
