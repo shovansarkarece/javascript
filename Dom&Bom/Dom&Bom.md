@@ -299,7 +299,10 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/511a572b-f5e0-4f02-a1ea-7513c61a51d3)
 
 # DOM Searching
-### getElementById(id)
+### getElementById(id):Find an element by its ID.
+
+![image](https://github.com/user-attachments/assets/80c42be5-161b-4dba-8ee2-c5d89c4bc5a9)
+
 ### getElementsByClassName(className)
 ### getElementsByTagName(tagName)
 ### querySelector(selector)
@@ -378,8 +381,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 //* ==============================
 //* DOM Searching
-//* ==============================
-//? getElementById(id): Find an element by its ID.
 
 //? getElementsByClassName(className): Find elements with a specific class name.
 
