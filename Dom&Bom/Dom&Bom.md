@@ -312,7 +312,10 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ![image](https://github.com/user-attachments/assets/95ef16a7-834f-4211-b4ac-a88301ca9566)
 
-### getElementsByTagName(tagName)
+### getElementsByTagName(tagName): Find elements with a specific tag name.
+
+![image](https://github.com/user-attachments/assets/3da7dada-abb7-4c42-bccd-7cf0e2895cb3)
+
 ### querySelector(selector)
 ### querySelectorAll(selector)
 ### innerHTML
@@ -389,11 +392,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 //* ==============================
 //* DOM Searching
-
-
-
-//? getElementsByTagName(tagName): Find elements with a specific tag name.
-
 //? querySelector(selector): Find the first element that matches the specified CSS selector.
 
 //? querySelectorAll(selector): Find all elements that match the specified CSS selector.
