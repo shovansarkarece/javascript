@@ -295,7 +295,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
 #### Output: nextSibling,previousElementSibling,parentElement
 ![image](https://github.com/user-attachments/assets/b99c55b3-c283-40ef-b8d9-ac217271d26c)
-
+# DOM Searching
 // getElementById(id)
 // getElementsByClassName(className)
 // getElementsByTagName(tagName)
