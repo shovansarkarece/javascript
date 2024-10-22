@@ -278,25 +278,46 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
   </body>
 </html>
 ```
+# DOM Navigation
+### document:document represents the entire document
+- **Syntax:`console.log(document);`**
 #### Output:document
 ![image](https://github.com/user-attachments/assets/7a77d321-5b04-43ce-a897-047ef42d1cf7)
+### Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
 #### Output:document.body
 ![image](https://github.com/user-attachments/assets/6ceef7d8-944d-40a6-b340-28df144172ca)
 #### Output:document.head
 ![image](https://github.com/user-attachments/assets/45835947-aae3-4d70-8d4d-8e2e949f1770)
+#### childNodes / children:
+- **Navigate to child nodes or elements.**
+- **childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.**
 #### Output:document.body.childNodes-->return NodeList
 - **childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.**
 ![image](https://github.com/user-attachments/assets/0f139190-11fc-4eba-8c2c-e47fd7a26f3c)
 #### Output:document.body.children-->return HTML Collection
 ![image](https://github.com/user-attachments/assets/ce5a4bb6-15ff-4ea4-a826-927a30df1db5)
+### firstChild / firstElementChild:
+- **Navigate to the first child node or element.**
+- **todo The Element suffix in firstElementChild and similar properties signifies that only element nodes are considered.**
 #### firstChild / firstElementChild:
 - **Navigate to the first child node or element.**
 #### Output:document.body.firstElementChild;
 ![image](https://github.com/user-attachments/assets/ae905242-3fa7-48ae-adce-debec5c8cd76)
+#### lastChild / lastElementChild:
+- **Navigate to the last child node or element.**
 #### Output:document.body.lastChild/lastElementChild
 ![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
-#### Output: nextSibling,previousElementSibling,parentElement
+#### nextSibling / nextElementSibling:
+- **Navigate to the next sibling node or element.**
+#### previousSibling / previousElementSibling:
+- **Navigate to the previous sibling node or element.**
+#### Output: nextSibling,previousElementSibling,parentNode,parentElement
+- **Navigate to the parent node or element.**
+- **Document and DocumentFragment nodes can never have a parent, so parentNode will always return null. It also returns null if the node has just been created and is not yet attached to the tree.**
 ![image](https://github.com/user-attachments/assets/b99c55b3-c283-40ef-b8d9-ac217271d26c)
+#### closest(selector):
+- **Find the closest ancestor of the current element that matches a given selector.**
+- **The closest(selector) method is used to find the closest ancestor of an element that matches a specified CSS selector. This method traverses up the DOM tree, starting from the current element, and returns the first ancestor that matches the provided selector. If no matching ancestor is found, it returns null.**
 ### All together example
 ![image](https://github.com/user-attachments/assets/511a572b-f5e0-4f02-a1ea-7513c61a51d3)
 
@@ -324,60 +345,24 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### textContent
 ### style
 
-//! DOM Methods:
-// createElement(tagName)
-// appendChild(node)
-// removeChild(node)
-// addEventListener(event, function)
-// removeEventListener(event, function)
-// setAttribute(name, value)
-// getAttribute(name)
-// parentNode / parentElement
-// childNodes / children
-// firstChild / firstElementChild
-// lastChild / lastElementChild
-// nextSibling / nextElementSibling
-// previousSibling / previousElementSibling
-// closest(selector)
-// forEach (Array.from)
+# DOM Methods:
+### createElement(tagName)
+### appendChild(node)
+### removeChild(node)
+### addEventListener(event, function)
+### removeEventListener(event, function)
+### setAttribute(name, value)
+### getAttribute(name)
+### parentNode / parentElement
+### childNodes / children
+### firstChild / firstElementChild
+### lastChild / lastElementChild
+### nextSibling / nextElementSibling
+### previousSibling / previousElementSibling
+### closest(selector)
+### forEach (Array.from)
 
-//* ==============================
-//* DOM Navigation
-//* ==============================
 
-//? document represents the entire document
-// console.log(document);
-
-//? Document.documentElement returns the Element that is the root element of the document (for example, the <html> element for HTML documents).
-
-//? parentNode / parentElement:
-// Navigate to the parent node or element.
-
-// Document and DocumentFragment nodes can never have a parent, so parentNode will always return null. It also returns null if the node has just been created and is not yet attached to the tree.
-
-//? childNodes / children:
-// Navigate to child nodes or elements.
-
-// childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.
-
-//? firstChild / firstElementChild:
-// Navigate to the first child node or element.
-
-//todo The Element suffix in firstElementChild and similar properties signifies that only element nodes are considered.
-
-//? lastChild / lastElementChild:
-// Navigate to the last child node or element.
-
-//? nextSibling / nextElementSibling:
-// Navigate to the next sibling node or element.
-
-//? previousSibling / previousElementSibling:
-// Navigate to the previous sibling node or element.
-
-//? closest(selector):
-// Find the closest ancestor of the current element that matches a given selector.
-
-//* ==============================
 //* DOM Filtering
 //* ==============================
 
@@ -388,9 +373,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 //? nextSibling / nextElementSibling
 //? previousSibling / previousElementSibling
 
-//? closest(selector):
-//? Find the closest ancestor that matches a given selector.
-//? The closest(selector) method is used to find the closest ancestor of an element that matches a specified CSS selector. This method traverses up the DOM tree, starting from the current element, and returns the first ancestor that matches the provided selector. If no matching ancestor is found, it returns null.
+
 
 //* ==============================
 //* DOM Searching
