@@ -320,7 +320,8 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 - **Find the closest ancestor of the current element that matches a given selector.**
 - **The closest(selector) method is used to find the closest ancestor of an element that matches a specified CSS selector. This method traverses up the DOM tree, starting from the current element, and returns the first ancestor that matches the provided selector. If no matching ancestor is found, it returns null.**
 ### All together example
-![image](https://github.com/user-attachments/assets/511a572b-f5e0-4f02-a1ea-7513c61a51d3)
+![image](https://github.com/user-attachments/assets/7a5a3eec-b3eb-4876-bde3-a333db295873)
+
 
 # DOM Searching
 - **These following 3 property always create confusion that's why we get clear idea from this 3 following property
