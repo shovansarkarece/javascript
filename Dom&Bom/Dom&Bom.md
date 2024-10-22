@@ -289,6 +289,8 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/0f139190-11fc-4eba-8c2c-e47fd7a26f3c)
 #### Output:document.body.children-->return HTML Collection
 ![image](https://github.com/user-attachments/assets/ce5a4bb6-15ff-4ea4-a826-927a30df1db5)
+#### firstChild / firstElementChild:
+- **Navigate to the first child node or element.**
 #### Output:document.body.firstElementChild;
 ![image](https://github.com/user-attachments/assets/ae905242-3fa7-48ae-adce-debec5c8cd76)
 #### Output:document.body.lastChild/lastElementChild
@@ -396,37 +398,32 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 //? querySelectorAll(selector): Find all elements that match the specified CSS selector.
 
-//* ============================================
-//* DOM - CRUD (Create, Read, Update, Delete):
-//* ============================================
+# DOM - CRUD (Create, Read, Update, Delete):
 
-//? createElement(tagName): Create a new HTML element.
+#### createElement(tagName): Create a new HTML element.
 
-//? appendChild(node): Append a node as the last child of a parent node.
+#### appendChild(node): Append a node as the last child of a parent node.
 
-//? removeChild(node): Remove a child node from its parent.
+#### removeChild(node): Remove a child node from its parent.
 
-//? addEventListener(event, function): Create an event listener to handle events.
+#### addEventListener(event, function): Create an event listener to handle events.
 
-//? removeEventListener(event, function): Remove an event listener.
+#### removeEventListener(event, function): Remove an event listener.
 
-//? setAttribute(name, value): Set the value of an attribute on an element.
+#### setAttribute(name, value): Set the value of an attribute on an element.
 
-//? getAttribute(name): Get the value of a specific attribute on an element.
+#### getAttribute(name): Get the value of a specific attribute on an element.
 
-//? innerHTML: Read or update the HTML content of an element.
+#### innerHTML: Read or update the HTML content of an element.
 
-//? textContent: Read or update the text content of an element.
+#### textContent: Read or update the text content of an element.
 
-//* =============================
-//* DOM - Iteration
-//* =============================
+# DOM - Iteration
 
-//? Iteration:
-//? forEach (Array.from): Iterate through NodeList or convert to an array for more flexible manipulation.
+#### Iteration:
+- **forEach (Array.from): Iterate through NodeList or convert to an array for more flexible manipulation.**
+### Very important
+- **When you use the browser's developer tools console to select an element and change its text content using JavaScript, you are directly manipulating the DOM object in memory. Since the DOM is a live representation of the document, any changes you make to the DOM objects are immediately reflected in the rendered web page.**
 
-// Very important
-//* When you use the browser's developer tools console to select an element and change its text content using JavaScript, you are directly manipulating the DOM object in memory. Since the DOM is a live representation of the document, any changes you make to the DOM objects are immediately reflected in the rendered web page.
-
-//* However, these changes are typically temporary and exist only in the current session. When you refresh the page or navigate away, the browser reloads the original HTML document from the server, and the DOM is reconstructed during the parsing process. Any modifications made to the DOM objects during the previous session are lost, and the page reverts to its original state.
+- **However, these changes are typically temporary and exist only in the current session. When you refresh the page or navigate away, the browser reloads the original HTML document from the server, and the DOM is reconstructed during the parsing process. Any modifications made to the DOM objects during the previous session are lost, and the page reverts to its original state.**
 
