@@ -322,6 +322,93 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### All together example
 ![image](https://github.com/user-attachments/assets/7a5a3eec-b3eb-4876-bde3-a333db295873)
 
+### All code together example
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      button,
+      input {
+        font-family: "Urbanist", sans-serif;
+      }
+    </style>
+  </head>
+  <!-- it's a comment node  -->
+  <body>
+    <div>
+      <h1 id="heading">DOM API</h1>
+      <ul class="list-of--nodes">
+        <li>1 node</li>
+        <li>2 node</li>
+        <li>3 node</li>
+        <!-- <li>4th node </li> -->
+        <li>4 node</li>
+        <li style="display: none">5 node</li>
+      </ul>
+    </div>
+    <div>
+      <h1>DOM API 2</h1>
+      <input type="text" />
+      <button>click me</button>
+      <div class="value"></div>
+    </div>
+    <script>
+//////////////// getElementById Example
+      // let findElementById = document.getElementById("heading");
+      // let findElementById = document.getElementById("#heading"); ❌
+      ////////////getElementsByClassName Example
+      // const findElementByClassName =
+      //   document.getElementsByClassName("list-of--nodes");
+
+      // console.log(...findElementByClassName);
+
+      // for (let elem of findElementByClassName) {
+      //   console.log(elem.innerHTML);
+      //   console.log(elem.innerText);
+      //   console.log(elem.textContent);
+      // }
+//////////////// getElementById Example
+      // console.log(findElementById.innerHTML);
+      // console.log(findElementById.innerText);
+      // console.log(findElementById.textContent);
+
+      // The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.
+
+      // Example using `innerText`: Prints text as it appears on screen, considering styling and excluding hidden text.
+
+      // Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.
+//////////////// getElementByTagName Example
+      // const getElementsByTagName = document.getElementsByTagName("li");
+      // console.log(getElementsByTagName);
+      // console.log(...getElementsByTagName);
+      // for (let name of getElementsByTagName) {
+      //   console.log(name);
+      // }
+//////////////querySelector Example
+      // const findElementByQuerySelector = document.querySelector("#heading");
+      // console.log(findElementByQuerySelector);
+      // console.log(findElementByQuerySelector.innerText);
+      // console.log(findElementByQuerySelector.innerHTML);
+      // console.log(findElementByQuerySelector.textContent);
+      // console.log(
+      //   (findElementByQuerySelector.innerText = "innerText added by the help of QuerySelector")
+      // );
+//////////////querySelectorAll Example
+      const findElementByQuerySelectorAll = document.querySelectorAll("li");
+      console.log(findElementByQuerySelectorAll);
+      findElementByQuerySelectorAll.forEach((curElem) => console.log(curElem));
+    </script>
+  </body>
+</html>
+```
 
 # DOM Searching
 - **These following 3 property always create confusion that's why we get clear idea from this 3 following property
