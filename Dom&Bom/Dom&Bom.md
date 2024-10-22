@@ -322,6 +322,36 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### All together example
 ![image](https://github.com/user-attachments/assets/7a5a3eec-b3eb-4876-bde3-a333db295873)
 
+# DOM Searching
+- **These following 3 property always create confusion that's why we get clear idea from this 3 following property
+- **The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.**
+- **Example using `innerText`: Prints text as it appears on screen, considering styling and excluding hidden text.**
+- **Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.
+- **Above 3 property(**`innerHTML`, `innerText`,`textContent`**) will be using every time when we use dom.
+### getElementById(id):Find an element by its ID.
+
+![image](https://github.com/user-attachments/assets/80c42be5-161b-4dba-8ee2-c5d89c4bc5a9)
+
+### getElementsByClassName(className):Find elements with a specific class name.
+
+![image](https://github.com/user-attachments/assets/95ef16a7-834f-4211-b4ac-a88301ca9566)
+
+### getElementsByTagName(tagName): Find elements with a specific tag name.
+
+![image](https://github.com/user-attachments/assets/3da7dada-abb7-4c42-bccd-7cf0e2895cb3)
+
+### querySelector(selector):Find the first element that matches the specified CSS selector.
+
+![image](https://github.com/user-attachments/assets/9bc778fa-ff18-44ee-a4cf-c1e7b4274d15)
+
+### querySelectorAll(selector):Find all elements that match the specified CSS selector.
+
+![image](https://github.com/user-attachments/assets/71b0bdcb-2303-4cd3-ae21-3f2503260909)
+
+### innerHTML
+### textContent
+### style
+
 ### All code together example
 ```
 <!DOCTYPE html>
@@ -410,35 +440,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 </html>
 ```
 
-# DOM Searching
-- **These following 3 property always create confusion that's why we get clear idea from this 3 following property
-- **The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.**
-- **Example using `innerText`: Prints text as it appears on screen, considering styling and excluding hidden text.**
-- **Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.
-- **Above 3 property(**`innerHTML`, `innerText`,`textContent`**) will be using every time when we use dom.
-### getElementById(id):Find an element by its ID.
-
-![image](https://github.com/user-attachments/assets/80c42be5-161b-4dba-8ee2-c5d89c4bc5a9)
-
-### getElementsByClassName(className):Find elements with a specific class name.
-
-![image](https://github.com/user-attachments/assets/95ef16a7-834f-4211-b4ac-a88301ca9566)
-
-### getElementsByTagName(tagName): Find elements with a specific tag name.
-
-![image](https://github.com/user-attachments/assets/3da7dada-abb7-4c42-bccd-7cf0e2895cb3)
-
-### querySelector(selector):Find the first element that matches the specified CSS selector.
-
-![image](https://github.com/user-attachments/assets/9bc778fa-ff18-44ee-a4cf-c1e7b4274d15)
-
-### querySelectorAll(selector):Find all elements that match the specified CSS selector.
-
-![image](https://github.com/user-attachments/assets/71b0bdcb-2303-4cd3-ae21-3f2503260909)
-
-### innerHTML
-### textContent
-### style
 
 # DOM Methods:
 ### createElement(tagName)
