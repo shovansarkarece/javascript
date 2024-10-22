@@ -307,6 +307,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 - **Navigate to the last child node or element.**
 #### Output:document.body.lastChild/lastElementChild
 ![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
+## Filtering Siblings:
 #### nextSibling / nextElementSibling:
 - **Navigate to the next sibling node or element.**
 #### previousSibling / previousElementSibling:
@@ -339,8 +340,9 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ![image](https://github.com/user-attachments/assets/3da7dada-abb7-4c42-bccd-7cf0e2895cb3)
 
-### querySelector(selector)
-### querySelectorAll(selector)
+### querySelector(selector):Find the first element that matches the specified CSS selector.
+
+### querySelectorAll(selector):Find all elements that match the specified CSS selector.
 ### innerHTML
 ### textContent
 ### style
@@ -361,25 +363,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### previousSibling / previousElementSibling
 ### closest(selector)
 ### forEach (Array.from)
-
-
-//* DOM Filtering
-//* ==============================
-
-//? childNodes / children:
-// Get a NodeList or HTMLCollection and filter based on your criteria.
-
-//? Filtering Siblings:
-//? nextSibling / nextElementSibling
-//? previousSibling / previousElementSibling
-
-
-
-//* ==============================
-//* DOM Searching
-//? querySelector(selector): Find the first element that matches the specified CSS selector.
-
-//? querySelectorAll(selector): Find all elements that match the specified CSS selector.
 
 # DOM - CRUD (Create, Read, Update, Delete):
 
@@ -403,7 +386,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 # DOM - Iteration
 
-#### Iteration:
+### Iteration:
 - **forEach (Array.from): Iterate through NodeList or convert to an array for more flexible manipulation.**
 ### Very important
 - **When you use the browser's developer tools console to select an element and change its text content using JavaScript, you are directly manipulating the DOM object in memory. Since the DOM is a live representation of the document, any changes you make to the DOM objects are immediately reflected in the rendered web page.**
