@@ -343,7 +343,12 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ### querySelector(selector):Find the first element that matches the specified CSS selector.
 
+![image](https://github.com/user-attachments/assets/9bc778fa-ff18-44ee-a4cf-c1e7b4274d15)
+
 ### querySelectorAll(selector):Find all elements that match the specified CSS selector.
+
+![image](https://github.com/user-attachments/assets/71b0bdcb-2303-4cd3-ae21-3f2503260909)
+
 ### innerHTML
 ### textContent
 ### style
