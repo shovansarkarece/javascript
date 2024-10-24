@@ -118,8 +118,8 @@ https://github.com/user-attachments/assets/2d5211ac-134c-453e-80d3-b81331cb715b
 - **Reloads the current page.**
 - **Syntax: ```window.location.reload(true).```**
 #### window.location.replace()(Method):
-- **It will replace the existing page and we are unable to back that page.
-- - **Syntax: ```window.location.replace()```
+- **It will replace the existing page and we are unable to back that page.**
+- - **Syntax: ```window.location.replace()```**
 #### window.location.search (Property):
 - **Returns the query string part of the URL.**
 - **Example: ```console.log(window.location.search)```**
