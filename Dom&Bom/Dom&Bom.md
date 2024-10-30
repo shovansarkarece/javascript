@@ -332,6 +332,15 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ![image](https://github.com/user-attachments/assets/80c42be5-161b-4dba-8ee2-c5d89c4bc5a9)
 
+#### Another Example
+
+![image](https://github.com/user-attachments/assets/0901542c-e7b5-4991-a352-6c5f317846b5)
+
+
+#### Another Example
+
+![image](https://github.com/user-attachments/assets/ff73e3ec-8b11-4806-acba-435795a48e7e)
+
 ### getElementsByClassName(className):Find elements with a specific class name.
 
 ![image](https://github.com/user-attachments/assets/95ef16a7-834f-4211-b4ac-a88301ca9566)
@@ -349,6 +358,9 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/71b0bdcb-2303-4cd3-ae21-3f2503260909)
 
 ### innerHTML
+
+![image](https://github.com/user-attachments/assets/3dd7ba44-468a-422c-8794-127d0779b1b1)
+
 ### textContent
 ### style
 
@@ -443,7 +455,11 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 # DOM Methods:
 ### createElement(tagName)
-### appendChild(node)
+#### appendChild(node): Append a node as the last child of a parent node.
+
+![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
+
+
 ### removeChild(node)
 ### addEventListener(event, function)
 ### removeEventListener(event, function)
@@ -462,7 +478,8 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 #### createElement(tagName): Create a new HTML element.
 
-#### appendChild(node): Append a node as the last child of a parent node.
+![image](https://github.com/user-attachments/assets/22412608-bf4f-4044-9af8-e54254b315f1)
+
 
 #### removeChild(node): Remove a child node from its parent.
 
