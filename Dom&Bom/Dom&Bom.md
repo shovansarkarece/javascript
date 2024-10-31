@@ -462,7 +462,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ### removeChild(node)
 
-![image](https://github.com/user-attachments/assets/5f2510fb-77a4-4490-905e-3b498863534b)
+![image](https://github.com/user-attachments/assets/b17966b4-c5b8-47ba-a02f-64ec25c82a79)
 
 ### addEventListener(event, function)
 ### removeEventListener(event, function)
