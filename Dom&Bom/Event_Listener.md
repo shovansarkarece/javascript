@@ -146,4 +146,41 @@
 ```
 #### Output
 ![image](https://github.com/user-attachments/assets/9d712ee5-56bb-4957-b12a-6eb75f00f65b)
-
+### Another Example
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="s1">
+        <h1>This is section one</h1>
+        <p>Paragraph one in section one</p>
+        <p>Paragraph two in section one</p>
+        <p>Paragraph three in section one</p>
+    </section>
+    <section id="s2">
+        <h2>This is section two</h2>
+        <p>Paragraph one in section two</p>
+        <p>Paragraph two in section two</p>
+        <p>Paragraph three in section two</p>
+    </section>
+    <button style="margin-top:10px;" id="click">Modify</button>
+    <script>
+        const button = document.getElementById('click')
+        button.addEventListener('click', function () {
+            const s1 = document.getElementById('s1')
+            const paragraphs = s1.querySelectorAll('p')
+            paragraphs.forEach(p=>{
+                p.remove()
+            })
+        })
+    </script>
+</body>
+</html>
+```
+#### Output
+![image](https://github.com/user-attachments/assets/cb1a6ec6-8756-4449-aa97-d690e2c44a88)
