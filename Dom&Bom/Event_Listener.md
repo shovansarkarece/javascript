@@ -39,3 +39,5 @@
 ```
 #### Output
 ![image](https://github.com/user-attachments/assets/c472e5e0-aecd-4046-a8ec-e2e115df64d5)
+## getElementsByClassName(className): Find elements with a specific class name.
+
