@@ -28,6 +28,8 @@
             const paragraphs = document.getElementsByTagName('p')
             for(let i=0 ; i < paragraphs.length; i++){
                 paragraphs[i].innerHTML = "<strong>"+paragraphs[i].innerHTML+"</strong>";
+//////Using Template literal we also write the above code like below
+                //     paragraphs[i].innerHTML = `<strong>${paragraphs[i].innerHTML}</strong>`;
             }
         })
     </script>
