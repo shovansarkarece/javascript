@@ -361,8 +361,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ![image](https://github.com/user-attachments/assets/3dd7ba44-468a-422c-8794-127d0779b1b1)
 
-### textContent
-
 ### All code together example
 ```
 <!DOCTYPE html>
@@ -502,7 +500,8 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ```
 #### Output
 ![image](https://github.com/user-attachments/assets/3e444d7c-ff68-41cc-ba51-6b67558a0657)
-
+#### Output
+![image](https://github.com/user-attachments/assets/ea05c339-0cc6-4ffc-bb86-67dd02b3e95b)
 
 
 # DOM Methods:
