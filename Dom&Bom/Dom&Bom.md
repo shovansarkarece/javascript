@@ -362,7 +362,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/3dd7ba44-468a-422c-8794-127d0779b1b1)
 
 ### textContent
-### style
 
 ### All code together example
 ```
@@ -451,6 +450,59 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
   </body>
 </html>
 ```
+
+### Style:To style any element we use style 
+- But in css property we use `background-color` but in dom styling we will use `backgroundColor`.That is the main difference.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            color: red;
+            font-size:50px;
+        } */
+    </style>
+</head>
+<body>
+    <section id="s1">
+        <h1 id="heading1">This is section one</h1>
+        <p>Paragraph one in section one</p>
+        <p>Paragraph two in section one</p>
+        <p>Paragraph three in section one</p>
+    </section>
+
+    <section id="s2" style="background-color: red; color:white; padding: 10px; width:250px">
+        <h2 id="heading2">This is section two</h2>
+        <p>Paragraph one in section two</p>
+        <p>Paragraph two in section two</p>
+        <p>Paragraph three in section two</p>
+    </section>
+
+    <button style="margin-top:10px;" id="click">Modify</button>
+
+    <script>
+        const button  = document.getElementById('click')
+        button.addEventListener('click',function(){
+            const h1 = document.getElementById('heading1')
+            h1.style.color = 'red'
+            h1.style.fontSize = '50px'
+
+            const s2 = document.getElementById('s2')
+            s2.style.backgroundColor = 'green'
+            s2.style.borderRadius = '20px'
+        })
+    </script>
+</body>
+</html>
+```
+#### Output
+![image](https://github.com/user-attachments/assets/3e444d7c-ff68-41cc-ba51-6b67558a0657)
+
 
 
 # DOM Methods:
