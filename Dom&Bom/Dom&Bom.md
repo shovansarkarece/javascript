@@ -1,3 +1,9 @@
+# DOM
+### Very important
+- **When you use the browser's developer tools console to select an element and change its text content using JavaScript, you are directly manipulating the DOM object in memory. Since the DOM is a live representation of the document, any changes you make to the DOM objects are immediately reflected in the rendered web page.**
+
+- **However, these changes are typically temporary and exist only in the current session. When you refresh the page or navigate away, the browser reloads the original HTML document from the server, and the DOM is reconstructed during the parsing process. Any modifications made to the DOM objects during the previous session are lost, and the page reverts to its original state.**
+
 # WIndow and Document
 ![image](https://github.com/user-attachments/assets/484e95df-c865-4f2e-99d3-9d15ef81b743)
 # Window Global Object, Dom and Bom.
@@ -324,9 +330,9 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 # DOM Searching
 - **These following 3 property always create confusion that's why we get clear idea from this 3 following property.**
-- **The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.**
+- **The `innerHTML` property returns the complete content, including all HTML tags, inside the `ul` elements and their text content.Read or update the HTML content of an element.**
 - **Example using `innerText`: Prints text as it appears on screen, considering styling and excluding hidden text.**
-- **Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.**
+- **Example using `textContent`: Prints text as it is in the markup, including hidden text and without considering styling.Read or update the text content of an element.**
 - **Above 3 property(**`innerHTML`, `innerText`,`textContent`**) will be using every time when we use dom.**
 ### getElementById(id):Find an element by its ID.
 
@@ -505,7 +511,43 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 
 # DOM Methods:
-### createElement(tagName)
+### createElement(tagName): 
+## Example
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="hero">Andrew Tale</li>
+            <li class="hero">Keanu Reeves</li>
+            <li id="hero1">Johnny Bravo</li>
+            <li>Johnny Depp</li>
+            <li>shinchan</li>
+        </ul>
+    </div>
+    <script>
+    //////createElement
+    let elem=document.querySelector("ul");
+    let createElem=document.createElement("li");
+    // Set content for the new 'li' element
+    createElem.textContent="New Hero"
+    // Append the new 'li' to the 'ul'
+    elem.appendChild(createElem);
+    // Log the new element
+    console.log(createElem);
+    </script>
+</body>
+</html>
+```
+### Output:
+![image](https://github.com/user-attachments/assets/af1e544e-b744-4f28-81f4-bb4f5579f118)
+
 #### appendChild(node): Append a node as the last child of a parent node.
 
 ![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
@@ -584,16 +626,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 #### getAttribute(name): Get the value of a specific attribute on an element.
 
-#### innerHTML: Read or update the HTML content of an element.
 
-#### textContent: Read or update the text content of an element.
 
-# DOM - Iteration
 
-### Iteration:
-- **forEach (Array.from): Iterate through NodeList or convert to an array for more flexible manipulation.**
-### Very important
-- **When you use the browser's developer tools console to select an element and change its text content using JavaScript, you are directly manipulating the DOM object in memory. Since the DOM is a live representation of the document, any changes you make to the DOM objects are immediately reflected in the rendered web page.**
-
-- **However, these changes are typically temporary and exist only in the current session. When you refresh the page or navigate away, the browser reloads the original HTML document from the server, and the DOM is reconstructed during the parsing process. Any modifications made to the DOM objects during the previous session are lost, and the page reverts to its original state.**
 
