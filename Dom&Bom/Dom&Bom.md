@@ -599,8 +599,11 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### addEventListener(event, function)
 ### removeEventListener(event, function)
 ### setAttribute(name, value)
+### Example
+![image](https://github.com/user-attachments/assets/c9feed55-107d-4ebc-9c92-94ddfdd20fdc)
+
 ### getAttribute(name)
-### Exampel
+### Example
 ![image](https://github.com/user-attachments/assets/90de01f4-1dcd-46af-80ad-0b5acce76e2a)
 
 
