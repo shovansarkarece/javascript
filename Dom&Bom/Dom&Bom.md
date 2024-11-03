@@ -602,6 +602,49 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### getAttribute(name)
 ### parentNode / parentElement
 ### childNodes / children
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="hero">Andrew Tale</li>
+            <li class="hero">Keanu Reeves</li>
+            <li id="hero1">Johnny Bravo</li>
+            <li>Johnny Depp</li>
+            <li>shinchan</li>
+        </ul>
+    </div>
+    <script src="practise.js">
+    ////children
+var k=document.querySelector('div');
+var l=k.children;
+console.log(l);
+console.log(l[0]);
+///childNodes
+var m=document.querySelector('ul');
+var n=m.childNodes;
+console.log(n);
+console.log(n[0]);
+console.log(n[1]);
+console.log(n[2]);
+//////childElementCount
+var o=document.querySelector('ul');
+var p=o.childElementCount;
+console.log(p);
+    </script>
+</body>
+</html>
+```
+![image](https://github.com/user-attachments/assets/63eaab37-dfd6-4cee-9a18-9f2a69e7179e)
+
+
+
 ### firstChild / firstElementChild
 ### lastChild / lastElementChild
 ### nextSibling / nextElementSibling
