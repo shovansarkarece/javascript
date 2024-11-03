@@ -610,7 +610,8 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ### parentNode / parentElement
 ### Example
-![image](https://github.com/user-attachments/assets/07736650-ebe3-4bd6-b24d-97eec5c163f0)
+![image](https://github.com/user-attachments/assets/65a18f83-f0e1-4a19-879b-aca17b53abb9)
+
 
 
 
