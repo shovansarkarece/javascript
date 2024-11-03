@@ -600,14 +600,18 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### removeEventListener(event, function)
 ### setAttribute(name, value)
 ### Example
-![image](https://github.com/user-attachments/assets/6b2a0261-3ed5-4d09-9c75-57f3960d982b)
+![image](https://github.com/user-attachments/assets/1eebfb8e-9a00-4928-8009-a69ec486a7cb)
+
 ### getAttribute(name)
 ### Example
 ![image](https://github.com/user-attachments/assets/90de01f4-1dcd-46af-80ad-0b5acce76e2a)
 
+
+
 ### parentNode / parentElement
 ### Example
-![image](https://github.com/user-attachments/assets/16f75584-0165-4435-8a2b-dbda899b9ee2)
+![image](https://github.com/user-attachments/assets/07736650-ebe3-4bd6-b24d-97eec5c163f0)
+
 
 
 ### childNodes / children
