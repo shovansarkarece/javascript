@@ -209,7 +209,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 # DOM(Document Object Module)
 - **When a web browser loads an HTML document, it parses the HTML source code and creates a tree-like structure known as the Document Object Model (DOM). This DOM tree represents the structure of the HTML document, with each HTML element being a node in the tree.**
-- ** This entire DOM tree is then accessible to JavaScript as an object. JavaScript can interact with this object to manipulate the content, structure, and style of the document dynamically.**
+- **This entire DOM tree is then accessible to JavaScript as an object. JavaScript can interact with this object to manipulate the content, structure, and style of the document dynamically.**
 - **The DOM essentially serves as an interface between the HTML document and JavaScript, providing a way for scripts to access and modify the document's structure and content.**
 - **The Document Object Model (DOM) is an Application Programming Interface (API). The DOM Tree is the structure of your HTML document, as represented by the DOM API. As stated, this API then gives us many methods and properties that we can use to manipulate the Tree, and therefore, by extension, the document.**
 
@@ -299,16 +299,10 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 - **childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.**
 #### Output:document.body.childNodes-->return NodeList
 - **childNodes is a property that returns a NodeList containing all child nodes of a given element, including text nodes and comment nodes.**
+
 ![image](https://github.com/user-attachments/assets/0f139190-11fc-4eba-8c2c-e47fd7a26f3c)
 #### Output:document.body.children-->return HTML Collection
 ![image](https://github.com/user-attachments/assets/ce5a4bb6-15ff-4ea4-a826-927a30df1db5)
-
-### lastChild / lastElementChild
-### nextSibling / nextElementSibling
-### previousSibling / previousElementSibling
-### closest(selector)
-### forEach (Array.from)
-#### addEventListener(event, function): Create an event listener to handle events.
 
 #### firstChild / firstElementChild:
 - **Navigate to the first child node or element.**
@@ -582,7 +576,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 ![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
 
-
 ### removeChild(node)
 
 ![image](https://github.com/user-attachments/assets/b17966b4-c5b8-47ba-a02f-64ec25c82a79)
@@ -626,20 +619,17 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 #### Output
 ![image](https://github.com/user-attachments/assets/cb1a6ec6-8756-4449-aa97-d690e2c44a88)
 
-### addEventListener(event, function)
-### removeEventListener(event, function)
-### setAttribute(name, value)
 #### setAttribute(name, value): Set the value of an attribute on an element.
-### Example
+### Example of setAttribute()
 ![image](https://github.com/user-attachments/assets/1eebfb8e-9a00-4928-8009-a69ec486a7cb)
 
 ### getAttribute(name)
 #### getAttribute(name): Get the value of a specific attribute on an element.
-### Example
+### Example of getAttribute()
 ![image](https://github.com/user-attachments/assets/90de01f4-1dcd-46af-80ad-0b5acce76e2a)
 
 ### parentNode / parentElement
-### Example
+### Example of parentNode / parentElement
 ![image](https://github.com/user-attachments/assets/65a18f83-f0e1-4a19-879b-aca17b53abb9)
 
 ### childNodes / children
@@ -684,20 +674,56 @@ console.log(p);
 ```
 ![image](https://github.com/user-attachments/assets/63eaab37-dfd6-4cee-9a18-9f2a69e7179e)
 
-
-
-
-
 # DOM - CRUD (Create, Read, Update, Delete):
 
 #### createElement(tagName): Create a new HTML element.
 
 ![image](https://github.com/user-attachments/assets/22412608-bf4f-4044-9af8-e54254b315f1)
 
+# createTextNode()
+- **The createTextNode() method creates a text node.**
+- **Syntax:`document.createTextNode(text)`**
+# createComment()
+- **The createComment() method creates a comment and returns the comment node.**
+- **Syntax:`document.createComment(text)`**
+### Example of createTextNode() and createComment()
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Navigation</title>
+    <style>
+        h1{
+            text-align: center;
+            color:#ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yahoo Baba : DOM Create Methods</h1>
+    <script>
+// var newElement = document.createElement("p");
+// var newElement = document.createElement("h2");
+// console.log(newElement);
+// var newText = document.createTextNode("This is just text");
+// console.log(newText);
+/* Dom Create  Comment*/
+// var newComment = document.createComment("this is comment");
+// console.log(newComment);
+    </script>
+</body>
+</html>
+```
+### Combined Example of createTextNode() and createComment()
+![image](https://github.com/user-attachments/assets/dc581623-254e-4a68-8616-f1efc691f7b9)
+
+
+
+### addEventListener(event, function)
+
+### removeEventListener(event, function)
 
 #### removeChild(node): Remove a child node from its parent.
-
-
 
 #### removeEventListener(event, function): Remove an event listener.
 
