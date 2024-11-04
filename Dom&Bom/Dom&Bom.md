@@ -308,7 +308,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### previousSibling / previousElementSibling
 ### closest(selector)
 ### forEach (Array.from)
-
+#### addEventListener(event, function): Create an event listener to handle events.
 
 #### firstChild / firstElementChild:
 - **Navigate to the first child node or element.**
@@ -629,21 +629,18 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ### addEventListener(event, function)
 ### removeEventListener(event, function)
 ### setAttribute(name, value)
+#### setAttribute(name, value): Set the value of an attribute on an element.
 ### Example
 ![image](https://github.com/user-attachments/assets/1eebfb8e-9a00-4928-8009-a69ec486a7cb)
 
 ### getAttribute(name)
+#### getAttribute(name): Get the value of a specific attribute on an element.
 ### Example
 ![image](https://github.com/user-attachments/assets/90de01f4-1dcd-46af-80ad-0b5acce76e2a)
-
-
 
 ### parentNode / parentElement
 ### Example
 ![image](https://github.com/user-attachments/assets/65a18f83-f0e1-4a19-879b-aca17b53abb9)
-
-
-
 
 ### childNodes / children
 ```
@@ -700,13 +697,10 @@ console.log(p);
 
 #### removeChild(node): Remove a child node from its parent.
 
-#### addEventListener(event, function): Create an event listener to handle events.
+
 
 #### removeEventListener(event, function): Remove an event listener.
 
-#### setAttribute(name, value): Set the value of an attribute on an element.
-
-#### getAttribute(name): Get the value of a specific attribute on an element.
 
 
 
