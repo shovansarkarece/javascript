@@ -302,17 +302,39 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/0f139190-11fc-4eba-8c2c-e47fd7a26f3c)
 #### Output:document.body.children-->return HTML Collection
 ![image](https://github.com/user-attachments/assets/ce5a4bb6-15ff-4ea4-a826-927a30df1db5)
-### firstChild / firstElementChild:
-- **Navigate to the first child node or element.**
-- **todo The Element suffix in firstElementChild and similar properties signifies that only element nodes are considered.**
+
+### lastChild / lastElementChild
+### nextSibling / nextElementSibling
+### previousSibling / previousElementSibling
+### closest(selector)
+### forEach (Array.from)
+
+
 #### firstChild / firstElementChild:
+- **Navigate to the first child node or element.**
+- **The firstChild property returns the first child node of a node.**
+- **The firstChild property returns a node object.**
+- **The firstChild property is read-only.**
+- **The firstChild property is the same as childNodes[0].**
 - **Navigate to the first child node or element.**
 #### Output:document.body.firstElementChild;
 ![image](https://github.com/user-attachments/assets/ae905242-3fa7-48ae-adce-debec5c8cd76)
-#### lastChild / lastElementChild:
+### Another Example
+#### Output:
+
+
+### lastChild / lastElementChild:
+- **The lastChild property returns the last child node of a node.**
+- **The lastChild property returns returns a node object.**
+- **The lastChild property is read-only.**
 - **Navigate to the last child node or element.**
 #### Output:document.body.lastChild/lastElementChild
 ![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
+### Combined Example of firstChild / firstElementChild  and lastChild / lastElementChild
+#### Output:
+![image](https://github.com/user-attachments/assets/68779b28-f74e-4033-b359-4ecf6ad5eb1e)
+
+
 ## Filtering Siblings:
 #### nextSibling / nextElementSibling:
 - **Navigate to the next sibling node or element.**
@@ -659,12 +681,7 @@ console.log(p);
 
 
 
-### firstChild / firstElementChild
-### lastChild / lastElementChild
-### nextSibling / nextElementSibling
-### previousSibling / previousElementSibling
-### closest(selector)
-### forEach (Array.from)
+
 
 # DOM - CRUD (Create, Read, Update, Delete):
 
