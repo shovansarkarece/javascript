@@ -319,9 +319,6 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 - **Navigate to the first child node or element.**
 #### Output:document.body.firstElementChild;
 ![image](https://github.com/user-attachments/assets/ae905242-3fa7-48ae-adce-debec5c8cd76)
-### Another Example
-#### Output:
-
 
 ### lastChild / lastElementChild:
 - **The lastChild property returns the last child node of a node.**
@@ -331,19 +328,30 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 #### Output:document.body.lastChild/lastElementChild
 ![image](https://github.com/user-attachments/assets/8042512d-f7e6-4cd8-945d-cf3abc890e40)
 ### Combined Example of firstChild / firstElementChild  and lastChild / lastElementChild
-#### Output:
+#### Example:
 ![image](https://github.com/user-attachments/assets/68779b28-f74e-4033-b359-4ecf6ad5eb1e)
-
 
 ## Filtering Siblings:
 #### nextSibling / nextElementSibling:
 - **Navigate to the next sibling node or element.**
+- **The nextSibling property returns the next node on the same tree level.**
+- **The nextSibling returnes a node object.**
+- **The nextSibling property is read-only.**
 #### previousSibling / previousElementSibling:
 - **Navigate to the previous sibling node or element.**
+- **The previousSibling property returns the previous node on the same tree level.**
+- **The previousSibling property returns a node object.**
+- **The previousSibling property is read-only.**
 #### Output: nextSibling,previousElementSibling,parentNode,parentElement
 - **Navigate to the parent node or element.**
 - **Document and DocumentFragment nodes can never have a parent, so parentNode will always return null. It also returns null if the node has just been created and is not yet attached to the tree.**
+#### Example:
 ![image](https://github.com/user-attachments/assets/b99c55b3-c283-40ef-b8d9-ac217271d26c)
+
+### Combined Example of nextSibling / nextElementSibling and previousSibling / previousElementSibling
+#### Example:
+![image](https://github.com/user-attachments/assets/a873ab6b-314f-4226-b8aa-3eeb4afb16b9)
+
 #### closest(selector):
 - **Find the closest ancestor of the current element that matches a given selector.**
 - **The closest(selector) method is used to find the closest ancestor of an element that matches a specified CSS selector. This method traverses up the DOM tree, starting from the current element, and returns the first ancestor that matches the provided selector. If no matching ancestor is found, it returns null.**
