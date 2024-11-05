@@ -239,3 +239,6 @@
 - **this will not work for arrow function**
 - **with an event listener like the below example it will not work properly.**
 ![image](https://github.com/user-attachments/assets/e8e00d05-3b10-4ec9-9021-d031995030c9)
+# this ill work on below EventListener properly.
+![image](https://github.com/user-attachments/assets/56112fc1-cefa-41e6-bc02-47a3c73900f7)
+
