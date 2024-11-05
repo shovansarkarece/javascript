@@ -235,3 +235,7 @@
 ```
 #### Output
 ![image](https://github.com/user-attachments/assets/3e444d7c-ff68-41cc-ba51-6b67558a0657)
+# THIS eXCEPTION
+- **this will not work for arrow function**
+- **with an event listener like the below example it will not work properly.**
+![image](https://github.com/user-attachments/assets/e8e00d05-3b10-4ec9-9021-d031995030c9)
