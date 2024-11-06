@@ -252,7 +252,7 @@
 # Example
 ![image](https://github.com/user-attachments/assets/ede8c6a8-e895-49fc-9223-9c8ef1ad972b)
 
-# THIS eXCEPTION
+# this Exception
 - **this will not work for arrow function**
 - **with an event listener like the below example it will not work properly.**
 ![image](https://github.com/user-attachments/assets/e8e00d05-3b10-4ec9-9021-d031995030c9)
