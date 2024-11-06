@@ -246,6 +246,12 @@
 ```
 #### Output
 ![image](https://github.com/user-attachments/assets/3e444d7c-ff68-41cc-ba51-6b67558a0657)
+
+# Event Object
+![image](https://github.com/user-attachments/assets/57358684-779d-4f09-aca1-d6fb57a46c09)
+# Example
+![image](https://github.com/user-attachments/assets/ede8c6a8-e895-49fc-9223-9c8ef1ad972b)
+
 # THIS eXCEPTION
 - **this will not work for arrow function**
 - **with an event listener like the below example it will not work properly.**
