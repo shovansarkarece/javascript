@@ -251,6 +251,59 @@
 ![image](https://github.com/user-attachments/assets/57358684-779d-4f09-aca1-d6fb57a46c09)
 # Example
 ![image](https://github.com/user-attachments/assets/ede8c6a8-e895-49fc-9223-9c8ef1ad972b)
+# Another Example
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        div {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>We are learning event right now</h1>
+    <button id="bt1">change to dark</button>
+    <button id="bt2">change to light</button>
+    <div onmouseover="bgChange()" onmouseleave="bgChange2()">
+        div
+    </div>
+    <script>
+        let bt1 = document.querySelector('#bt1');
+        let bt2 = document.querySelector('#bt2');
+        bt1.addEventListener('click', (e)=>{
+            document.body.style.backgroundColor = 'black'
+            document.body.style.color = 'white'
+            console.log(e.type);
+            console.log(e.target)
+        })
+        bt2.addEventListener('mouseover', ()=>{
+            document.body.style.backgroundColor = 'white'
+            document.body.style.color = 'black'
+        })
+        let bgChange = () => {
+            let div = document.querySelector('div')
+            div.style.backgroundColor = 'yellow'
+        }
+        let bgChange2 = () => {
+            let div = document.querySelector('div')
+            div.style.backgroundColor = 'blue'
+        }
+    </script>
+</body>
+</html>
+```
 
 # this Exception
 - **this will not work for arrow function**
