@@ -573,7 +573,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/af1e544e-b744-4f28-81f4-bb4f5579f118)
 
 #### appendChild(node): Append a node as the last child of a parent node.
- cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
+
 
 ![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
 
@@ -813,7 +813,7 @@ console.log(p);
 ![image](https://github.com/user-attachments/assets/dc581623-254e-4a68-8616-f1efc691f7b9)
 
 
-
+ cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
 ### addEventListener(event, function)
 
 ### removeEventListener(event, function)
