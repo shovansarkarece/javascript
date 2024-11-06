@@ -596,6 +596,72 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 | afterend   | After the element                                    |
 | beforebegin| Before the element                                   |
 | beforeend  | Before the end of the element (last child)           |
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Navigation</title>
+    <style>
+        #test{
+            background: #ffff00;
+            width: 800px;
+            height: 200px;
+            padding: 10px 10px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam eos vel consequatur. Delectus voluptas
+            dolorem id exercitationem, ad ipsam consectetur hic ullam provident! Adipisci exercitationem ipsam rerum sunt
+            doloremque magni soluta, delectus maiores, sapiente quasi labore praesentium accusamus earum cum nam saepe qui?
+            Accusamus provident quo perferendis sint sed.</p>
+    </div>
+    <script>
+//  insertAdjacentElement Method
+
+var newElement = document.createElement("h2");
+
+var newText = document.createTextNode("This is just element");
+
+newElement.appendChild(newText);
+
+var target = document.getElementById("test");
+
+// target.insertAdjacentElement("afterbegin",newElement);
+// target.insertAdjacentElement("afterend",newElement);
+// target.insertAdjacentElement("beforebegin",newElement);
+target.insertAdjacentElement("beforeend",newElement);
+//  insertAdjacentHTML Method
+
+// var newElement = "<h2>This is just Html</h2>";
+
+// var target = document.getElementById("test");
+
+target.insertAdjacentHTML("afterbegin",newElement);
+// target.insertAdjacentHTML("afterend",newElement);
+// target.insertAdjacentHTML("beforebegin",newElement);
+// target.insertAdjacentHTML("beforeend",newElement);
+
+//  insertAdjacentText Method
+
+// var newText = "<h2>This is just Text</h2>";
+
+// var target = document.getElementById("test");
+
+// target.insertAdjacentHTML("beforeend",newText);
+
+
+    </script>
+</body>
+</html>
+```
+
+### Example of insertAdjacentElement(afterbegin,afterend,beforebegin,beforeend)
+![image](https://github.com/user-attachments/assets/7c8c1972-c0f2-4ee6-980a-7fdef4cfa6ca)
+### Example of insertAdjacentHTML(afterbegin,afterend,beforebegin,beforeend)
+![image](https://github.com/user-attachments/assets/ab8a5efd-e5c5-4e6e-944a-80188964fa00)
 
 
 # replaceChild()
