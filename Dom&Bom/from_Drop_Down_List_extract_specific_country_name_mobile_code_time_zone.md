@@ -1,4 +1,4 @@
-
+# From this project we get the Country List and extract the specific country name, mobile name, and timezone of that extracted country
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -41,10 +41,8 @@
                         Mobile Code: ${countries[i].mobileCode}<br>`
                     document.getElementById('info').innerHTML = info;
                 }
-
             }
         })
-
     </script>
 </body>
 </html>
