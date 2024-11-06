@@ -10,6 +10,8 @@
 
 # Event Listener
 ![image](https://github.com/user-attachments/assets/6f646939-175e-489c-b818-2e2fa0bd6a9d)
+# Another Example
+![image](https://github.com/user-attachments/assets/e50a3430-01ac-4604-a59d-a95adf523d54)
 
 
 #### addEventListener(event, function): Create an event listener to handle events.
