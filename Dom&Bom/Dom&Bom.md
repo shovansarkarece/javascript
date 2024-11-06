@@ -671,7 +671,8 @@ target.insertAdjacentHTML("afterbegin",newElement);
 ![image](https://github.com/user-attachments/assets/d9316a49-4772-4632-98f4-9df6ed7400f8)
 
 ### remove(node)
-- **The removeChild() method removes an element's child.**
+- **Remove a child node from its parent.**
+- **The remove() method removes an element's child.**
 ### Example
 ![image](https://github.com/user-attachments/assets/b17966b4-c5b8-47ba-a02f-64ec25c82a79)
 
@@ -814,11 +815,6 @@ console.log(p);
 
 
  cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
-### addEventListener(event, function)
-
-### removeEventListener(event, function)
-
-#### removeChild(node): Remove a child node from its parent.
 
 #### removeEventListener(event, function): Remove an event listener.
 
