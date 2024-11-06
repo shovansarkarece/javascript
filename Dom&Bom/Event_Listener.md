@@ -2,6 +2,8 @@
 ![image](https://github.com/user-attachments/assets/aa4900ff-6418-4ab0-94ef-aeb0943b90de)
 # Mouse Events
 ![image](https://github.com/user-attachments/assets/b8167244-a45a-419a-9003-e78a904c77ef)
+# Types of Events
+![image](https://github.com/user-attachments/assets/adf48e65-fe45-483a-94d5-92d8215c5899)
 
 #### addEventListener(event, function): Create an event listener to handle events.
 ```
