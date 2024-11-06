@@ -586,11 +586,16 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 
 # insertAdjacentElement() and insertAdjacentHTML()
 - **The insertAdjacentElement() method inserts a an element into a specified position.**
-| Value      | Description |
-| afterbegin | After the beginning of the element (first child) |
-| afterend | After the element |
-| beforebegin | Before the element |
-| beforeend | Before the end of the element (last child) |
+- **The insertAdjacentHTML() method inserts HTML code into a specified position.**
+- **`element.insertAdjacentElement(position, element)` or `node.insertAdjacentElement(position, element)`
+| Value      | Description                                           |
+|------------|-------------------------------------------------------|
+| afterbegin | After the beginning of the element (first child)     |
+| afterend   | After the element                                    |
+| beforebegin| Before the element                                   |
+| beforeend  | Before the end of the element (last child)           |
+
+
 # replaceChild()
 - **The `replaceChild()` method replaces a child node with a new node.**
 ### Example
