@@ -585,6 +585,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/d9316a49-4772-4632-98f4-9df6ed7400f8)
 
 ### removeChild(node)
+- **The removeChild() method removes an element's child.**
 ### Example
 ![image](https://github.com/user-attachments/assets/b17966b4-c5b8-47ba-a02f-64ec25c82a79)
 
