@@ -4,8 +4,13 @@
 ![image](https://github.com/user-attachments/assets/b8167244-a45a-419a-9003-e78a904c77ef)
 # Types of Events
 ![image](https://github.com/user-attachments/assets/adf48e65-fe45-483a-94d5-92d8215c5899)
+![image](https://github.com/user-attachments/assets/804f70dc-50f5-4f89-ac58-d6df2f5bc33d)
 # Ways to Assign EventHandeler
 ![image](https://github.com/user-attachments/assets/095d32cb-9b24-42fe-b2b2-b117cad9d141)
+
+# Event Listener
+![image](https://github.com/user-attachments/assets/6f646939-175e-489c-b818-2e2fa0bd6a9d)
+
 
 #### addEventListener(event, function): Create an event listener to handle events.
 ```
