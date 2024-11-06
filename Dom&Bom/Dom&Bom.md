@@ -661,7 +661,8 @@ target.insertAdjacentHTML("afterbegin",newElement);
 ### Example of insertAdjacentElement(afterbegin,afterend,beforebegin,beforeend)
 ![image](https://github.com/user-attachments/assets/7c8c1972-c0f2-4ee6-980a-7fdef4cfa6ca)
 ### Example of insertAdjacentHTML(afterbegin,afterend,beforebegin,beforeend)
-![image](https://github.com/user-attachments/assets/ab8a5efd-e5c5-4e6e-944a-80188964fa00)
+![image](https://github.com/user-attachments/assets/5e121c43-3b6e-46dd-a169-aa485a6a7321)
+
 
 
 # replaceChild()
