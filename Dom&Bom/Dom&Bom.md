@@ -573,7 +573,7 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/af1e544e-b744-4f28-81f4-bb4f5579f118)
 
 #### appendChild(node): Append a node as the last child of a parent node.
-insertAdjacentElement() insertAdjacentHTML() cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
+ cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
 
 ![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
 
@@ -584,6 +584,13 @@ insertAdjacentElement() insertAdjacentHTML() cloneNode()  contains()  hasAttribu
 
 ![image](https://github.com/user-attachments/assets/ba76b2bb-38b9-4930-b329-297f9e25d424)
 
+# insertAdjacentElement() and insertAdjacentHTML()
+- **The insertAdjacentElement() method inserts a an element into a specified position.**
+| Value      | Description |
+| afterbegin | After the beginning of the element (first child) |
+| afterend | After the element |
+| beforebegin | Before the element |
+| beforeend | Before the end of the element (last child) |
 # replaceChild()
 - **The `replaceChild()` method replaces a child node with a new node.**
 ### Example
