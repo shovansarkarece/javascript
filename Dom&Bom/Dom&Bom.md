@@ -573,17 +573,19 @@ https://github.com/user-attachments/assets/fe86f69a-817c-4e50-9fa0-1cfc3ac68274
 ![image](https://github.com/user-attachments/assets/af1e544e-b744-4f28-81f4-bb4f5579f118)
 
 #### appendChild(node): Append a node as the last child of a parent node.
-# add replaceChild() removeChild() insertBefore()  insertAdjacentElement() insertAdjacentHTML() cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
+ insertBefore()  insertAdjacentElement() insertAdjacentHTML() cloneNode()  contains()  hasAttribute() hasChildNodes() isEqualNode() 
 
 
 
 ![image](https://github.com/user-attachments/assets/3e2b205b-1241-44db-ab96-d68ce9f302bb)
 
-
-
+# replaceChild()
+- **The `replaceChild()` method replaces a child node with a new node.**
+### Example
+![image](https://github.com/user-attachments/assets/d9316a49-4772-4632-98f4-9df6ed7400f8)
 
 ### removeChild(node)
-
+### Example
 ![image](https://github.com/user-attachments/assets/b17966b4-c5b8-47ba-a02f-64ec25c82a79)
 
 ### Another Example
