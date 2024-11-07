@@ -235,7 +235,8 @@ if (num === 0) {
  }
 ```
 # Do-While Loop
-![image](https://github.com/user-attachments/assets/9a52fc6e-41e9-43c5-8849-09617580ecd7)
+![image](https://github.com/user-attachments/assets/1c42d384-8048-470a-9ba1-d4bb2926f506)
+
 ### Syntax of Do-While Loop
 ![image](https://github.com/user-attachments/assets/adf25d3e-dadb-4044-a196-ceb98bd742e9)
 
