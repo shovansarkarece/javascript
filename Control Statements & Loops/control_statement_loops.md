@@ -200,6 +200,8 @@ if (num === 0) {
 
 - **Question: How does the switch statement handle the flow of control based on the value of areaOfShapes?**
 - **The switch statement evaluates the value of areaOfShapes and executes the code block corresponding to the matching case. The break statements ensure that only the relevant code block is executed.**
+# Loops in JavaScript
+![image](https://github.com/user-attachments/assets/cab03e68-ed4b-4605-8ae4-091644f3a255)
 
 # While Loop
 ![image](https://github.com/user-attachments/assets/ab861d8b-f5a9-463b-98c5-9daab05ea25f)
