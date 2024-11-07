@@ -3,6 +3,9 @@
 # Naming Variables: Rules and Best Practices
 ![image](https://github.com/user-attachments/assets/b51ca883-c2cd-4c8b-b469-a921386e0e68)
 - **In JavaScript, values and variables are fundamental concepts that form the basis of programming.**
+![image](https://github.com/user-attachments/assets/6035c3e3-f864-4653-b6d5-1dc41ac8e1b4)
+
+
 # Values:  
 - **A value is a piece of information that a program can work with. It can be a number, text, true/false, or more complex data.**
 # Variables: 
