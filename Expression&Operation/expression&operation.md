@@ -17,6 +17,9 @@
 
 ### 1)Assignment operators
 - **Assignment operators in programming are symbols used to assign values to variables. They take the value on the right side of the operator and assign it to the variable on the left side.**
+
+![image](https://github.com/user-attachments/assets/26e1d0b0-eb2e-4a09-8baa-e43128285983)
+
 - **Example**
 ```
  var myFavNum = 15;
@@ -26,6 +29,8 @@
 ### 2)Arithmetic operators
 - **Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.**
 - **Addition (+): Adds two values or variables.**
+![image](https://github.com/user-attachments/assets/0701e428-9927-4343-9aa4-15413288a3ca)
+
 - **Example:**
 ```
 var x = 5;
