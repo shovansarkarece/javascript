@@ -119,6 +119,9 @@ const result = 55 * "hello" ❓
 - **Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).**
 - **Equal (==): Checks if two values are equal, performing type coercion if necessary.**
 ```console.log(5 == "5");```
+
+![image](https://github.com/user-attachments/assets/0d161c2a-967f-436e-a7f6-9b37f571d763)
+
 #### Output:true
 ### Strict Equal (===):
 - **Checks if two values are equal without performing type coercion.**
@@ -163,8 +166,9 @@ const result = 55 * "hello" ❓
 ```
 #### Output:
 ### 5)Logical operators in JavaScript
-
 - **There are three main logical operators: && (logical AND), || (logical OR), and ! (logical NOT).**
+
+![image](https://github.com/user-attachments/assets/70f62f01-7810-4d19-be65-bfc1c3abb1a9)
 
 ### Logical AND (&&): Returns true if both operands are true, otherwise, it returns false.
 ![image](https://github.com/user-attachments/assets/e007c4f0-1650-4174-9f66-5c5b2999f23e)
@@ -242,6 +246,7 @@ console.log(+"5");
 #### Output:6
 - **The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.**
 #### 7)Conditional (ternary) operator
+![image](https://github.com/user-attachments/assets/c783141e-f32e-4d05-98eb-82f7becfb5af)
 
 ![image](https://github.com/user-attachments/assets/87df19ba-9ca0-487d-9120-8611c81d56fe)
 
