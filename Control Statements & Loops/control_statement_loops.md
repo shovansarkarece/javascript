@@ -113,6 +113,7 @@ if (num === 0) {
 }
 ```
 # Switch Statement
+![image](https://github.com/user-attachments/assets/57540f35-a3b5-460f-a3c8-b056b4bf8301)
 
 #### Switch Statement: The switch statement is used to perform different actions based on different conditions.
 - **Syntax:**
