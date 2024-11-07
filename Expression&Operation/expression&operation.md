@@ -29,6 +29,7 @@
 ### 2)Arithmetic operators
 - **Arithmetic operators in programming perform basic mathematical operations on variables or values. They include addition, subtraction, multiplication, division, and modulus.**
 - **Addition (+): Adds two values or variables.**
+
 ![image](https://github.com/user-attachments/assets/0701e428-9927-4343-9aa4-15413288a3ca)
 
 - **Example:**
