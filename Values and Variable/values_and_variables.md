@@ -29,3 +29,5 @@ var myAge = 30;
 - **Explanation: This is not a valid variable name. It includes the special character '@', which is not allowed in JavaScript variable names. Only letters, numbers, underscores, and dollar signs are allowed.**
 
 ![image](https://github.com/user-attachments/assets/7215c42b-07d1-412d-8ef9-5ea7553aebab)
+# let,const,var
+![image](https://github.com/user-attachments/assets/fc895bb3-3d9a-4ae2-a587-be8ce9893a5e)
