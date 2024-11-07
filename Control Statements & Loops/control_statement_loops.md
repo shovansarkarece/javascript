@@ -1,13 +1,13 @@
 # Control Statements & Loops
 ![image](https://github.com/user-attachments/assets/c4c04ee3-6e4c-43db-a955-8b79d4b9da04)
 ## If Statement
+![image](https://github.com/user-attachments/assets/33947c91-84bf-4c8c-839a-6a805c92a24c)
 
-![image](https://github.com/user-attachments/assets/784e195f-2e85-434e-8654-9f1ee9af043a)
-
-
-## If Else:
+## If Else Statement:
 - **The if...else statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement in the optional else clause will be executed.**
-
+#### Example-1
+![image](https://github.com/user-attachments/assets/784e195f-2e85-434e-8654-9f1ee9af043a)
+#### Example-1
 ![image](https://github.com/user-attachments/assets/b591dab4-c6cc-449d-afb5-6309bab76d06)
 ### Syntax
 ```
@@ -27,6 +27,9 @@
    console.log("tv dekhte hai yr");
  }
 ```
+## else - if Statement:
+![image](https://github.com/user-attachments/assets/55c68fcd-967e-480a-949c-f3d5625ffb5f)
+
 #### Example-2
 - **We can also use an else if clause to check additional conditions:**
 ```
