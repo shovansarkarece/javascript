@@ -455,6 +455,19 @@ for(let value of arr){
 ```
 ### for_Each  loop
 ![image](https://github.com/user-attachments/assets/03b12dab-a455-48d2-8bed-a99590d72600)
+### Example-1
+```
+let arr = [10,20,30];
+arr.forEach((value,index,arr)=>console.log(value,index,arr))
+```
+### Output:
+```
+10 0 [ 10, 20, 30 ]
+20 1 [ 10, 20, 30 ]
+30 2 [ 10, 20, 30 ]
+```
+
+### Example-2
 ```
 let arr = [10,20,30];
 arr.forEach((value,index,arr)=>console.log(
