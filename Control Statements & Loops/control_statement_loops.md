@@ -402,5 +402,33 @@ for (initialization; condition; iteration) {
  }
 ```
 # Advanced Loops
+### for_in loop
 ![image](https://github.com/user-attachments/assets/8eb2c06d-8cc3-45e0-bd7f-f2a1ddd10fdb)
-
+```
+const phone = {
+    brand:'iphone',
+    modal:'iphone - 16',
+    price:75000,
+    camera:'20 MP',
+    ram :'2 GB',
+    rom : '16 GB'
+}
+// brand,modal,price,camera,ram,rom
+// USing for loop without using Template literal 
+for(let key in phone){
+    console.log(key, phone[key])
+}
+// USing for loop without using Template literal 
+for(let key in phone){
+    console.log(`${key}: ${phone[key]}`)
+}
+```
+### Output:
+```
+brand: iphone
+modal: iphone - 16
+price: 75000
+camera: 20 MP
+ram: 2 GB
+rom: 16 GB
+```
