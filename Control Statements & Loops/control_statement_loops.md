@@ -401,5 +401,6 @@ for (initialization; condition; iteration) {
    console.log(pattern);
  }
 ```
-
+# Advanced Loops
+![image](https://github.com/user-attachments/assets/8eb2c06d-8cc3-45e0-bd7f-f2a1ddd10fdb)
 
