@@ -453,3 +453,27 @@ for(let value of arr){
 4
 5
 ```
+### for_Each  loop
+![image](https://github.com/user-attachments/assets/03b12dab-a455-48d2-8bed-a99590d72600)
+```
+let arr = [10,20,30];
+arr.forEach((value,index,arr)=>console.log(
+    `The given array is ${arr}
+     The arrays's index is ${index} 
+     The arrays's value is ${value}
+     `))
+```
+### Output:
+```
+The given array is 10,20,30
+     The arrays's index is 0
+     The arrays's value is 10
+
+The given array is 10,20,30
+     The arrays's index is 1
+     The arrays's value is 20
+
+The given array is 10,20,30
+     The arrays's index is 2
+     The arrays's value is 30
+```
