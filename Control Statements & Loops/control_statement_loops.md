@@ -419,7 +419,7 @@ const phone = {
 for(let key in phone){
     console.log(key, phone[key])
 }
-// USing for loop without using Template literal 
+// USing for_in loop without using Template literal 
 for(let key in phone){
     console.log(`${key}: ${phone[key]}`)
 }
@@ -432,4 +432,24 @@ price: 75000
 camera: 20 MP
 ram: 2 GB
 rom: 16 GB
+```
+### for_of  loop
+![image](https://github.com/user-attachments/assets/b233c5fd-eb4f-450a-8fdc-70c809dc67e1)
+### Example
+```
+// for of
+let arr = [1,2,3,4,5]
+
+for(let value of arr){
+    console.log(value)
+    console.log(`${value}`) // USing for_of loop without using Template literal 
+}
+```
+### Output:
+```
+1
+2
+3
+4
+5
 ```
