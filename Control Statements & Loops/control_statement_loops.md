@@ -402,7 +402,7 @@ for (initialization; condition; iteration) {
  }
 ```
 # Advanced Loops
-### for_in loop
+## for_in loop
 ![image](https://github.com/user-attachments/assets/8eb2c06d-8cc3-45e0-bd7f-f2a1ddd10fdb)
 ### Example
 ```
@@ -433,7 +433,7 @@ camera: 20 MP
 ram: 2 GB
 rom: 16 GB
 ```
-### for_of  loop
+## for_of  loop
 ![image](https://github.com/user-attachments/assets/b233c5fd-eb4f-450a-8fdc-70c809dc67e1)
 ### Example
 ```
@@ -453,7 +453,7 @@ for(let value of arr){
 4
 5
 ```
-### for_Each  loop
+## for_Each  loop
 ![image](https://github.com/user-attachments/assets/03b12dab-a455-48d2-8bed-a99590d72600)
 ### Example-1
 ```
