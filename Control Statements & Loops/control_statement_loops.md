@@ -404,6 +404,7 @@ for (initialization; condition; iteration) {
 # Advanced Loops
 ### for_in loop
 ![image](https://github.com/user-attachments/assets/8eb2c06d-8cc3-45e0-bd7f-f2a1ddd10fdb)
+### Example
 ```
 const phone = {
     brand:'iphone',
