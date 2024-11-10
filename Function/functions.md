@@ -292,6 +292,29 @@ SJ emocleW
 # Callback Function
 ![image](https://github.com/user-attachments/assets/78730f12-6e58-4782-9d12-24ceb2606a22)
 ### Example-1
-![image](https://github.com/user-attachments/assets/5a188c54-74e8-490c-b969-f754a697fee8)
+![image](https://github.com/user-attachments/assets/52e0cf26-8e03-4041-a3c5-67269e58787e)
+### Example-2
+```
+// console.log("we are learning callback function")
 
+const print = () =>{
+    console.log("printing press")
+}
+const print2 = () =>{
+    console.log("printing press 2")
+}
 
+const test = (name,callback1,callback2) =>{
+   console.log('inside the test function ',name)
+   callback1();
+   callback2();
+}
+
+test('suman',print,print2)
+```
+### Output
+```
+// inside the test function  suman
+// printing press
+// printing press 2
+```
