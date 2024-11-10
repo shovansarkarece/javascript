@@ -273,7 +273,8 @@ console.log(isReverse("vinod thapa"));
 SJ emocleW
 ```
 # Arrow Function
-![image](https://github.com/user-attachments/assets/2a667071-cc97-46d2-85b8-4cf8683fe0cf)
+![image](https://github.com/user-attachments/assets/7d2df97b-f50b-411c-84f4-db0f0efe0583)
+
 ```
 // console.log('we are learning arrow_function')
 //////// Example-1
@@ -288,3 +289,9 @@ SJ emocleW
 // };
 // console.log(sum(10, 20));
 ```
+# Callback Function
+![image](https://github.com/user-attachments/assets/78730f12-6e58-4782-9d12-24ceb2606a22)
+### Example-1
+![image](https://github.com/user-attachments/assets/5a188c54-74e8-490c-b969-f754a697fee8)
+
+
