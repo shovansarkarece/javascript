@@ -67,6 +67,7 @@ function sum(a,b){
 - **How to call a function**
 - **`greet();`**
 #### Example-1
+- **1.Write a function to find the sum of two numbers with parameters.**
 ```
 // function sum(a,b){
 //     console.log(a+b)
@@ -119,4 +120,155 @@ function functionName(parameter1, parameter2, ...params) {
 ```
 ram
 sita
+```
+# 1. Write a function to find the sum of two numbers.
+- **"1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.**
+### Example-1
+```
+// Function definition
+// function sum() {
+//   var a = 15,
+//     b = 10;
+//   console.log(a + b);
+// }
+// // Calling the function
+// sum();
+```
+### Output:
+```
+25
+```
+# Function expressions
+- **A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.**
+### Example-1
+```
+// var result = function sum(a, b) {
+//   console.log(a + b);
+// };
+// result(10, 15);
+```
+### Output:
+```
+25
+```
+### Example-2
+```
+function greet(name){
+    return `Hello ${name}`
+}
+let result = greet('suman')
+console.log(result)
+```
+### Output:
+```
+Hello suman
+```
+# Anonymous Function
+- **An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.**
+```
+ var result = function (a, b) {
+   console.log(a + b);
+ };
+ result(10, 15);
+```
+### Output:
+```
+25
+```
+# Return Keyword
+- **Return Keyword: In JavaScript, the return statement is used within a function to specify the value that the function should produce or provide back to the code that called it. The return statement stops the execution of a function and sends a value back to the caller**
+- **Syntax: `return expression;`**
+### Example 1: Returning a Sum of two number
+```
+// function sum(a, b) {
+//   //   console.log(a + b);
+//   return a + b;
+//   console.log("hello I am function");
+// }
+// var result = sum(5, 5);
+// // console.log(result);
+// console.log("the sum of two number is " + result);
+// console.log(sum(5, 5));
+// console.log(sum(15, 50));
+// console.log(sum(25, 750));
+```
+### Example 2:
+```
+// function sum(a,b){
+//     return a+b
+// }
+// let result = sum(10,20)
+// console.log(result)
+```
+### Output:
+```
+30
+```
+# IIFE - immediately invoked function expression
+- **An IIFE, or Immediately Invoked Function Expression, is a JavaScript function that is defined and executed immediately after its creation. It is a way to create a self-contained block of code that doesn't interfere with the surrounding code and executes immediately**
+### Syntax:
+```
+// (function () {
+//   // code to be executed
+// })();
+
+// var result = (function (a, b) {
+//   console.log(a + b);
+//   return a + b;
+// })(5, 10);
+
+// console.log("the sum of two number is " + result);
+```
+# Interview Questions ( IIFE with Parameters)
+### Question 1: Calculator Function
+- **Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.**
+```
+const calculator = (num1, num2, operator) => {
+  let result;
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      result = num1 - num2;
+      return result;
+    case "*":
+      result = num1 * num2;
+      return result;
+    case "/":
+      if (num2 === 0) {
+        return "0 is not allowed";
+      } else {
+        result = num1 / num2;
+        return result;
+      }
+    default:
+      return "no operator found";
+  }
+};
+console.log(calculator(5, 2, "+")); // Output: 7
+console.log(calculator(8, 4, "-")); // Output: 4
+console.log(calculator(8, 4, "*")); // Output: 32
+console.log(calculator(10, 2, "/")); // Output: 5
+```
+### Output:
+```
+7
+4
+32
+5
+```
+### Write a function to reverse a given string without using built-in reverse methods.
+```
+const isReverse = (str) => {
+  let reverse = "";
+  for (let char = str.length - 1; char >= 0; char--) {
+    reverse = reverse + str[char];
+  }
+  return reverse;
+};
+console.log(isReverse("vinod thapa"));
+```
+### Output:
+```
+SJ emocleW
 ```
