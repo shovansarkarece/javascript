@@ -318,3 +318,10 @@ test('suman',print,print2)
 // printing press
 // printing press 2
 ```
+# Scope in Function
+### Function Global Scope
+![image](https://github.com/user-attachments/assets/87f7d6b0-20e3-4cfd-a626-689e913ca16e)
+### Function Local Scope
+![image](https://github.com/user-attachments/assets/ca1dea07-2367-4017-9c1d-d5902c7ca882)
+### Block Scope with let and const
+![image](https://github.com/user-attachments/assets/4bd150f6-f8f6-400a-bd4b-0fd17247ca57)
