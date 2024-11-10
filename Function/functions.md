@@ -272,3 +272,19 @@ console.log(isReverse("vinod thapa"));
 ```
 SJ emocleW
 ```
+# Arrow Function
+![image](https://github.com/user-attachments/assets/2a667071-cc97-46d2-85b8-4cf8683fe0cf)
+```
+// console.log('we are learning arrow_function')
+//////// Example-1
+// let print = () => console.log("suman");
+// print();
+//////// Example-2
+// let sum = (a,b) =>console.log(a+b)
+//////// Example-3
+// let sum = (a, b) => {
+//   console.log("ram");
+//   return a + b;
+// };
+// console.log(sum(10, 20));
+```
