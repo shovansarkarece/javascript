@@ -235,7 +235,8 @@ console.log(+"5");
 ```
 #### Output:4
 #### Output:4
-#### Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
+#### Postfix Increment (x++) and Postfix Decrement (x--): 
+- **In postfix form, the value of the operand is first returned, and then it is incremented or decremented.**
 ```
  var x = 5;
  var y = x++;
