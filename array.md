@@ -62,7 +62,8 @@ let fruits = ["apple", "orange", "banana"];
 // console.log(fruits);
 ```
 # Loop Over Array
-- For Each Loop
+### For Each Loop
+```
 let App=["Android","IOS","Windows","Mac","Web"]
 App.forEach((item)=>{
     console.log(item)
