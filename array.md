@@ -54,9 +54,15 @@ console.log(numbers[1])//-->Aray's Index 1
 ```
 ![image](https://github.com/user-attachments/assets/05f415b2-07f8-4daa-9ab4-b65e0385f8f5)
 
+### Modifying Elements:
+- **👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.**
+```
+let fruits = ["apple", "orange", "banana"];
+// fruits[2] = "mango";
+// console.log(fruits);
+```
 # Loop Over Array
 - For Each Loop
-```
 let App=["Android","IOS","Windows","Mac","Web"]
 App.forEach((item)=>{
     console.log(item)
