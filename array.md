@@ -13,7 +13,19 @@
 
 ![image](https://github.com/user-attachments/assets/96c51935-e5f5-47a8-92d6-50357ff3f98d)
 
-
+### Arrays as Objects: 
+- **Arrays in JavaScript are a specific type of object that has numeric keys (indices) and a length property. The indices are automatically maintained, and the length property is automatically updated when you add or remove elements from the array.**
+- **typeof Operator: The typeof operator in JavaScript returns "object" for both arrays and regular objects.**
+- **JavaScript Array is a data structure that allows you to store and organize multiple values within a single variable. It is a versatile and dynamic object. It can hold various data types, including numbers, strings, objects, and even other arrays. Arrays in JavaScript are zero-indexed i.e. the first element is accessed with an index 0, the second element with an index of 1, and so forth.**
+# Creating Arrays:
+- **Using Array constructor**
+- `let fruits = new Array('apple', 'orange', 'banana')`
+# Using array literal
+- **`let fruits = ["apple", "orange", "banana"];`**
+- **`console.log(fruits);`**
+# We can also create an empty array
+- **`let arr = [];`**
+- **`console.log(typeof arr);`**
 >JavaScript array is an object that represents a collection of similar type of elements
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
