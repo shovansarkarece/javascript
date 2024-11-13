@@ -20,13 +20,23 @@
 # Creating Arrays:
 - **Using Array constructor**
 - `let fruits = new Array('apple', 'orange', 'banana')`
+- **`console.log(fruits);`**
 # Using array literal
 - **`let fruits = ["apple", "orange", "banana"];`**
 - **`console.log(fruits);`**
 # We can also create an empty array
 - **`let arr = [];`**
 - **`console.log(typeof arr);`**
->JavaScript array is an object that represents a collection of similar type of elements
+
+# Accessing Elements:
+- **👉 Accessing Elements:  Array elements are accessed using zero-based indices.**
+```
+let fruits = ["apple", "orange", "banana"];
+// console.log(fruits[0]);
+// console.log(fruits[3]);
+// console.log(fruits["apple"]);////undefined 
+```
+### Another Example
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
 let city=["Dhaka","Rajshahi","Rangpur"]
