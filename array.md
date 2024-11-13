@@ -1,4 +1,19 @@
 # Array
+![image](https://github.com/user-attachments/assets/7b03e484-168d-4d02-b2b0-f93c69ca678e)
+
+![image](https://github.com/user-attachments/assets/a5cb5357-b815-4a28-aca7-08b468fff80b)
+
+![image](https://github.com/user-attachments/assets/4b3834ff-cee8-4e7a-a968-9c427f576637)
+
+![image](https://github.com/user-attachments/assets/51e0dc93-a274-4e7b-948e-a9527b4b7fd3)
+
+![image](https://github.com/user-attachments/assets/c1610464-081b-4d58-9fc4-128c6dd0cc79)
+
+![image](https://github.com/user-attachments/assets/34ff553b-a507-4e31-a0f9-8ff19056d6ac)
+
+![image](https://github.com/user-attachments/assets/96c51935-e5f5-47a8-92d6-50357ff3f98d)
+
+
 >JavaScript array is an object that represents a collection of similar type of elements
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
