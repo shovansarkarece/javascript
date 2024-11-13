@@ -61,7 +61,7 @@ let fruits = ["apple", "orange", "banana"];
 // fruits[2] = "mango";
 // console.log(fruits);
 ```
-# Loop Over Array
+# Array Traversal / Iterating Over Arrays / Loop Over Array
 ### For Each Loop
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
