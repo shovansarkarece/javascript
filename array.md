@@ -62,6 +62,16 @@ let fruits = ["apple", "orange", "banana"];
 // console.log(fruits);
 ```
 # Array Traversal / Iterating Over Arrays / Loop Over Array
+### Loop Iteration 
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+for(i=0;i<App.length;i=i+1){
+    console.log((i+1) +" "+App[i])
+}
+```
+### Output:
+![image](https://github.com/user-attachments/assets/58e63cda-e26f-409e-a518-7a80bb789e76)
+
 ### For Each Loop
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
@@ -69,15 +79,26 @@ App.forEach((item)=>{
     console.log(item)
 })
 ```
+### Output:
 ![image](https://github.com/user-attachments/assets/73d46218-074d-4f5d-8ec6-ad17b781f250)
-# Loop Iteration 
+
+### for of loop , also known as iterable
+- **for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.**
 ```
-let App=["Android","IOS","Windows","Mac","Web"]
-for(i=0;i<App.length;i=i+1){
-    console.log((i+1) +" "+App[i])
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+for (let item of fruits) {
+  console.log(item);
 }
 ```
-![image](https://github.com/user-attachments/assets/58e63cda-e26f-409e-a518-7a80bb789e76)
+### Output:
+```
+apple
+orange
+mango
+grapes
+banana
+```
+
 # Array Helping Methods
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
