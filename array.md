@@ -161,6 +161,18 @@ Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Windows and Ind
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Mac and Index is ==>3
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index is ==>4
 ```
+# map()
+- **The map() method in JavaScript is used to create a new array by applying a callback function to each element of an existing array. It does not modify the original array but returns a new array with the results of the callback function.**
+- **Parameters**
+- **callback(currentValue, index, array):**
+- **- **currentValue: The current element being processed.**
+- **index (optional): The index of the current element.**
+- **array (optional): The original array being traversed.**
+- **thisArg (optional):**
+- **A value to use as this inside the callback function.**
+
+
+
 # Array Helping Methods
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
