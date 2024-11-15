@@ -161,6 +161,23 @@ Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Windows and Ind
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Mac and Index is ==>3
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index is ==>4
 ```
+### write a program to Multiply each element with 2
+```
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach((curElem) => {
+  console.log(curElem * 2);
+  //   Performs an action on each element
+});
+```
+### Output:
+```
+2
+4
+6
+8
+10
+```
+
 # map()
 - **The map() method in JavaScript is used to create a new array by applying a callback function to each element of an existing array. It does not modify the original array but returns a new array with the results of the callback function.**
 - **Parameters**
@@ -170,10 +187,89 @@ Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index i
 - **array (optional): The original array being traversed.**
 - **thisArg (optional):**
 - **A value to use as this inside the callback function.**
-
-
-
-# Array Helping Methods
+- **map() does not mutate the original array.**
+- **It always returns a new array.The returned array will have the same length as the original array.**
+- **Syntax:**
+```array.map(callback(currentValue, index, array), thisArg)```
+### Example
+```
+const numbers = [1, 2, 3, 4];
+const squares = numbers.map(num => num * num);
+console.log(`Mapped New Array is===> [${squares}]`); // [1, 4, 9, 16]
+console.log(`Original Array is ===> [${numbers}]`); // [1, 2, 3, 4] (unchanged)
+```
+### Output:
+```
+Mapped New Array is===> [1,4,9,16]
+Original Array is ===> [1,2,3,4]
+```
+### Another Example
+```
+const myMapArr = fruits.map((curElem, index, arr) => {
+  return ` my fav fruit is ${curElem} `;
+  //   console.log(arr);
+});
+console.log(myMapArr);
+console.log(fruits);
+```
+### Output:
+```
+[
+  ' my fav fruit is apple ',
+  ' my fav fruit is orange ',
+  ' my fav fruit is mango ',
+  ' my fav fruit is grapes ',
+  ' my fav fruit is banana '
+]
+[ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
+```
+### Another Example
+```
+const fruits = ['apple', 'banana', 'cherry'];
+const withIndex = fruits.map((fruit, index) => `Index is ${index}: and Value is ${fruit}`);
+console.log(withIndex); // ["0: apple", "1: banana", "2: cherry"]
+```
+### Output:
+```
+[
+  'Index is 0: and Value is apple',
+  'Index is 1: and Value is banana',
+  'Index is 2: and Value is cherry'
+]
+```
+### Example of Using Object
+```
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' }
+];
+const userNames = users.map((user) => `Object Value is ${user.name}` );
+console.log(userNames); // ['Alice', 'Bob']
+```
+### Output:
+```
+[ 'Object Value is Alice', 'Object Value is Bob' ]
+```
+//! write a program to Multiply each element with 2
+```
+const numbers = [1, 2, 3, 4, 5];
+const doubleValue = numbers.map((curElem) => {
+  return curElem * 2;
+  //   Creates a new array with transformed elements
+});
+console.log(doubleValue);
+```
+# Key Differences between map() and forEach
+- **Return Value:**
+- **forEach: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or performing a task for each element.**
+- **map: It returns a new array containing the results of applying a function to each element in the original array. The original array remains unchanged.**
+## Chaining:
+- **forEach: It doesn't return a value, so it cannot be directly chained with other array methods.**
+- **map: Since it returns a new array, you can chain other array methods after using map.**
+## Use Case:
+- **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
+- **map: Used when you want to create a new array based on the transformation of each element in the original array.**
+## Array Helping Methods
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
 ```
