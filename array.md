@@ -72,22 +72,22 @@ for(i=0;i<App.length;i=i+1){
 ### Output:
 ![image](https://github.com/user-attachments/assets/58e63cda-e26f-409e-a518-7a80bb789e76)
 
-### For Each Loop
+## for of loop
+- **Iterates over the values of an iterable object (such as arrays, strings, Maps, Sets, etc.).**
+- **Does not give access to the index of the array or object keys; it gives only the values.**
+- **When working with iterables (like arrays, strings, Sets, Maps, etc.).**
+- **Allows the use of break, continue, and return (in a function context).When you want to use break or continue to control the flow of the loop.**
+- **Syntax**
 ```
-let App=["Android","IOS","Windows","Mac","Web"]
-App.forEach((item)=>{
-    console.log(item)
-})
+for (const value of iterable) {
+//*  // code to execute on each element
+//* }
 ```
-### Output:
-![image](https://github.com/user-attachments/assets/73d46218-074d-4f5d-8ec6-ad17b781f250)
-
-### for of loop , also known as iterable
-- **for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.**
+### Example:
 ```
 let fruits = ["apple", "orange", "mango", "grapes", "banana"];
-for (let item of fruits) {
-  console.log(item);
+for (const fruit of fruits) {
+  console.log(fruit);  // logs 'apple', 'orange', 'mango'
 }
 ```
 ### Output:
@@ -98,7 +98,69 @@ mango
 grapes
 banana
 ```
-
+## for in loop
+- **The for...in loop is used to iterate over the properties (including indices) of an object.**
+- **Iterates over the keys (or property names) of an object or the indices of an array (or array-like objects).**
+- **It works on objects (including arrays, but gives indices as strings) and other enumerable properties.**
+- **The order of iteration is not guaranteed in all cases, especially for non-array objects.**
+- **Not recommended for arrays if you need to access array elements directly (use for...of instead).**
+- **Use for...in when you want to iterate over the keys of an object.When you need to iterate over the keys or properties of an object.**
+- **When used with arrays, it will iterate over the array indexes (as strings), which is not the best practice for arrays since array indexes are numeric. Instead, use for...of to get the values directly.**
+- **Syntax**
+```
+for (const value of Object) {
+//*  // code to execute on each key
+//* }
+```
+### Example:
+```
+let person = { name: "Alice", age: 25, city: "Wonderland" };
+for (const key in person) {
+  console.log(`Object's key/property is ${key},and Key's/Property's Value is ${person[key]}`);  // logs 'name Alice', 'age 25', 'city Wonderland'
+}
+```
+### Output:
+```
+Object's key/property is name,and Key's/Property's Value is Alice
+Object's key/property is age,and Key's/Property's Value is 25
+Object's key/property is city,and Key's/Property's Value is Wonderland
+```
+## forEach Method
+- **Array-specific method for iterating through array elements.**
+- **Executes a provided function once for each element in the array (or array-like object).**
+- **Provides access to both the element and the index (as the second argument).**
+- **Does not return a value (always returns undefined), so it’s used primarily for side effects (e.g., logging, updating external variables).**
+- **Does not support break, continue, or return within the callback function (it will not exit or skip iterations).**
+- **forEach is array-specific, great for side effects like logging or modifying external state, but does not support early exits like break or continue.**
+### Example:
+```
+// fruits.forEach((curElem, index, arr) => {
+//    console.log(`Array is==> ${arr} Current Element is ==> ${curElem} and Index is ==>${index} `);
+// });
+```
+### Output:
+```
+Array is==> apple,orange,mango,grapes,banana Current Element is ==> apple and Index is ==>0
+Array is==> apple,orange,mango,grapes,banana Current Element is ==> orange and Index is ==>1
+Array is==> apple,orange,mango,grapes,banana Current Element is ==> mango and Index is ==>2
+Array is==> apple,orange,mango,grapes,banana Current Element is ==> grapes and Index is ==>3
+Array is==> apple,orange,mango,grapes,banana Current Element is ==> banana and Index is ==>4
+```
+### Another Example
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+App.forEach((CurrentElement,index,array)=>{
+  console.log(`Array is==> [${array}] Current Element is ==> ${CurrentElement} and Index is ==>${index} `);
+})
+```
+### Output:
+```
+Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Android and Index is ==>0
+Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> IOS and Index is ==>1
+Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Windows and Index is ==>2
+Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Mac and Index is ==>3
+Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index is ==>4
+```
 # Array Helping Methods
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
