@@ -250,7 +250,7 @@ console.log(userNames); // ['Alice', 'Bob']
 ```
 [ 'Object Value is Alice', 'Object Value is Bob' ]
 ```
-//! write a program to Multiply each element with 2
+### Write a program to Multiply each element with 2
 ```
 const numbers = [1, 2, 3, 4, 5];
 const doubleValue = numbers.map((curElem) => {
@@ -269,7 +269,39 @@ console.log(doubleValue);
 ## Use Case:
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
-## Array Helping Methods
+# Array Helping Methods
+## How to Insert, Add, Replace and Delete Elements in Array(CRUD)
+## PUSH()
+  >The JavaScript array push() method adds one or more elements to the end of the given array.
+### Example
+```
+let ostadApp=["Android","IOS","Windows","Mac","Web"]
+let res=ostadApp.push("Apple")
+console.log(ostadApp)
+```
+### Output:
+```
+[ 'Android', 'IOS', 'Windows', 'Mac', 'Web', 'Apple' ]
+```
+![image](https://github.com/user-attachments/assets/0ca87219-e9e1-424d-b444-cbe2ae134b48)
+### Another Example
+```
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// console.log(fruits.push("guava"));
+// console.log(fruits);
+```
+### Output:
+```
+[ 'apple', 'orange', 'mango', 'grapes', 'banana', 'guava' ]
+```
+## POP()
+  >The JavaScript array pop() method removes the last element from the given array and return that element.
+```
+let App=["Android","IOS","Windows","Mac","Web"]
+let res=App.pop()
+console.log(res)
+////Output:Web
+```
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
 ```
@@ -358,22 +390,7 @@ let res=App.indexOf("Web")
 console.log(res)
 ////Output:4
 ```
-- JAVASCRIPT ARRAY POP()
-  >The JavaScript array pop() method removes the last element from the given array and return that element.
-```
-let App=["Android","IOS","Windows","Mac","Web"]
-let res=App.pop()
-console.log(res)
-////Output:Web
-```
-- JAVASCRIPT ARRAY  PUSH()
-  >The JavaScript array push() method adds one or more elements to the end of the given array.
-```
-let ostadApp=["Android","IOS","Windows","Mac","Web"]
-let res=ostadApp.push("Apple")
-console.log(ostadApp)
-```
-![image](https://github.com/user-attachments/assets/0ca87219-e9e1-424d-b444-cbe2ae134b48)
+
 
 - JAVASCRIPT ARRAY REVERSE()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
