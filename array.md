@@ -273,6 +273,9 @@ console.log(doubleValue);
 # How to Insert, Add, Replace and Delete Elements in Array(CRUD)
 ## PUSH()
   >The JavaScript array push() method adds one or more elements to the end of the given array.
+![image](https://github.com/user-attachments/assets/67b0f992-779f-4715-92f3-5dfa3387c7fb)
+![image](https://github.com/user-attachments/assets/65200d92-821c-4125-9711-a99f9b8c0541)
+
 ### Example
 ```
 let ostadApp=["Android","IOS","Windows","Mac","Web"]
@@ -295,6 +298,10 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 ```
 ## POP()
   >The JavaScript array pop() method removes the last element from the given array and return that element.
+![image](https://github.com/user-attachments/assets/b47f621f-dd88-4087-8c47-9b83dafe8ef0)
+![image](https://github.com/user-attachments/assets/a0c0f107-37a9-43e1-bd58-8ca62b37dc9d)
+
+
 ### Example 
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
