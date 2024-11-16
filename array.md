@@ -509,6 +509,41 @@ console.log(res)
 ```
 4
 ```
+# lastIndexof()
+- **//? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present.**
+- **The array is searched backwards(from ledt to right), starting at fromIndex.**
+### Example
+```
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+// const result = numbers.lastIndexOf(6);
+// console.log(result);
+```
+### Output:
+```
+3
+```
+### Another Example
+```
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result = numbers.lastIndexOf(6, 5);
+console.log(result);
+```
+### Output:
+```
+3
+```
+### Another Example
+```
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result = numbers.lastIndexOf(6, 8);
+console.log(result);
+```
+### Output:
+```
+6
+```
+![image](https://github.com/user-attachments/assets/4bb7633b-5b70-4f17-b051-3f60419bb66e)
+
 - JAVASCRIPT ARRAY REVERSE()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
 ```
