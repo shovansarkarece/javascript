@@ -179,6 +179,8 @@ numbers.forEach((curElem) => {
 ```
 
 # map()
+>![image](https://github.com/user-attachments/assets/3066ec1d-34b4-4a55-af5d-f163be1108b0)
+>>![image](https://github.com/user-attachments/assets/7c1dfe4f-4c8a-4f4a-a55b-c0f1a0bce4f1)
 - **The map() method in JavaScript is used to create a new array by applying a callback function to each element of an existing array. It does not modify the original array but returns a new array with the results of the callback function.**
 - **Parameters**
 - **callback(currentValue, index, array):**
