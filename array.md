@@ -484,20 +484,31 @@ console.log(res3)
 ```
 ![image](https://github.com/user-attachments/assets/632ee5c5-5f11-4999-9134-cdcec1de9527)
 
-- JAVASCRIPT ARRAY INDEXOF()
->The JavaScript array indexOf() method is used to search the position of a particular element in a given array. 
->>This method is case-sensitive.
+# INDEXOF()
+![image](https://github.com/user-attachments/assets/d57b971e-5f99-4867-8d8b-74344dcffa11)
+- **indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.**
+- **syntax:`indexOf(searchElement, fromIndex)`
+### Example:
 ```
-let App=["Android","IOS","Windows","Mac","Web"]
-let res=App.pop()
-console.log(res)
+const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 4, 10];
+console.log(numbers.indexOf(4, 5));
+```
+### Output:
+![image](https://github.com/user-attachments/assets/60713001-75d7-4540-bf94-96a88aa57f7f)
+```
+9
+10
+```
+### Another Example
+```
 let App=["Android","IOS","Windows","Mac","Web"]
 let res=App.indexOf("Web")
 console.log(res)
-////Output:4
 ```
-
-
+### Output:
+```
+4
+```
 - JAVASCRIPT ARRAY REVERSE()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
 ```
