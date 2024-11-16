@@ -193,6 +193,7 @@ numbers.forEach((curElem) => {
 - **It always returns a new array.The returned array will have the same length as the original array.**
 - **Syntax:**
 ```array.map(callback(currentValue, index, array), thisArg)```
+>![image](https://github.com/user-attachments/assets/db60e037-fabb-4764-be31-a63d297ed2e0)
 ### Example
 ```
 const numbers = [1, 2, 3, 4];
