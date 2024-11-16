@@ -270,7 +270,7 @@ console.log(doubleValue);
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
 # Array Helping Methods
-## How to Insert, Add, Replace and Delete Elements in Array(CRUD)
+# How to Insert, Add, Replace and Delete Elements in Array(CRUD)
 ## PUSH()
   >The JavaScript array push() method adds one or more elements to the end of the given array.
 ### Example
@@ -283,7 +283,6 @@ console.log(ostadApp)
 ```
 [ 'Android', 'IOS', 'Windows', 'Mac', 'Web', 'Apple' ]
 ```
-![image](https://github.com/user-attachments/assets/0ca87219-e9e1-424d-b444-cbe2ae134b48)
 ### Another Example
 ```
 let fruits = ["apple", "orange", "mango", "grapes", "banana"];
