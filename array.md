@@ -542,7 +542,7 @@ console.log(result);
 ```
 6
 ```
-![image](https://github.com/user-attachments/assets/4bb7633b-5b70-4f17-b051-3f60419bb66e)
+![image](https://github.com/user-attachments/assets/f8abdc97-582a-4dfc-983d-c0ed619828ab)
 
 - JAVASCRIPT ARRAY REVERSE()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
