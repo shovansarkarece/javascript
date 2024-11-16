@@ -301,7 +301,12 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 let App=["Android","IOS","Windows","Mac","Web"]
 let res=App.pop()
 console.log(res)
-////Output:Web
+```
+### Output:
+```
+[ 'Android', 'IOS', 'Windows', 'Mac', 'Web' ]
+Web
+[ 'Android', 'IOS', 'Windows', 'Mac' ]
 ```
 ### Another Example 
 ```
@@ -312,9 +317,87 @@ console.log(fruits);
 ```
 ### Output:
 ```
-[ 'apple', 'orange', 'mango', 'grapes', 'banana', 'guava' ]
+[ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
+banana
+[ 'apple', 'orange', 'mango', 'grapes' ]
+```
+# unshift(): Method that adds one or more elements to the beginning of an array
+### Example:
+```
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+// console.log(fruits);
+// console.log(fruits.unshift("guava"));
+// console.log(fruits);
+```
+### Output:
+```
+[ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
+6
+[ 'guava', 'apple', 'orange', 'mango', 'grapes', 'banana' ]
+```
+# shift(): Method that removes the first element from an array.
+### Example:
+```
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+console.log(fruits);
+console.log(fruits.shift());
+console.log(fruits);
+```
+### Output:
+```
+[ 'guava', 'apple', 'orange', 'mango', 'grapes', 'banana' ]
 guava
 [ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
+```
+# what if, we want to add or remove anywhere in an elements
+# splice():
+- **The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place**
+- **Mutates the original array.The splice() method directly changes the array it is called on.**
+- **`start (required)`:The index at which to begin changing the array. If negative, it indicates an offset from the end of the array.**
+- **`deleteCount (optional)`:The number of elements to remove starting from the start index.**
+- **If deleteCount is 0, no elements are removed.If omitted, all elements from start to the end of the array are removed.**
+- **`item1, item2, ..., itemN (optional)`:Elements to add to the array starting at the start index. If no items are specified, the method only removes elements.**
+- **syntax:`splice(start, deleteCount, item1, item2, /* …, */ itemN)`**
+### 1.Removing elements:
+```
+let fruits = ["apple", "banana", "cherry", "date"];
+let removed = fruits.splice(1, 2); // Removes 2 elements starting at index 1
+console.log(fruits);  // Output: ["apple", "date"]
+console.log(removed); // Output: ["banana", "cherry"]
+```
+### 2.Adding elements:
+```
+let fruits = ["apple", "date"];
+fruits.splice(1, 0, "banana", "cherry"); // Adds "banana" and "cherry" at index 1
+console.log(fruits);  // Output: ["apple", "banana", "cherry", "date"]
+// let fruits = ["apple", "orange", "banana", "mango"];
+// fruits.splice(1, 1, "grapes");
+// console.log(fruits);
+```
+### 3.Replacing elements:
+```
+let fruits = ["apple", "banana", "cherry", "date"];
+fruits.splice(1, 2, "grape", "kiwi"); // Removes 2 elements at index 1 and adds "grape" and "kiwi"
+console.log(fruits);  // Output: ["apple", "grape", "kiwi", "date"]
+```
+### 4.Using negative indices:
+```
+let fruits = ["apple", "banana", "cherry", "date"];
+fruits.splice(-2, 1); // Removes 1 element starting 2 places from the end
+console.log(fruits);  // Output: ["apple", "banana", "date"]
+```
+### 5.Removing all elements after a certain index:
+```
+let fruits = ["apple", "banana", "cherry", "date"];
+fruits.splice(2); // Removes everything from index 2 onward
+console.log(fruits);  // Output: ["apple", "banana"]
+```
+### 6.Removing element at the end
+```
+// let fruits = ["apple", "orange", "banana", "mango"];
+// fruits.splice(-1, 0, "grapes");
+// fruits.splice(1, 0, "grapes");
+// console.log(fruits);
 ```
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
