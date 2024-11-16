@@ -296,11 +296,25 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 ```
 ## POP()
   >The JavaScript array pop() method removes the last element from the given array and return that element.
+### Example 
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
 let res=App.pop()
 console.log(res)
 ////Output:Web
+```
+### Another Example 
+```
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+console.log(fruits);
+// console.log(fruits.pop());
+// console.log(fruits);
+```
+### Output:
+```
+[ 'apple', 'orange', 'mango', 'grapes', 'banana', 'guava' ]
+guava
+[ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
 ```
 - JAVASCRIPT ARRAY CONCAT()
   >The JavaScript array concat() method combines two or more arrays and returns a new string.
