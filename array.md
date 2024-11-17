@@ -177,7 +177,6 @@ numbers.forEach((curElem) => {
 8
 10
 ```
-
 # map()
 >![image](https://github.com/user-attachments/assets/3066ec1d-34b4-4a55-af5d-f163be1108b0)
 >>![image](https://github.com/user-attachments/assets/7c1dfe4f-4c8a-4f4a-a55b-c0f1a0bce4f1)
@@ -346,6 +345,26 @@ console.log(result); // Output: 20
 ```
 20
 ```
+### Another Example:
+```
+let ar=[5,22,19,25,34]
+let res=ar.find(x=>x>20);
+console.log(res);
+```
+### Output:
+```
+22
+```
+### Another Example:
+```
+let ar1=[5,25,19,22,34]
+let res1=ar1.find(x=>x>20);
+console.log(res1);
+```
+### Output:
+```
+25
+```
 # findIndex()
 - **findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.**
 - **synax:`array.findIndex(callback(element, index, array), thisArg)`**
@@ -357,7 +376,7 @@ console.log(result); // Output: 20
 - **Does not mutate the array.The findIndex() method does not change the original array.**
 - **Stops at the first match.Once a matching element is found, the method stops further iteration.**
 ### Return Value:
->The index of the first element that satisfies the condition.-1 if no elements satisfy the condition.
+- **The index of the first element that satisfies the condition.-1 if no elements satisfy the condition.**
 - **Example Use Cases:**
 ### 1. Finding the index of a number in an array:**
 ```
@@ -368,6 +387,26 @@ console.log(index);  // Output: 2
 ### Output:
 ```
 2
+```
+### Another Example
+```
+let ar=[5,22,19,25,34]
+let res=ar.findIndex(x=>x>20);
+console.log(res);
+```
+### Output:
+```
+1 =====>(Always first element's index will return)
+```
+### Another Example
+```
+let ar1=[5,25,19,22,34]
+let res1=ar1.findIndex(x=>x>20);
+console.log(res1);
+```
+### Output:
+```
+1   =====>(Always first element's index will return)
 ```
 ### 2. Finding the index of an object in an array:
 ```
@@ -407,12 +446,11 @@ console.log(index);
 1
 ```
 # Array Helping Methods
-# How to Insert, Add, Replace and Delete Elements in Array(CRUD)
+# How to Insert,Add,Replace and Delete Elements in Array(CRUD)
 ## PUSH()
-  >The JavaScript array push() method adds one or more elements to the end of the given array.
+- **The JavaScript array `push()` method adds one or more elements to the end of the given array.**
 ![image](https://github.com/user-attachments/assets/67b0f992-779f-4715-92f3-5dfa3387c7fb)
 ![image](https://github.com/user-attachments/assets/65200d92-821c-4125-9711-a99f9b8c0541)
-
 ### Example
 ```
 let ostadApp=["Android","IOS","Windows","Mac","Web"]
@@ -434,7 +472,7 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 [ 'apple', 'orange', 'mango', 'grapes', 'banana', 'guava' ]
 ```
 ## POP()
-  >The JavaScript array pop() method removes the last element from the given array and return that element.
+- **The JavaScript array pop() method removes the last element from the given array and return that element.**
 ![image](https://github.com/user-attachments/assets/b47f621f-dd88-4087-8c47-9b83dafe8ef0)
 ![image](https://github.com/user-attachments/assets/a0c0f107-37a9-43e1-bd58-8ca62b37dc9d)
 ### Example 
@@ -599,10 +637,9 @@ console.log(months);
 ```
 [ 'Jan', 'March', 'April', 'June', 'July' ]
 ```
-
-- **JAVASCRIPT ARRAY FILTER()**
-- **The JavaScript array filter() method filter and extract the element of an array that satisfying the provided condition.**
-- **The filter() method in JavaScript is used to create a new array with elements that pass a specific test implemented by a provided callback function.**
+## filter()**
+- **The JavaScript array `filter()` method filter and extract the element of an array that satisfying the provided condition.**
+- **The `filter()` method in JavaScript is used to create a new array with elements that pass a specific test implemented by a provided callback function.**
 - **It does not modify the original array.**
 - **Does not mutate the original array.Unlike splice(), the filter() method creates a new array without altering the original array.**
 - **Returns an empty array if no elements match.**
@@ -687,7 +724,7 @@ console.log(result);
 ```
  []
 ```
-### 7.user wants to delete value 6.
+### 7.User wants to delete value 6.
 ```
 let value = 6;
 const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
@@ -766,7 +803,7 @@ return arr.indexOf(curElem) === index;
 
 ![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
 
-# JAVASCRIPT ARRAY CONCAT()
+## concat()
 - **The JavaScript array concat() method combines two or more arrays and returns a new string.**
 ```
 let first=['a','b','c']
@@ -776,48 +813,15 @@ console.log(res)
 ```
 ### Output:
 ![image](https://github.com/user-attachments/assets/4181e9ed-b680-41cb-bb2e-4eb1c3cd9cf2)
-# JAVASCRIPT ARRAY FROM()
->The from() method creates a new array that holds the shallow copy from an array or iterable object.
->>When applied to a string, each word gets converted to an array element in the new array
+## from()
+- **The from() method creates a new array that holds the shallow copy from an array or iterable object.**
+- **When applied to a string, each word gets converted to an array element in the new array**
 ```
 let nameString="Independence is the right of human being"
 let nameArray=Array.from(nameString)
 console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
-- **JAVASCRIPT ARRAY FIND()**
->The JavaScript array find() method returns the first element of the given array that satisfies the provided function condition.
-- **Example-1**
-```
-let ar=[5,22,19,25,34]
-let res=ar.find(x=>x>20);
-console.log(res);
-////Output:22(Always first element will return)
-```
-- **Example-2**
-```
-let ar1=[5,25,19,22,34]
-let res1=ar1.find(x=>x>20);
-console.log(res1);
-////Output:25(Always first element will return)
-```
-- **JAVASCRIPT ARRAY FINDINDEX()**
->The JavaScript array findIndex() method returns the index of first element of the given array that satisfies the provided function condition. 
->>It returns -1, if no element satisfies the condition.
-- **Example-1**
-```
-let ar=[5,22,19,25,34]
-let res=ar.findIndex(x=>x>20);
-console.log(res);
-////Output:1(Always first element's index will return)
-```
-- ***Example-2 ****
-```
-let ar1=[5,25,19,22,34]
-let res1=ar1.findIndex(x=>x>20);
-console.log(res1);
-////Output:1(Always first element's index will return)
-```
 # JAVASCRIPT ARRAY INCLUDES()
 - **The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.**
 - **Syntax:`includes(searchElement, fromIndex)`**
@@ -846,7 +850,7 @@ console.log(result);
 true
 true
 ```
-# INDEXOF()
+# indexOf()
 ![image](https://github.com/user-attachments/assets/d57b971e-5f99-4867-8d8b-74344dcffa11)
 - **indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.**
 - **syntax:`indexOf(searchElement, fromIndex)`
@@ -906,7 +910,7 @@ console.log(result);
 ```
 ![image](https://github.com/user-attachments/assets/f8abdc97-582a-4dfc-983d-c0ed619828ab)
 
-- JAVASCRIPT ARRAY REVERSE()
+# reverse()
 >The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
@@ -914,11 +918,9 @@ App.reverse();
 console.log(App)
 ```
 ![image](https://github.com/user-attachments/assets/88bf640c-e7d7-4939-bcaa-75e42d2a5cdd)
-
-- JAVASCRIPT ARRAY SLICE()
-  >The JavaScript array slice() method extracts the part of the given array and returns it.
-  >>This method doesn't change the original array
-
+# slice()
+- **The JavaScript array slice() method extracts the part of the given array and returns it.**
+- **This method doesn't change the original array**
 ```
 let ostadApp=["Android","IOS","Windows","Mac","Web"]
 let res=ostadApp.slice(1,3); //// 1,2-->(n-1)-->(3-1)-->2
@@ -929,9 +931,9 @@ console.log(res1);
 console.log(res2);
 ```
 ![image](https://github.com/user-attachments/assets/9b67b325-ad30-46a2-876c-5280aa882205)
-- JAVASCRIPT ARRAY SORT()
->The JavaScript array sort() method is used to arrange the array elements in some order.
->>By default, sort() method follows the ascending order.
+# sort()
+- **The JavaScript array sort() method is used to arrange the array elements in some order.**
+- **By default, sort() method follows the ascending order.**
 ```
 let numbers=[30,55,44,20,77];
 numbers.sort()////-->By default, sort() method follows the ascending order.
