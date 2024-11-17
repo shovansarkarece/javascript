@@ -520,8 +520,24 @@ console.log(fruits);  // Output: ["apple", "banana", "cherry", "date"]
 ```
 let fruits = ["apple", "banana", "cherry", "date"];
 fruits.splice(1, 2, "grape", "kiwi"); // Removes 2 elements at index 1 and adds "grape" and "kiwi"
-console.log(fruits);  // Output: ["apple", "grape", "kiwi", "date"]
+console.log(fruits);  
 ```
+### Output: 
+```
+["apple", "grape", "kiwi", "date"]
+```
+### Another example of Replacing elements:
+```
+let arr =["A","B","C","D","E"]
+//////Example of Splice in terms of deletion
+let res=arr.splice(2,2,"P","Q")////==>It means we can select from index 2 
+////and susbstitute 2 elemenet at the place of C,D with P,Q
+console.log(res);
+console.log(arr);
+```
+### Output: 
+![image](https://github.com/user-attachments/assets/9b3708eb-2d85-4afd-9f86-f9bf93640fa7)
+
 ### 4.Using negative indices:
 ```
 let fruits = ["apple", "banana", "cherry", "date"];
@@ -913,20 +929,6 @@ numbers.reverse()////-->But if we want to get the array in descending order then
 console.log(numbers);
 ```
 ![image](https://github.com/user-attachments/assets/05c1d3db-ea80-41e3-a86e-f5315e9d1f63)
-# JAVASCRIPT ARRAY SPLICE()
->The JavaScript array splice() method is used to add/remove the elements to/from the existing array. 
->>It returns the removed elements from an array.
->>>*****The splice() method also modifies the original array.*****
-- **Syntax:array.splice(index,removecount,item)**
-```
-let arr =["A","B","C","D","E"]
-//////Example of Splice in terms of deletion
-let res=arr.splice(2,2,"P","Q")////==>It means we can select from index 2 
-////and susbstitute 2 elemenet at the place of C,D with P,Q
-console.log(res);
-console.log(arr);
-```
-![image](https://github.com/user-attachments/assets/9b3708eb-2d85-4afd-9f86-f9bf93640fa7)
 
 #### Another Example of Splice in terms of deletion
 ```
