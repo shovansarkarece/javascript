@@ -550,6 +550,16 @@ let fruits = ["apple", "banana", "cherry", "date"];
 fruits.splice(2); // Removes everything from index 2 onward
 console.log(fruits);  // Output: ["apple", "banana"]
 ```
+#### Another Example of Splice in terms of deletion
+```
+let arr1 =["A","B","C","D","E"]
+//////Example of Splice in terms of deletion
+let res2=arr1.splice(2,2,)////==>It means we can select from index 2 and delete 2 elements from index 2
+console.log(res2);
+console.log(arr1);//////As we know splice() method, will change our main array.
+```
+### Output: 
+![image](https://github.com/user-attachments/assets/da014796-5293-48df-8ff9-b566746f4d83)
 ### 6.Removing element at the end
 ```
 // let fruits = ["apple", "orange", "banana", "mango"];
@@ -930,14 +940,5 @@ console.log(numbers);
 ```
 ![image](https://github.com/user-attachments/assets/05c1d3db-ea80-41e3-a86e-f5315e9d1f63)
 
-#### Another Example of Splice in terms of deletion
-```
-let arr1 =["A","B","C","D","E"]
-//////Example of Splice in terms of deletion
-let res2=arr1.splice(2,2,)////==>It means we can select from index 2 
-////and delete 2 elements from index 2
-console.log(res2);
-console.log(arr1);//////As we know splice() method, will change our main array.
-```
-![image](https://github.com/user-attachments/assets/da014796-5293-48df-8ff9-b566746f4d83)
+
 
