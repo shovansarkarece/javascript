@@ -183,7 +183,7 @@ numbers.forEach((curElem) => {
 - **The map() method in JavaScript is used to create a new array by applying a callback function to each element of an existing array. It does not modify the original array but returns a new array with the results of the callback function.**
 - **Parameters**
 - **callback(currentValue, index, array):**
-- **- **currentValue: The current element being processed.**
+- **currentValue: The current element being processed.**
 - **index (optional): The index of the current element.**
 - **array (optional): The original array being traversed.**
 - **thisArg (optional):**
@@ -315,8 +315,6 @@ console.log(doubleValue);
 ## Use Case:
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
-
-
 # Filter in an array( Search + Filter )
 ## filter()
 - **The JavaScript array `filter()` method filter and extract the element of an array that satisfying the provided condition.**
