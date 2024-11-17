@@ -272,6 +272,140 @@ console.log(doubleValue);
 ## Use Case:
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
+# Filter in an array( Search + Filter )
+# find()
+- **syntax:`array.find(callback(element, index, array), thisArg)`**
+- **`callback (required)`:A function to test each element of the array.It takes three arguments**
+- **`element`: The current element being processed.**
+- **`index (optional)`: The index of the current element.**
+- **`array (optional)`: The array find() was called on.**
+- **`thisArg (optional)`:A value to use as this when executing the callback function.**
+- **Returns the first element that satisfies the condition specified in the callback.**
+- **Returns undefined if no elements match the condition.**
+- **The find() method is non-destructive and leaves the original array unchanged.**
+- **Once the find() method finds a matching element, it stops processing the rest of the array.**
+- **If you need the index, consider using the findIndex() method.**
+- **1.Finding an element in an array:**
+```
+let numbers = [10, 20, 30, 40];
+let result = numbers.find(num => num > 25);
+console.log(result); // Output: 30 (first number greater than 25)
+```
+### Output:
+```
+30
+```
+### Another Example
+```
+const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
+const result = numbers.find((curElem) => {
+  return curElem > 6;
+});
+console.log(result);
+```
+### Output:
+```
+7
+```
+- **2.Using find() with objects:**
+```
+let users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" }
+];
+let user = users.find(user => user.name === "Bob");
+console.log(user); // Output: { id: 2, name: "Bob" }
+```
+### Output:
+```
+{ id: 2, name: 'Bob' }
+```
+- **3. No match found:**
+```
+let numbers = [1, 2, 3, 4];
+let result = numbers.find(num => num > 5);
+console.log(result); // Output: undefined
+```
+### Output:
+```
+undefined
+```
+- **4. Using thisArg:**
+```
+let obj = {
+  threshold: 15
+};
+let numbers = [10, 20, 30];
+let result = numbers.find(function(num) {
+  return num > this.threshold;
+}, obj);
+console.log(result); // Output: 20
+```
+### Output:
+```
+20
+```
+# findIndex()
+- **findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.**
+- **synax:`array.findIndex(callback(element, index, array), thisArg)`**
+- **`callback (required)`:A function that tests each element of the array. It is called with the following arguments:**
+- **`element`: The current element being processed.**
+- **`index`: The index of the current element.**
+- **`array`: The entire array being traversed.**
+- **`thisArg (optional)`:An object to use as this when executing the callback. Defaults to undefined.**
+- **Does not mutate the array.The findIndex() method does not change the original array.**
+- **Stops at the first match.Once a matching element is found, the method stops further iteration.**
+### Return Value:
+>The index of the first element that satisfies the condition.-1 if no elements satisfy the condition.
+- **Example Use Cases:**
+### 1. Finding the index of a number in an array:**
+```
+const numbers = [10, 20, 30, 40];
+const index = numbers.findIndex(num => num > 25); // Finds the first number greater than 25
+console.log(index);  // Output: 2
+```
+### Output:
+```
+2
+```
+### 2. Finding the index of an object in an array:
+```
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" }
+];
+const index = users.findIndex(user => user.name === "Bob");
+console.log(index); 
+```
+### Output:
+```
+1
+```
+### 3. Checking for non-existent conditions:
+```
+const numbers = [10, 20, 30, 40];
+const index = numbers.findIndex(num => num > 50); // No number greater than 50
+console.log(index);
+```
+### Output:
+```
+-1
+```
+### 4. Using thisArg:
+```
+const threshold = { limit: 15 };
+const numbers = [10, 20, 30, 40];
+const index = numbers.findIndex(function(num) {
+  return num > this.limit;
+}, threshold);
+console.log(index);
+```
+### Output: 
+```
+1
+```
 # Array Helping Methods
 # How to Insert, Add, Replace and Delete Elements in Array(CRUD)
 ## PUSH()
@@ -303,8 +437,6 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
   >The JavaScript array pop() method removes the last element from the given array and return that element.
 ![image](https://github.com/user-attachments/assets/b47f621f-dd88-4087-8c47-9b83dafe8ef0)
 ![image](https://github.com/user-attachments/assets/a0c0f107-37a9-43e1-bd58-8ca62b37dc9d)
-
-
 ### Example 
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
@@ -344,7 +476,7 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 6
 [ 'guava', 'apple', 'orange', 'mango', 'grapes', 'banana' ]
 ```
-# shift(): Method that removes the first element from an array.
+# shift():Method that removes the first element from an array.
 ### Example:
 ```
 let fruits = ["apple", "orange", "mango", "grapes", "banana"];
@@ -367,6 +499,7 @@ guava
 - **If deleteCount is 0, no elements are removed.If omitted, all elements from start to the end of the array are removed.**
 - **`item1, item2, ..., itemN (optional)`:Elements to add to the array starting at the start index. If no items are specified, the method only removes elements.**
 - **syntax:`splice(start, deleteCount, item1, item2, /* …, */ itemN)`**
+- **What is the return value of splice method?==>When used to add elements, the splice method returns an empty array ([]).**
 ### 1.Removing elements:
 ```
 let fruits = ["apple", "banana", "cherry", "date"];
@@ -408,16 +541,216 @@ console.log(fruits);  // Output: ["apple", "banana"]
 // fruits.splice(1, 0, "grapes");
 // console.log(fruits);
 ```
-- JAVASCRIPT ARRAY CONCAT()
-  >The JavaScript array concat() method combines two or more arrays and returns a new string.
+### Delete June from an array?
+```
+const months = ["Jan", "march", "April", "June", "July"];
+const indexToDelete = months.indexOf("June");
+months.splice(indexToDelete, 1);
+console.log(months);
+```
+### Output:
+```
+[ 'Jan', 'march', 'April', 'July' ]
+```
+### Add Dec at the end of an array?
+```
+const months = ["Jan", "march", "April", "June", "July"];
+months.splice(months.length, 0, "Dec");
+console.log(months);
+```
+### Output:
+```
+[ 'Jan', 'march', 'April', 'June', 'July', 'Dec' ]
+```
+### Update march to March (update)?
+```
+const months = ["Jan", "march", "April", "June", "July"];
+const indexToUpdate = months.indexOf("march");
+months.splice(indexToUpdate, 1, "March");
+console.log(months);
+```
+### Output:
+```
+[ 'Jan', 'March', 'April', 'June', 'July' ]
+```
+
+- **JAVASCRIPT ARRAY FILTER()**
+- **The JavaScript array filter() method filter and extract the element of an array that satisfying the provided condition.**
+- **The filter() method in JavaScript is used to create a new array with elements that pass a specific test implemented by a provided callback function.**
+- **It does not modify the original array.**
+- **Does not mutate the original array.Unlike splice(), the filter() method creates a new array without altering the original array.**
+- **Returns an empty array if no elements match.**
+- **Syntax:`array.filter(callback(element, index, array), thisArg)`**
+##Parameters:
+###`callback (required)`:
+- **A function that tests each element. It should return true to keep the element and false to exclude it.**
+- **The callback function has three arguments:**
+###`element`:
+- **The current element being processed in the array.**
+###`index (optional)`:
+- **The index of the current element.**
+###`array (optional)`: The array filter() was called on.
+###`thisArg (optional)`:Value to use as this when executing the callback.
+###Return Value:
+- **A new array containing the elements that satisfy the condition.**
+Examples:
+### 1. Filtering numbers:
+```
+const numbers = [10, 20, 30, 40, 50];
+const result = numbers.filter(num => num > 25); // Keep numbers greater than 25
+console.log(result); 
+```
+### Output:
+```
+[30, 40, 50]
+```
+### 2. Filtering strings:
+```
+const fruits = ["apple", "banana", "cherry", "date"];
+const result = fruits.filter(fruit => fruit.startsWith("b")); // Keep fruits starting with 'b'
+console.log(result);
+```
+### Output: 
+```
+["banana"]
+```
+### 3. Using index in the callback:
+```
+const numbers = [5, 10, 15, 20, 25];
+const result = numbers.filter((num, index) => index % 2 === 0); // Keep elements at even indices
+console.log(result);
+```
+### Output: 
+```
+[5, 15, 25]
+```
+### 4. Filtering objects in an array:
+```
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+];
+const result = people.filter(person => person.age >= 25); // Keep people aged 25 or older
+console.log(result);
+```
+### Output:
+```
+[{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }]
+```
+### 5. Using thisArg:
+```
+const threshold = { limit: 15 };
+const numbers = [10, 20, 30, 5];
+const result = numbers.filter(function(num) {
+    return num > this.limit;
+}, threshold);
+console.log(result);
+```
+### Output: 
+```
+[20, 30]
+```
+### 6.Returns an empty array if no elements match.
+```
+const nums = [1, 2, 3];
+const result = nums.filter(n => n > 10);
+console.log(result); 
+```
+### Output: 
+```
+ []
+```
+### 7.user wants to delete value 6.
+```
+let value = 6;
+const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+
+let updatedCart = numbers.filter((curElem) => {
+  return curElem !== value;
+});
+console.log(updatedCart);
+```
+### Output:
+```
+[
+  1, 2, 3, 4,
+  5, 7, 8, 9
+]
+```
+### 8.Filtering Products by Price
+```
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 800 },
+  { name: "Tablet", price: 300 },
+  { name: "Smartwatch", price: 150 },
+];
+//? Filter products with a price less than or equal to 500
+const filterProducts = products.filter((curElem) => {
+  //   console.log(curElem.price <= 500);
+  return curElem.price <= 500;
+});
+console.log(filterProducts);
+```
+### output:
+```
+[ { name: 'Tablet', price: 300 }, { name: 'Smartwatch', price: 150 } ]
+```
+### 9.Filter unique values
+```
+const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+let uniqueValues = numbers.filter((curElem, index, arr) => {
+    // console.log(index);
+    console.log(arr.indexOf(curElem));
+//   return arr.indexOf(curElem) === index;
+});
+// console.log(uniqueValues);
+// console.log([...new Set(numbers)]);
+console.log(marks.filter(check));
+```
+```
+console.log(index);
+1
+2
+3
+4
+5
+6
+7
+8
+9
+console.log(arr.indexOf(curElem));
+0
+1
+2
+3
+4
+5
+4 here index 4 is coming as Output because element 6 is available in the 4th index as well as the 6th index. Because the indexof() always returns first index that's why it is updated 6th  index as the 4th index.
+7
+8
+9
+return arr.indexOf(curElem) === index;
+[
+  1, 2, 3, 4, 6,
+  5, 7, 8, 9
+]
+```
+
+![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
+
+# JAVASCRIPT ARRAY CONCAT()
+- **The JavaScript array concat() method combines two or more arrays and returns a new string.**
 ```
 let first=['a','b','c']
 let second=['d','e','f']
 let res=first.concat(second)
 console.log(res)
 ```
+### Output:
 ![image](https://github.com/user-attachments/assets/4181e9ed-b680-41cb-bb2e-4eb1c3cd9cf2)
-- JAVASCRIPT ARRAY FROM()
+# JAVASCRIPT ARRAY FROM()
 >The from() method creates a new array that holds the shallow copy from an array or iterable object.
 >>When applied to a string, each word gets converted to an array element in the new array
 ```
@@ -426,16 +759,6 @@ let nameArray=Array.from(nameString)
 console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
-- **JAVASCRIPT ARRAY FILTER()**
->The JavaScript array filter() method filter and extract the element of an array that satisfying the provided condition.
-```
-let marks=[20,37,40,45,50,30,10,5]
-function check(value){
-    return value>30;
-}
-console.log(marks.filter(check));
-```
-![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
 - **JAVASCRIPT ARRAY FIND()**
 >The JavaScript array find() method returns the first element of the given array that satisfies the provided function condition.
 - **Example-1**
@@ -469,8 +792,10 @@ let res1=ar1.findIndex(x=>x>20);
 console.log(res1);
 ////Output:1(Always first element's index will return)
 ```
-- JAVASCRIPT ARRAY INCLUDES()
-  >The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.
+# JAVASCRIPT ARRAY INCLUDES()
+- **The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.**
+- **Syntax:`includes(searchElement, fromIndex)`**
+### Example
 ```
 let ostadApp=["Android","IOS","Windows","Mac","Web"]
 let res=ostadApp.includes("Apple");
@@ -483,7 +808,18 @@ console.log(res2)
 console.log(res3)
 ```
 ![image](https://github.com/user-attachments/assets/632ee5c5-5f11-4999-9134-cdcec1de9527)
-
+### Another Example
+```
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result = numbers.includes(5);
+const result = numbers.includes(5,2);
+console.log(result);
+```
+### Output:
+```
+true
+true
+```
 # INDEXOF()
 ![image](https://github.com/user-attachments/assets/d57b971e-5f99-4867-8d8b-74344dcffa11)
 - **indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.**
