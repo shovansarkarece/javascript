@@ -435,7 +435,6 @@ return arr.indexOf(curElem) === index;
   5, 7, 8, 9
 ]
 ```
-![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
 # find()
 - **syntax:`array.find(callback(element, index, array), thisArg)`**
 - **`callback (required)`:A function to test each element of the array.It takes three arguments**
@@ -611,7 +610,7 @@ console.log(index);
 ```
 # Array Helping Methods
 # How to Insert,Add,Replace and Delete Elements in Array(CRUD)
-## PUSH()
+## push()
 - **The JavaScript array `push()` method adds one or more elements to the end of the given array.**
 ![image](https://github.com/user-attachments/assets/67b0f992-779f-4715-92f3-5dfa3387c7fb)
 ![image](https://github.com/user-attachments/assets/65200d92-821c-4125-9711-a99f9b8c0541)
@@ -635,7 +634,7 @@ let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 ```
 [ 'apple', 'orange', 'mango', 'grapes', 'banana', 'guava' ]
 ```
-## POP()
+## pop()
 - **The JavaScript array pop() method removes the last element from the given array and return that element.**
 ![image](https://github.com/user-attachments/assets/b47f621f-dd88-4087-8c47-9b83dafe8ef0)
 ![image](https://github.com/user-attachments/assets/a0c0f107-37a9-43e1-bd58-8ca62b37dc9d)
@@ -692,7 +691,7 @@ console.log(fruits);
 guava
 [ 'apple', 'orange', 'mango', 'grapes', 'banana' ]
 ```
-# what if, we want to add or remove anywhere in an elements
+# What if, we want to add or remove anywhere in an elements
 # splice():
 - **The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place**
 - **Mutates the original array.The splice() method directly changes the array it is called on.**
@@ -820,7 +819,7 @@ let nameArray=Array.from(nameString)
 console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
-# JAVASCRIPT ARRAY INCLUDES()
+# includes()
 - **The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.**
 - **Syntax:`includes(searchElement, fromIndex)`**
 ### Example
@@ -874,7 +873,7 @@ console.log(res)
 4
 ```
 # lastIndexof()
-- **//? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present.**
+- **lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present.**
 - **The array is searched backwards(from ledt to right), starting at fromIndex.**
 ### Example
 ```
@@ -907,9 +906,8 @@ console.log(result);
 6
 ```
 ![image](https://github.com/user-attachments/assets/f8abdc97-582a-4dfc-983d-c0ed619828ab)
-
 # reverse()
->The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.
+- **The JavaScript array reverse() method changes the sequence of elements of the given array and returns the reverse sequence.**
 ```
 let App=["Android","IOS","Windows","Mac","Web"]
 App.reverse();
@@ -932,6 +930,7 @@ console.log(res2);
 # sort()
 - **The JavaScript array sort() method is used to arrange the array elements in some order.**
 - **By default, sort() method follows the ascending order.**
+- **Sorting an Array: The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings.**
 ```
 let numbers=[30,55,44,20,77];
 numbers.sort()////-->By default, sort() method follows the ascending order.
@@ -939,6 +938,45 @@ numbers.reverse()////-->But if we want to get the array in descending order then
 console.log(numbers);
 ```
 ![image](https://github.com/user-attachments/assets/05c1d3db-ea80-41e3-a86e-f5315e9d1f63)
+### For ascending order in terms of sort
+```
+// const numbers = [1, 2, 4, 3, 6, 5, 6, 7, 4, 8, 9];
+// const sortedNumbers = numbers.sort((a, b) => {
+//   if (a > b) {
+//     return 1;
+//   } else if (b > a) {
+//     return -1;
+//   }
+// });
+// console.log(numbers);
+```
+### Output:
+```
+[
+  1, 2, 3, 4, 4,
+  5, 6, 6, 7, 8,
+  9
+]
+```
+### For descending order in terms of sort
+```
+// const sortedNumbers = numbers.sort((a, b) => {
+//   if (a > b) {
+//     return -1;
+//   } else if (b > a) {
+//     return 1;
+//   }
+// });
+// console.log(numbers);
+```
+### Output:
+```
+[
+  9, 8, 7, 6, 6,
+  5, 4, 4, 3, 2,
+  1
+]
+```
 
 
 
