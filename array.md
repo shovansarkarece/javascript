@@ -483,7 +483,7 @@ return arr.indexOf(curElem) === index;
 - **The reduce method in JavaScript is used to accumulate or reduce an array to a single value.**
 - **It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result.**
 - **The reduce method takes a callback function as its first argument and an optional initial value for the accumulator as the second argument.**
-- **syntax:
+- **syntax:**
 ```
 array.reduce(function callback(accumulator, currentValue, index, array) {
 //   // Your logic here
@@ -532,7 +532,6 @@ console.log(sumOfSquares); // Output: 56
 ```
 # Difference between map(),filter() and reduce()
 ![image](https://github.com/user-attachments/assets/e7521f18-3e3b-41d9-91a3-05e8c2c2ca6e)
-
 # find()
 - **syntax:`array.find(callback(element, index, array), thisArg)`**
 - **`callback (required)`:A function to test each element of the array.It takes three arguments**
