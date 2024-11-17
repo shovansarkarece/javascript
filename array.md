@@ -261,6 +261,50 @@ const doubleValue = numbers.map((curElem) => {
 });
 console.log(doubleValue);
 ```
+# Interview Question for map()
+### Using map to square each number and create a new array
+```
+// const numbers = [1, 2, 3, 4, 5];
+// let result = numbers.map((curElem) => curElem * curElem);
+// console.log(result);
+```
+### Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
+```
+// Original array of strings
+// const words = ["APPLE", "banana", "cherry", "date"];
+
+// const result = words.map((curElem) => {
+//   return curElem.toLowerCase();
+// });
+// console.log(result);
+```
+### Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
+```
+// Original array of numbers
+// const numbers = [1, 2, 3, 4, 5];
+
+// const result = numbers
+//   .map((curElem) => {
+//     if (curElem % 2 === 0) {
+//       return curElem * curElem;
+//     }
+//   })
+//   .filter((curElem) => curElem !== undefined);
+// console.log(result);
+```
+## Using Ternary Operator
+```
+// const evenSquare = numbers
+//   .map((curNum) => (curNum % 2 === 0 ? curNum * curNum : undefined))
+//   .filter((curElem) => curElem !== undefined);
+// console.log(evenSquare);
+```
+### Using the map method, write a function that takes an array of names and returns a new array where each name is prefixed with "Mr. ".
+```
+// const names = ["ram", "vinod", "laxman"];
+// const prefixName = names.map((curName) => `Mr. ${curName}`);
+// console.log(prefixName);
+```
 # Key Differences between map() and forEach
 - **Return Value:**
 - **forEach: It doesn't return a value. The forEach method is used for iterating over the elements of an array and performing a side effect, such as modifying the array or performing a task for each element.**
@@ -271,6 +315,8 @@ console.log(doubleValue);
 ## Use Case:
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
+
+
 # Filter in an array( Search + Filter )
 ## filter()
 - **The JavaScript array `filter()` method filter and extract the element of an array that satisfying the provided condition.**
@@ -435,6 +481,60 @@ return arr.indexOf(curElem) === index;
   5, 7, 8, 9
 ]
 ```
+# reduce() method
+- **The reduce method in JavaScript is used to accumulate or reduce an array to a single value.**
+- **It iterates over the elements of an array and applies a callback function to each element, updating an accumulator value with the result.**
+- **The reduce method takes a callback function as its first argument and an optional initial value for the accumulator as the second argument.**
+- **syntax:
+```
+array.reduce(function callback(accumulator, currentValue, index, array) {
+//   // Your logic here
+//   // Return the updated accumulator value
+// }, initialValue);
+```
+- **`callback`: A function that is called once for each element in the array.**
+- **`accumulator`: The accumulated result of the previous iterations.**
+- **`currentValue`: The current element being processed in the array.**
+- **`index (optional)`: The index of the current element being processed.**
+- **`array (optional)`: The array reduce was called upon.**
+- **`initialValue (optional)`: An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.**
+```
+// const productPrice = [100, 200, 300, 400, 500];
+// const totalPrice = productPrice.reduce((accum, curElem) => {
+//   return accum + curElem;
+// }, 0);
+// console.log(totalPrice);
+```
+### Output:
+```
+1500
+```
+# Combined example of map(),filter() and reduce()
+### When to Use:
+- **Use map() when you want to transform each element.**
+- **Use filter() when you want to extract a subset of elements.**
+- **Use reduce() when you want a single, cumulative result.**
+```
+const numbers = [1, 2, 3, 4, 5, 6];
+// 1. Filter even numbers
+const evens = numbers.filter(num => num % 2 === 0); // [2, 4, 6]
+// 2. Square the even numbers
+console.log(evens);
+const squaredEvens = evens.map(num => num * num); // [4, 16, 36]
+// 3. Sum the squared even numbers
+console.log(squaredEvens);
+const sumOfSquares = squaredEvens.reduce((acc, num) => acc + num, 0); // 56
+console.log(sumOfSquares); // Output: 56
+```
+### Output:
+```
+[2, 4, 6]
+[4, 16, 36]
+56
+```
+# Difference between map(),filter() and reduce()
+![image](https://github.com/user-attachments/assets/e7521f18-3e3b-41d9-91a3-05e8c2c2ca6e)
+
 # find()
 - **syntax:`array.find(callback(element, index, array), thisArg)`**
 - **`callback (required)`:A function to test each element of the array.It takes three arguments**
