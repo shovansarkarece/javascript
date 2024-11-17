@@ -272,6 +272,170 @@ console.log(doubleValue);
 - **forEach: Used when you want to iterate over the array elements and perform an action on each element, but you don't need a new array.**
 - **map: Used when you want to create a new array based on the transformation of each element in the original array.**
 # Filter in an array( Search + Filter )
+## filter()
+- **The JavaScript array `filter()` method filter and extract the element of an array that satisfying the provided condition.**
+- **The `filter()` method in JavaScript is used to create a new array with elements that pass a specific test implemented by a provided callback function.**
+- **It does not modify the original array.**
+- **Does not mutate the original array.Unlike splice(), the filter() method creates a new array without altering the original array.**
+- **Returns an empty array if no elements match.**
+- **Syntax:`array.filter(callback(element, index, array), thisArg)`**
+##Parameters:
+###`callback (required)`:
+- **A function that tests each element. It should return true to keep the element and false to exclude it.**
+- **The callback function has three arguments:**
+###`element`:
+- **The current element being processed in the array.**
+###`index (optional)`:
+- **The index of the current element.**
+###`array (optional)`: The array filter() was called on.
+###`thisArg (optional)`:Value to use as this when executing the callback.
+###Return Value:
+- **A new array containing the elements that satisfy the condition.**
+Examples:
+### 1. Filtering numbers:
+```
+const numbers = [10, 20, 30, 40, 50];
+const result = numbers.filter(num => num > 25); // Keep numbers greater than 25
+console.log(result); 
+```
+### Output:
+```
+[30, 40, 50]
+```
+### 2. Filtering strings:
+```
+const fruits = ["apple", "banana", "cherry", "date"];
+const result = fruits.filter(fruit => fruit.startsWith("b")); // Keep fruits starting with 'b'
+console.log(result);
+```
+### Output: 
+```
+["banana"]
+```
+### 3. Using index in the callback:
+```
+const numbers = [5, 10, 15, 20, 25];
+const result = numbers.filter((num, index) => index % 2 === 0); // Keep elements at even indices
+console.log(result);
+```
+### Output: 
+```
+[5, 15, 25]
+```
+### 4. Filtering objects in an array:
+```
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 }
+];
+const result = people.filter(person => person.age >= 25); // Keep people aged 25 or older
+console.log(result);
+```
+### Output:
+```
+[{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }]
+```
+### 5. Using thisArg:
+```
+const threshold = { limit: 15 };
+const numbers = [10, 20, 30, 5];
+const result = numbers.filter(function(num) {
+    return num > this.limit;
+}, threshold);
+console.log(result);
+```
+### Output: 
+```
+[20, 30]
+```
+### 6.Returns an empty array if no elements match.
+```
+const nums = [1, 2, 3];
+const result = nums.filter(n => n > 10);
+console.log(result); 
+```
+### Output: 
+```
+ []
+```
+### 7.User wants to delete value 6.
+```
+let value = 6;
+const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+
+let updatedCart = numbers.filter((curElem) => {
+  return curElem !== value;
+});
+console.log(updatedCart);
+```
+### Output:
+```
+[
+  1, 2, 3, 4,
+  5, 7, 8, 9
+]
+```
+### 8.Filtering Products by Price
+```
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Phone", price: 800 },
+  { name: "Tablet", price: 300 },
+  { name: "Smartwatch", price: 150 },
+];
+//? Filter products with a price less than or equal to 500
+const filterProducts = products.filter((curElem) => {
+  //   console.log(curElem.price <= 500);
+  return curElem.price <= 500;
+});
+console.log(filterProducts);
+```
+### output:
+```
+[ { name: 'Tablet', price: 300 }, { name: 'Smartwatch', price: 150 } ]
+```
+### 9.Filter unique values
+```
+const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+let uniqueValues = numbers.filter((curElem, index, arr) => {
+    // console.log(index);
+    console.log(arr.indexOf(curElem));
+//   return arr.indexOf(curElem) === index;
+});
+// console.log(uniqueValues);
+// console.log([...new Set(numbers)]);
+console.log(marks.filter(check));
+```
+```
+console.log(index);
+1
+2
+3
+4
+5
+6
+7
+8
+9
+console.log(arr.indexOf(curElem));
+0
+1
+2
+3
+4
+5
+4 here index 4 is coming as Output because element 6 is available in the 4th index as well as the 6th index. Because the indexof() always returns first index that's why it is updated 6th  index as the 4th index.
+7
+8
+9
+return arr.indexOf(curElem) === index;
+[
+  1, 2, 3, 4, 6,
+  5, 7, 8, 9
+]
+```
+![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
 # find()
 - **syntax:`array.find(callback(element, index, array), thisArg)`**
 - **`callback (required)`:A function to test each element of the array.It takes three arguments**
@@ -637,172 +801,6 @@ console.log(months);
 ```
 [ 'Jan', 'March', 'April', 'June', 'July' ]
 ```
-## filter()**
-- **The JavaScript array `filter()` method filter and extract the element of an array that satisfying the provided condition.**
-- **The `filter()` method in JavaScript is used to create a new array with elements that pass a specific test implemented by a provided callback function.**
-- **It does not modify the original array.**
-- **Does not mutate the original array.Unlike splice(), the filter() method creates a new array without altering the original array.**
-- **Returns an empty array if no elements match.**
-- **Syntax:`array.filter(callback(element, index, array), thisArg)`**
-##Parameters:
-###`callback (required)`:
-- **A function that tests each element. It should return true to keep the element and false to exclude it.**
-- **The callback function has three arguments:**
-###`element`:
-- **The current element being processed in the array.**
-###`index (optional)`:
-- **The index of the current element.**
-###`array (optional)`: The array filter() was called on.
-###`thisArg (optional)`:Value to use as this when executing the callback.
-###Return Value:
-- **A new array containing the elements that satisfy the condition.**
-Examples:
-### 1. Filtering numbers:
-```
-const numbers = [10, 20, 30, 40, 50];
-const result = numbers.filter(num => num > 25); // Keep numbers greater than 25
-console.log(result); 
-```
-### Output:
-```
-[30, 40, 50]
-```
-### 2. Filtering strings:
-```
-const fruits = ["apple", "banana", "cherry", "date"];
-const result = fruits.filter(fruit => fruit.startsWith("b")); // Keep fruits starting with 'b'
-console.log(result);
-```
-### Output: 
-```
-["banana"]
-```
-### 3. Using index in the callback:
-```
-const numbers = [5, 10, 15, 20, 25];
-const result = numbers.filter((num, index) => index % 2 === 0); // Keep elements at even indices
-console.log(result);
-```
-### Output: 
-```
-[5, 15, 25]
-```
-### 4. Filtering objects in an array:
-```
-const people = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 30 },
-    { name: "Charlie", age: 22 }
-];
-const result = people.filter(person => person.age >= 25); // Keep people aged 25 or older
-console.log(result);
-```
-### Output:
-```
-[{ name: "Alice", age: 25 }, { name: "Bob", age: 30 }]
-```
-### 5. Using thisArg:
-```
-const threshold = { limit: 15 };
-const numbers = [10, 20, 30, 5];
-const result = numbers.filter(function(num) {
-    return num > this.limit;
-}, threshold);
-console.log(result);
-```
-### Output: 
-```
-[20, 30]
-```
-### 6.Returns an empty array if no elements match.
-```
-const nums = [1, 2, 3];
-const result = nums.filter(n => n > 10);
-console.log(result); 
-```
-### Output: 
-```
- []
-```
-### 7.User wants to delete value 6.
-```
-let value = 6;
-const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
-
-let updatedCart = numbers.filter((curElem) => {
-  return curElem !== value;
-});
-console.log(updatedCart);
-```
-### Output:
-```
-[
-  1, 2, 3, 4,
-  5, 7, 8, 9
-]
-```
-### 8.Filtering Products by Price
-```
-const products = [
-  { name: "Laptop", price: 1200 },
-  { name: "Phone", price: 800 },
-  { name: "Tablet", price: 300 },
-  { name: "Smartwatch", price: 150 },
-];
-//? Filter products with a price less than or equal to 500
-const filterProducts = products.filter((curElem) => {
-  //   console.log(curElem.price <= 500);
-  return curElem.price <= 500;
-});
-console.log(filterProducts);
-```
-### output:
-```
-[ { name: 'Tablet', price: 300 }, { name: 'Smartwatch', price: 150 } ]
-```
-### 9.Filter unique values
-```
-const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
-let uniqueValues = numbers.filter((curElem, index, arr) => {
-    // console.log(index);
-    console.log(arr.indexOf(curElem));
-//   return arr.indexOf(curElem) === index;
-});
-// console.log(uniqueValues);
-// console.log([...new Set(numbers)]);
-console.log(marks.filter(check));
-```
-```
-console.log(index);
-1
-2
-3
-4
-5
-6
-7
-8
-9
-console.log(arr.indexOf(curElem));
-0
-1
-2
-3
-4
-5
-4 here index 4 is coming as Output because element 6 is available in the 4th index as well as the 6th index. Because the indexof() always returns first index that's why it is updated 6th  index as the 4th index.
-7
-8
-9
-return arr.indexOf(curElem) === index;
-[
-  1, 2, 3, 4, 6,
-  5, 7, 8, 9
-]
-```
-
-![image](https://github.com/user-attachments/assets/a53ce305-e1f1-4c94-a53e-e258230ae00a)
-
 ## concat()
 - **The JavaScript array concat() method combines two or more arrays and returns a new string.**
 ```
