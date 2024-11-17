@@ -917,6 +917,7 @@ console.log(nameArray)
 ```
 ![image](https://github.com/user-attachments/assets/4af5c769-ef60-4d5e-bdd7-b6248d584296)
 # includes()
+![image](https://github.com/user-attachments/assets/3b89d799-bf00-419f-8278-0ee2f82f2790)
 - **The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.**
 - **Syntax:`includes(searchElement, fromIndex)`**
 ### Example
