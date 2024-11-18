@@ -249,54 +249,70 @@ JavaScript
 - **String.prototype.includes must not be a regular expression.Means we unable to use  `includes() with regular expression.`**
 ```
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let includeResult = text.includes(/java/i);
+// let includeResult = text.includes(/java/i); ////doesn't support regex
 // let includeResult = text.includes("J");
 // console.log(includeResult);
 ```
-
-
-
-
-- **replace()**
-  >It replaces a given string with the specified replacement.
+### Output:
 ```
-let text="Hello world"
-let res=text.replace("Hello","JavaScript")
-let res1=text.replace("world","Java")
-console.log(res)
-console.log(res1)
-/////Output:JavaScript world
-/////       Hello Java
+true
 ```
-- **substr()**
-  >substr()==>It is used to fetch the part of the given string on the basis of the specified starting position and length.
-  >substring()==>It is used to fetch the part of the given string on the basis of the specified index.
-   >>substring()==>substr and substring() both the method are same but substring() method first index where we want to cut
-    >>>till the last index.Assume we have a String "Hello world" which consist of 12 charecter.Now we want "world" which starts
-     >>>>from 6th index and it up to the 10th index then we pass substring(6,10)==> which return world but in substr(6,5) because
-       world consist of 5 charecter that's the main difference.
-#### **Both substr and substring() will change the main string**
+# startsWith(): 
+- **The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:**
 ```
-// let text="Hello world"
-// let res=text.substr(0,5)/////Here we want to fetch 5 character from 0th index
-// let res1=text.substr(6,5)/////Here we want to fetch 5 character from 6th index
-// console.log(res)
-// console.log(res1)
-// console.log(res)
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.startsWith("Helcome");
+// let result = text.startsWith("Hello");
+// console.log(result);
 ```
-![image](https://github.com/user-attachments/assets/63b0dd27-a415-4517-bc00-c37121b32fa4)
-
+### Output:
 ```
-let text="Hello world"
-let res=text.substring(0,5)/////Here we want to fetch 5 character from 0th index
-let res1=text.substring(6,11)/////Here we want to fetch 5 character from 6th index
-console.log(res)
-console.log(res1)
-console.log(res)
+false
+true
 ```
-![image](https://github.com/user-attachments/assets/ac141468-21b0-4ba0-acd4-4a7782ce7108)
-- **slice()**
-  >It is used to fetch the part of the given string. It allows us to assign positive as well negative index.
+- **start position for the search can be specified**
+```
+let result = text.startsWith("welcome", 18);
+// let result = text.startsWith("welcome", 17);
+console.log(result);
+```
+### Output:
+```
+true
+false 
+```
+# endsWith(): 
+- **The endsWith() method returns true if a string ends with a specified value. Otherwise it returns false:**
+```
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.endsWith("welcome");
+// let result = text.endsWith("course");
+// console.log(result);
+```
+### Output:
+```
+false
+true
+```
+# slice():
+![image](https://github.com/user-attachments/assets/a81f17c3-5237-4778-bcba-8d2300a9d960)
+- **Extracts a part of a string and returns the extracted part in a new string.**
+- **syntax:`slice(start, end);`**
+- **JavaScript counts positions from zero.**
+- **First position is 0. Second position is 1.**
+### Example
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+let result = text.slice(6);===>6=(n-1)=6-1=5
+let result = text.slice(6, 15);===>6=(n-1)=6-1=5 and ===>15=(n-1)=(15-1)=14
+console.log(result);
+```
+### Output:
+```
+JavaScript, welcome to our world best JavaScript course
+JavaScrip
+```
+### Another Example
 ```
 const str = 'The quick brown fox jumps over the lazy dog.';
 
@@ -312,6 +328,56 @@ console.log(str.slice(-4));
 console.log(str.slice(-9, -5));
 // Expected output: "lazy"
 ````
+# substr()
+![image](https://github.com/user-attachments/assets/a578d897-44ed-4cd6-b0d8-68bcb0d69fb7)
+- **substr()==>It is used to fetch the part of the given string on the basis of the specified starting position and length.**
+- **substring: Extracts a portion of the string based on starting and ending indices.**
+- **substring()==>substr and substring() both the method are same but substring() method first index where we want to cut till the last index.**
+- **String.prototype.substr() it is deprecated  ❌**
+- **Both substr and substring() will change the main string**
+- **substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring().**
+- **syntax:`substring(indexStart, indexEnd)`**
+```
+// let text="Hello world"
+// let res=text.substr(0,5)/////Here we want to fetch 5 character from 0th index
+we have a String "Hello world" which consist of 12 charecter.Now we want "world" which starts.From 6th index and it up to the 10th index then we
+pass substring(6,10)==> which return world but in substr(6,5) because world consist of 5 charecter that's the main difference.
+// let res1=text.substr(6,5)/////Here we want to fetch 5 character from 6th index
+// console.log(res)
+// console.log(res1)
+// console.log(res)
+```
+![image](https://github.com/user-attachments/assets/63b0dd27-a415-4517-bc00-c37121b32fa4)
+```
+let text="Hello world"
+let res=text.substring(0,5)/////Here we want to fetch 5 character from 0th index
+let res1=text.substring(6,11)/////Here we want to fetch 5 character from 6th index
+console.log(res)
+console.log(res1)
+console.log(res)
+```
+![image](https://github.com/user-attachments/assets/ac141468-21b0-4ba0-acd4-4a7782ce7108)
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.substring(0); ====>Hello JavaScript, welcome to our world best JavaScript course
+// let result = text.substring(1); ====>ello JavaScript, welcome to our world best JavaScript course
+let result = text.substring(-5); ====>Hello JavaScript, welcome to our world best JavaScript course
+console.log(result);
+```
+- **replace()**
+  >It replaces a given string with the specified replacement.
+```
+let text="Hello world"
+let res=text.replace("Hello","JavaScript")
+let res1=text.replace("world","Java")
+console.log(res)
+console.log(res1)
+/////Output:JavaScript world
+/////       Hello Java
+```
+
+
+
 - **toLowerCase()**
 - >It converts the given string into lowercase letters.
 ```
