@@ -243,6 +243,19 @@ JavaScript
 6
 44
 ```
+# includes(): 
+- **Returns true if the string contains the specified value, and false otherwise.**
+- **Note: `includes()` is case sensitive. `includes()` is an ES6 feature.**
+- **String.prototype.includes must not be a regular expression.Means we unable to use  `includes() with regular expression.`**
+```
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let includeResult = text.includes(/java/i);
+// let includeResult = text.includes("J");
+// console.log(includeResult);
+```
+
+
+
 
 - **replace()**
   >It replaces a given string with the specified replacement.
