@@ -1,8 +1,10 @@
 # String
--The JavaScript string is an object that represents a sequence of characters
+- **The JavaScript string is an object that represents a sequence of characters**
+- **Strings in JavaScript are a fundamental data type that represents a sequence of characters.**
+- **Strings created with single or double quotes works the same.**
 # String Method()
 - **charAt()**
-  >It provides the char value present at the specified index.
+- **It provides the char value present at the specified index.**
 ```
 ////*******String Method *************/
 ////charAt()==>It provides the char value present at the specified index.
