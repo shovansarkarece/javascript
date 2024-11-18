@@ -327,6 +327,10 @@ console.log(str.slice(-4));
 
 console.log(str.slice(-9, -5));
 // Expected output: "lazy"
+
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.slice(1);
+console.log(result); ====>ello JavaScript, welcome to our world best JavaScript course
 ````
 # substr()
 ![image](https://github.com/user-attachments/assets/a578d897-44ed-4cd6-b0d8-68bcb0d69fb7)
@@ -363,9 +367,12 @@ let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.substring(1); ====>ello JavaScript, welcome to our world best JavaScript course
 let result = text.substring(-5); ====>Hello JavaScript, welcome to our world best JavaScript course
 console.log(result);
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.substring(1);
+console.log(result); ====> ello JavaScript, welcome to our world best JavaScript course
 ```
 - **replace()**
-  >It replaces a given string with the specified replacement.
+- **It replaces a given string with the specified replacement.**
 ```
 let text="Hello world"
 let res=text.replace("Hello","JavaScript")
@@ -375,8 +382,15 @@ console.log(res1)
 /////Output:JavaScript world
 /////       Hello Java
 ```
-
-
+## Interview Question
+- **What is the output for the following code**
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+let result = text.replace("H", ""); ====>ello JavaScript, welcome to our world best JavaScript course
+// let result = text.replace("JavaScript", "Vinod");  ====>Hello Vinod, welcome to our world best JavaScript course
+// let result = text.replaceAll("JavaScript", "Vinod"); ====>Hello Vinod, welcome to our world best Vinod course
+console.log(result);
+```
 
 - **toLowerCase()**
 - >It converts the given string into lowercase letters.
