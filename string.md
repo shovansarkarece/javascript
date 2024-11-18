@@ -2,6 +2,38 @@
 - **The JavaScript string is an object that represents a sequence of characters**
 - **Strings in JavaScript are a fundamental data type that represents a sequence of characters.**
 - **Strings created with single or double quotes works the same.**
+## String Properties:
+- **length: Property that returns the length of the string (number of characters).**
+```
+// const str = "Hello,    World!";
+// console.log(str.length);
+// including space and all
+```
+### Output:
+```
+16 ===>Means in this string there are 16 characters available.
+```
+## Escape Character: 
+- **In JavaScript, the backslash \ is used as an escape character. It allows you to include special characters in a string.**
+```
+// Code	   Result	    Description
+// \'	    '	        Single quote
+// \"	    "	        Double quote
+// \\	    \	        Backslash
+// \n     new line  new line
+// let text = "My name is ' Thapa Technical ' & \\ I am a \"Full Stack \" Developer. ";
+//  let text = 'My name is " Thapa Technical " & I am a Full Stack Developer. ';
+ let text = 'My name is " Thapa Technical " \n & I am a Full Stack Developer. ';
+// console.log(text);
+```
+### Output:
+```
+My name is ' Thapa Technical ' & \ I am a "Full Stack " Developer.
+My name is " Thapa Technical " & I am a Full Stack Developer.
+My name is " Thapa Technical "
+ & I am a Full Stack Developer.
+```
+
 # String Method()
 - **charAt()**
 - **It provides the char value present at the specified index.**
@@ -22,36 +54,196 @@ console.log(res)
 /////Output:Hello world JavaScript Developer 
 ```
 - **indexOf()**
-  >It provides the position of a char value present in the given string.
+![image](https://github.com/user-attachments/assets/2b8630f0-700d-4b19-8ee7-237d9b0c752a)
+- **The indexOf() method is case sensitive.**
+- **The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found.**
+- **syntax:`indexOf(searchString, position)`**
 ```
-let text="Hello world"
-let res=text.indexOf("H")
-let res1=text.indexOf("e")
-let res2=text.indexOf("o")
-let res3=text.indexOf("w")
-let res4=text.indexOf("d")
-console.log(res)
-console.log(res1)
-console.log(res2)
-console.log(res3)
-console.log(res4)
-//////Output: 0
-//////        1
-//////        4
-//////        6
-//////        10
+let text = "Vinod Thapa";
+// console.log(text.indexOf("thapa"));
+console.log(text.indexOf("Thapa"));
 ```
-- **lastIndexOf()**
-  >It provides the position of a char value present in the given string by searching a character from the last position.
+### Output:
+```
+-1
+6
+```
+## from()
+- **The from() method is not directly associated with strings in JavaScript. However, it is a static method of the Array class, used to create arrays from iterable or array-like objects (e.g., strings).**
+- **If you're working with strings, you might use Array.from() to convert a string into an array of its characters.**
+### Example:
+```
+let text = "Vinod Thapa";
+let strArr = Array.from(text);
+console.log(strArr);
+```
+### Output:
+```
+[
+  'V', 'i', 'n', 'o',
+  'd', ' ', 'T', 'h',
+  'a', 'p', 'a'
+]
+```
+### Another Example:
+```
+const str = "hello";
+const arr = Array.from(str);
+console.log(arr); 
+
+```
+### Output:
+```
+['h', 'e', 'l', 'l', 'o']
+```
+# Using Array.from() with a Mapping Function:
+### Example
+```
+const str = "hello";
+const upperCaseArr = Array.from(str, char => char.toUpperCase());
+console.log(upperCaseArr); 
+```
+### Output:
+```
+ ['H', 'E', 'L', 'L', 'O']
+```
+### Another Example
+```
+let text = "Vinod Thapa";
+let strArr = Array.from(text);
+let strMap = strArr.map((curElem, index) => `${curElem} - ${index}`);
+console.log(strMap);
+```
+### Output:
+```
+[
+  'V - 0',  'i - 1',
+  'n - 2',  'o - 3',
+  'd - 4',  '  - 5',
+  'T - 6',  'h - 7',
+  'a - 8',  'p - 9',
+  'a - 10'
+]
+```
+# lastIndexOf()**
+- **It provides the position of a char value present in the given string by searching a character from the last position.**
+- **The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:**
+- **It always works index from left to right means backwards**
+- **syntax:`lastIndexOf(searchString, position)`**
+### Example:
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let index = text.indexOf("JavaScript");
+// let index = text.lastIndexOf("JavaScript");
+let index = text.lastIndexOf("JavaScript", 40);
+console.log(index);
+```
+### Output:
+```
+44 ==>It is searching That string from last not from fast
+6 ==>As per syntax we are searching that string from the 40th index but as we know lastIndexOf() works from left to right, that's why it will return 6th index.Because it works from left to right and 2nd
+JavaScript string is available at the 44th index.
+```
+### Another Example
 ```
 let text="Hello world"
 let res=text.lastIndexOf("l")
 let res1=text.lastIndexOf("o")
 console.log(res)
 console.log(res1)
-//////Output: 9
-//////        7
 ```
+### Output:
+```
+ 9
+ 7
+```
+# search(): 
+- **The search() method searches a string for a string (or a regular expression) and returns the position of the match.**
+- **Returns the index number where the first match is found. Returns -1 if no match is found.**
+- **but as it is working as a case-sensitive that's why we use i flag to ignore case sensitivity**
+- **👉 Important Tips**
+- **The search() method cannot take a second start position argument.**
+- **The indexOf() method cannot take powerful search values (regular expressions).**
+- **They accept the same arguments (parameters), and return the same value.**
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+let result = text.search(/Javascript/i);
+console.log(result);
+```
+### Output:
+```
+6
+```
+# match(): 
+- **Returns an array of the matched values or null if no match is found.**
+- **here the js converts the normal text into regular expression text.match(/JavaScript/); without the g flag**
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+let result = text.match("Javascript");
+ let result = text.match("JavaScript");
+ let result = text.match(/Javascript/gi);
+console.log(result);
+```
+### Output:
+```
+null
+
+[
+  'JavaScript',
+  index: 6,
+  input: 'Hello JavaScript, welcome to our world best JavaScript course',
+  groups: undefined
+]
+
+[ 'JavaScript', 'JavaScript' ]
+```
+# matchAll() : 
+- **Returns an iterator of all matches, providing detailed information about each match. Returns an empty iterator if no match is found.**
+- **here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end.**
+- **Returns an iterator: The method returns an iterator, not an array.We can convert it to an array using the spread operator ([...]) or Array.from().**
+- **Requires g flag: The regular expression should have the g flag for global matches.**
+```
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// // let matchResult = text.matchAll("javascript");
+// let matchResult = text.matchAll("JavaScript");
+// //todo  here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end
+// console.log(matchResult);
+// console.log(...matchResult);
+// for (let item of matchResult) {
+//   console.log(item[0]);
+// }
+
+// for (let index of matchResult) {
+//   console.log(index.index);
+// }
+
+// for (let { index } of matchResult) {
+//   console.log(index);
+// }
+```
+### Output:
+```
+Object [RegExp String Iterator] {}
+////When we use only spread operator then we will get such kind of output
+[
+  'JavaScript',
+  index: 6,
+  input: 'Hello JavaScript, welcome to our world best JavaScript course',
+  groups: undefined
+] [
+  'JavaScript',
+  index: 44,
+  input: 'Hello JavaScript, welcome to our world best JavaScript course',
+  groups: undefined
+]
+
+JavaScript
+JavaScript
+
+6
+44
+```
+
 - **replace()**
   >It replaces a given string with the specified replacement.
 ```
