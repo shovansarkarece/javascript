@@ -98,11 +98,12 @@ console.log(Math.floor(4.7))////==>4
 // const truncValue = Math.trunc(3.7);
 // console.log(truncValue);
 ```
-### No matter how many chars are there after decimal, `trunc()` will always return only number before the decimal.
-### round rounds to the nearest integer.
-### floor always rounds down.
-### ceil always rounds up.
-### isFinite()
+![image](https://github.com/user-attachments/assets/fe834d47-2625-4b9d-b88a-6b5dfc20ef67)
+#### No matter how many chars are there after decimal, `trunc()` will always return only number before the decimal.
+#### round rounds to the nearest integer.
+#### floor always rounds down.
+#### ceil always rounds up.
+#### isFinite()
 - It determines whether the given value is a finite number.
 ```
 console.log(Number.isFinite(10)); // true
