@@ -392,23 +392,23 @@ let result = text.replace("H", ""); ====>ello JavaScript, welcome to our world b
 console.log(result);
 ```
 
-- **toLowerCase()**
-- >It converts the given string into lowercase letters.
+### toLowerCase()
+- **It converts the given string into lowercase letters.**
 ```
 const sentence = 'The quick brown fox jumps over the lazy dog.';
 console.log(sentence.toLowerCase());
 //// Expected output: "the quick brown fox jumps over the lazy dog."
 ```
-- **toUpperCase()**
-  >It converts the given string into the uppercase letter.
+### toUpperCase()
+- **It converts the given string into the uppercase letter.**
 ```
  const sentence = 'The quick brown fox jumps over the lazy dog.';
 
  console.log(sentence.toUpperCase());
 //// Expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
 ```
-- **trim()**
- >It trims the white space from the left and right sides of the string.
+### trim()
+- **It trims the white space from the left and right sides of the string.**
 ```
 const greeting = '   Hello world!   ';
 console.log(greeting);
