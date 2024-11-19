@@ -35,8 +35,15 @@ My name is " Thapa Technical "
 ```
 
 # String Method()
-- **charAt()**
-- **It provides the char value present at the specified index.**
+## Extracting String Characters
+## There are 3 methods for extracting string characters:
+
+- **The charAt(position) Method**
+- **The charCodeAt(position) Method**
+- **The at(position) Method**
+# charAt()
+![image](https://github.com/user-attachments/assets/99ff37a7-c677-4ac1-8a4f-dae2fcd8549c)
+- **It provides the char value present at the specified index. It provides an empty string when there is no specified character available in that specified index.**
 ```
 ////*******String Method *************/
 ////charAt()==>It provides the char value present at the specified index.
