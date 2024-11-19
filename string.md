@@ -51,9 +51,39 @@ let text="Hello world"
 let res=text.charAt("3")
 console.log(res)
 /////Output:l
+////Another Example
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.charAt(6);
+let result = text.charAt(-6);
+console.log(result);
 ```
-- **concat()**
-  >It provides a combination of two or more strings.
+# charCodeAt()
+- **The charCodeAt() method returns the code of the character at a specified index in a string. The method returns a UTF-16 code (an integer between 0 and 65535).**
+- **This is the list where we will get the clear idea about our code against alphabet or any charecter.**
+![screenshot-chatgpt com-2024 11 19-10_10_18](https://github.com/user-attachments/assets/dc501dc5-6add-4eea-b016-532da653cc3d)
+```
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let result = text.charCodeAt(6);
+// console.log(result);
+/////Output:74
+for (let i = 32; i <= 126; i++) {
+    console.log(`${String.fromCharCode(i)}: ${i}`);
+}
+////// Output:This will list all printable ASCII characters from space (32) to tilde (126). 
+//!If you need characters outside this range, you can extend the loop or refer to Unicode charts for non-ASCII characters.
+```
+# at() 
+- **The at() method returns the character at a specified index (position) in a string**
+- **It allows the use of negative indexes while charAt() do not.**
+![image](https://github.com/user-attachments/assets/16fcc97c-9090-4d69-abce-1903f2146769)
+```
+let text = "Hello JavaScript, welcome to our world best JavaScript course";
+let result = text.at(-6);
+console.log(result);
+//////Output:c
+```
+# concat()**
+- **It provides a combination of two or more strings.**
 ```
 let text="Hello world"
 let res=text.concat(" JavaScript Developer ")
