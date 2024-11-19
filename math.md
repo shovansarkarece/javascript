@@ -1,9 +1,19 @@
 # JAVASCRIPT MATH
 ## The JavaScript math object provides several constants and methods to perform mathematical operation. 
+### Constants:
+- **Math.PI: Represents the mathematical constant Pi (π).**
+```
+const piValue = Math.PI;
+console.log(piValue);
+Output:3.141592653589793
+```
+# Basic Operations:
 ### abs()
-- It returns the absolute value of the given number.
+- It returns the absolute value of the given number or in simple, how far the number is from 0. It will be always positive.
 ```
 console.log(Math.abs(-90))///==>90
+console.log(Math.abs(5));///===>5
+console.log(Math.abs(-115));///===>115
 ```
 ### max()
 It returns maximum value of the given numbers.
@@ -24,20 +34,45 @@ It returns random number between 0 (inclusive) and 1 (exclusive).
 console.log((1000+Math.random()*9000))////4789.677353980265
 ```
 ### round()
-It returns closest integer value of the given number.
+- **It returns closest integer value of the given number.**
+** Math.round(x): Rounds a number to the nearest integer.**
 ```
+// const roundedValue = Math.round(3.7);
+// console.log(roundedValue);
 console.log(Math.round(4.7))////==>5
 ```
+
+
+
+
+
+
 ### ceil()
-- It returns a smallest integer value, greater than or equal to the given number.
+- **It returns a smallest integer value, greater than or equal to the given number.**
+- **`Math.ceil(x)`: Returns the value of x rounded up to its nearest integer.**
 ```
+// const ceilValue = Math.ceil(3.7);
+// console.log(ceilValue);
 console.log(Math.ceil(4.7))////==>5
 ```
 ### floor()
-- It returns largest integer value, lower than or equal to the given number.
+- **It returns largest integer value, lower than or equal to the given number.**
+- **`Math.floor(x)`: Returns the value of x rounded down to its nearest integer.**
 ```
 console.log(Math.floor(4.7))////==>4
+// const floorValue = Math.floor(3.7);
+// console.log(floorValue);
 ```
+### Math.trunc(x)
+- `Math.trunc(x)`: Returns the integer part of x:
+```
+// const truncValue = Math.trunc(3.7);
+// console.log(truncValue);
+```
+### No matter how many chars are there after decimal, `trunc()` will always return only number before the decimal.
+### round rounds to the nearest integer.
+### floor always rounds down.
+### ceil always rounds up.
 ### isFinite()
 - It determines whether the given value is a finite number.
 ```
