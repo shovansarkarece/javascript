@@ -72,6 +72,48 @@ for (let i = 32; i <= 126; i++) {
 ////// Output:This will list all printable ASCII characters from space (32) to tilde (126). 
 //!If you need characters outside this range, you can extend the loop or refer to Unicode charts for non-ASCII characters.
 ```
+## Write a JavaScript function that prints the letters 'a' through 'z' in the console. You should use a loop to iterate through the letters and print each one on a new line.
+```
+// console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+console.log(String.fromCharCode(122));
+console.log(String.fromCharCode(120));
+//////Output:
+97
+122
+z
+x
+// for (let char = 97; char <= 122; char++) {
+//   console.log(String.fromCharCode(char));
+// }
+//////Output:
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+```
 # at() 
 - **The at() method returns the character at a specified index (position) in a string**
 - **It allows the use of negative indexes while charAt() do not.**
@@ -408,7 +450,7 @@ let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.substring(1);
 console.log(result); ====> ello JavaScript, welcome to our world best JavaScript course
 ```
-- **replace()**
+# replace()
 - **It replaces a given string with the specified replacement.**
 ```
 let text="Hello world"
@@ -418,6 +460,22 @@ console.log(res)
 console.log(res1)
 /////Output:JavaScript world
 /////       Hello Java
+```
+# Replacing String Content:
+- **replace() : The replace method is used to replace a specified value with another value.**
+```
+// const str = "Hello, World!";
+// const newStr = str.replace("World", "JavaScript");
+// console.log(newStr);
+/////// Outputs: Hello, JavaScript!
+```
+## Case-Insensitive Replacement: 
+- **To perform a case-insensitive replacement, you can use the i flag in the regular expression.**
+```
+// let originalString = "Hello, World! How are you, World?";
+// let replacedString = originalString.replace(/world/gi, "vinod");
+// console.log(replacedString);
+/////// Outputs: Hello, vinod! How are you, vinod?
 ```
 ## Interview Question
 - **What is the output for the following code**
@@ -435,6 +493,9 @@ console.log(result);
 const sentence = 'The quick brown fox jumps over the lazy dog.';
 console.log(sentence.toLowerCase());
 //// Expected output: "the quick brown fox jumps over the lazy dog."
+const str = "JavaScript";
+console.log(str.toLowerCase());
+////// Outputs: javascript
 ```
 ### toUpperCase()
 - **It converts the given string into the uppercase letter.**
@@ -443,13 +504,94 @@ console.log(sentence.toLowerCase());
 
  console.log(sentence.toUpperCase());
 //// Expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+const str = "JavaScript";
+console.log(str.toUpperCase()); // Outputs: JAVASCRIPT
 ```
 ### trim()
 - **It trims the white space from the left and right sides of the string.**
+- **Removes whitespace from both ends of the string.**
 ```
 const greeting = '   Hello world!   ';
 console.log(greeting);
 // Expected output: "   Hello world!   ";
 console.log(greeting.trim());
 // Expected output: "Hello world!";
+// const str = "   Hello, World!   ";
+// console.log(str.length);
+////Output:19
+// let trimStr = str.trim();
+// console.log(trimStr);
+/////Output:Hello, World!
+// console.log(trimStr.length);
+/////Output:13
+```
+### split()
+- **Splits the string into an array of substrings based on a specified delimiter.**
+```
+// const str = "apple,orange,banana";
+// let strArr = str.split(",") /////Output:======>[ 'apple', 'orange', 'banana' ]
+//let strArr = str.split(",").reverse()/////Output:======>[ 'banana', 'orange', 'apple' ]
+// let strArr = str.split(",").reverse().join();/////Output:======> banana,orange,apple
+// console.log(strArr);
+```
+
+# Write a JavaScript function that prints the letters 'a' through 'z' in the console.You should use a loop to iterate through the letters and print each one on a new line.
+```
+// console.log("a".charCodeAt(0));
+// console.log("z".charCodeAt(0));
+// console.log(String.fromCharCode(122));
+// console.log(String.fromCharCode(120));
+
+// for (let char = 97; char <= 122; char++) {
+//     console.log(String.fromCharCode(char));
+// }
+```
+# Write a function to count the number of vowels in a string?
+```
+// const countVowels = (str) => {
+//   const vowels = "aeiou";
+//   let count = 0;
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+
+// console.log(countVowels("Hello a i o u world"));
+```
+# Write a function to check if all the vowels presents in a string or not?
+```
+// const checkAllVowelPresentOrNot = (str) => {
+//   const vowels = "aeiou";
+//   for (let char of vowels) {
+//     if (!str.includes(char)) {
+//       return false;
+//     }
+//   }
+//   return "All vowels present in the given string";
+// };
+
+// console.log(checkAllVowelPresentOrNot("my name u is vinod @  thapa"));
+
+```
+# Write a JavaScript function to check if the given sting is Pangram or not?
+```
+const pangramChecker = (str) => {
+  let inputArr = str.toLowerCase().split("");
+//   console.log(inputArr);
+//   console.log("z".charCodeAt());
+  const values = inputArr.filter(
+    (curElem) =>
+      curElem.charCodeAt() >= "a".charCodeAt() &&
+      curElem.charCodeAt() <= "z".charCodeAt()
+  );
+//   console.log(values);
+
+  return new Set(values).size === 26 && "All letters are available from a to z";
+
+//   return [...new Set(values)].length === 26;
+};
+console.log(pangramChecker("The quick  @ brown fox jumps ove the lazy dog"));
 ```
