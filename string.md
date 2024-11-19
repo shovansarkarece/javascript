@@ -82,7 +82,7 @@ let result = text.at(-6);
 console.log(result);
 //////Output:c
 ```
-# concat()**
+# concat()
 - **It provides a combination of two or more strings.**
 ```
 let text="Hello world"
