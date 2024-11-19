@@ -33,20 +33,49 @@ It returns random number between 0 (inclusive) and 1 (exclusive).
 ```
 console.log((1000+Math.random()*9000))////4789.677353980265
 ```
+### Generate Random number
+- **`Math.random()`: Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)**
+```
+console.log((Math.random() * 100).toFixed(3));
+```
 ### round()
 - **It returns closest integer value of the given number.**
-** Math.round(x): Rounds a number to the nearest integer.**
+- **Math.round(x): Rounds a number to the nearest integer.**
 ```
 // const roundedValue = Math.round(3.7);
 // console.log(roundedValue);
 console.log(Math.round(4.7))////==>5
 ```
-
-
-
-
-
-
+### pow(x, y):
+- **`Math.pow(x, y)`: Returns the value of x to the power of y.**
+```
+console.log(Math.pow(2, 5));
+console.log(2 ** 5);
+//////Output:32
+             32
+```
+### sqrt():
+- **Math.sqrt(): Math.sqrt(x) returns the square root of x**
+```
+// let squareRoot = Math.sqrt(25);
+// console.log(squareRoot);
+```
+### log(x)
+- **`Math.log(x)`: returns the natural logarithm of x.**
+```
+// let logResult = Math.log(1);
+// let logResult = Math.log(2);
+// console.log(logResult);
+//////Output: 0
+              0.6931471805599453
+```
+### log2(x)
+- **Math.log2(x) returns the base 2 logarithm of x.**
+```
+// let logResult = Math.log2(8);
+// console.log(logResult);
+//////Output:3
+```
 ### ceil()
 - **It returns a smallest integer value, greater than or equal to the given number.**
 - **`Math.ceil(x)`: Returns the value of x rounded up to its nearest integer.**
@@ -63,7 +92,7 @@ console.log(Math.floor(4.7))////==>4
 // const floorValue = Math.floor(3.7);
 // console.log(floorValue);
 ```
-### Math.trunc(x)
+### trunc(x)
 - `Math.trunc(x)`: Returns the integer part of x:
 ```
 // const truncValue = Math.trunc(3.7);
@@ -92,20 +121,20 @@ console.log(Number.isInteger(10.5)); // false
 console.log(Number.parseFloat("10.5")); // 10.5
 console.log(Number.parseFloat("10abc")); // 10
 ```
-parseInt()
+## parseInt()
 - It converts the given string into an integer number.
 ```
 console.log(Number.parseInt("10.5")); // 10
 console.log(Number.parseInt("10abc")); // 10
 ```
-toFixed()
+## toFixed()
 - It returns the string that represents a number with exact digits after a decimal point.
 ```
 let num = 10.5678;
 console.log(num.toFixed(2)); // "10.57"
 
 ```
-toString()
+## toString()
 - It returns the given number in the form of string.This method converts a number into its string representation.
 - It can also take a parameter to specify the base (radix) for the conversion (e.g., binary, hexadecimal).
 ```
