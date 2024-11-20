@@ -293,3 +293,15 @@ console.log(date);
 ```
 ### Output:
 ![image](https://github.com/user-attachments/assets/b0224ee8-c6ad-43c1-a8a9-1767c8946b4f)
+## Date.now() 
+- **It is a static method of the Date object.**
+- **Use Date.now() if you want the timestamp right this second.**
+- **It returns the current timestamp (number of milliseconds) representing the current moment.**
+- **Use new Date().getTime() if you have an existing Date object from elsewhere and want its timestamp.**
+```
+// let newDate = new Date();
+// console.log(Date.now());
+// console.log(newDate.getTime());
+```
+### Outpt:
+![image](https://github.com/user-attachments/assets/798818d0-bd79-4413-a1b4-d799759bf7b6)
