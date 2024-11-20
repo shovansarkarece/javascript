@@ -86,6 +86,28 @@ new Date(date string) creates a date object from a date string
 ```
 ### In JavaScript, the first day of the week (day 0) is Sunday.
 - **day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)**
+
+//* JavaScript Get Date Methods / Getting Components:
+//* ===================================================
+
+// You can get various components of a date using the methods of the Date object:
+// const currentDate = new Date();
+// // //? In a date object, the time is static.
+// const year = currentDate.getFullYear();
+// console.log(year)
+// const month = currentDate.getMonth(); // 0-based index
+// console.log(month)
+// const date = currentDate.getDate();
+// console.log(date)
+// const day = currentDate.getDay();
+// console.log(currentDate);
+// console.log(day);
+// In JavaScript, the first day of the week (day 0) is Sunday.
+// day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
+
+
+
+
 ## getDate()
 >It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of local time.
 ```
@@ -183,4 +205,91 @@ console.log(date)
 const day = currentDate.getDay();
 console.log(currentDate);
 console.log(day);
+// const currentTime = new Date();
+// const hours = currentTime.getHours();
+// const minutes = currentTime.getMinutes();
+// const seconds = currentTime.getSeconds();
+// const time = currentTime.getTime();
+// console.log(time);
 ```
+
+# Set Time Methods:
+## `setHours(hourValue[, minuteValue[, secondValue[, millisecondValue]]])`: 
+- **Sets the hours for a specified date according to local time.**
+```
+// const date = new Date();
+// date.setHours(10);
+// console.log(date); // Date object with the hours set to 10
+```
+## `setMinutes(minuteValue[, secondValue[, millisecondValue]])`: 
+- **Sets the minutes for a specified date according to local time.**
+```
+// const date = new Date();
+// date.setMinutes(30);
+// console.log(date); // Date object with the minutes set to 30
+```
+## `setSeconds(secondValue[, millisecondValue])`: 
+- **Sets the seconds for a specified date according to local time.**
+```
+// const date = new Date();
+// date.setSeconds(45);
+// console.log(date); // Date object with the seconds set to 45
+```
+## `setMilliseconds(millisecondValue)`: 
+- **Sets the milliseconds for a specified date according to local time.**
+```
+// const date = new Date();
+// date.setMilliseconds(500);
+// console.log(date); // Date object with the milliseconds set to 500
+```
+## `setTime(timeValue)`: 
+- **Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.**
+```
+const date = new Date();
+date.setTime(1832090690883);
+console.log(date);
+```
+## All Output below here:
+![image](https://github.com/user-attachments/assets/ec91db0b-14e6-4855-a098-9ff6a3befcb2)
+# A few useful methods of the Date object in JavaScript
+## 1.toLocaleString(): 
+- **Returns a string representing the date and time portion of a Date object using the current locale's conventions.**
+```
+// const date = new Date();
+// const localString = date.toLocaleString();
+// console.log(localString);
+// Example output: "2/19/2024, 4:30:00 PM" (depending on the locale)
+```
+### Output:
+![image](https://github.com/user-attachments/assets/f4539d4d-f80c-4c1a-b11b-b09649a77ddd)
+
+## 2.toLocaleDateString(): 
+- **Returns a string representing the date portion of a Date object using the current locale's conventions.**
+```
+// const date = new Date();
+// const localDateString = date.toLocaleDateString();
+// console.log(localDateString);
+// Example output: "2/19/2024" (depending on the locale)
+```
+### Output:
+![image](https://github.com/user-attachments/assets/b5bf7261-7a99-4d82-940c-e74f79d979aa)
+
+## 3.toLocaleTimeString(): 
+- **Returns a string representing the time portion of a Date object using the current locale's conventions.**
+```
+// const date = new Date();
+// const localTimeString = date.toLocaleTimeString();
+// console.log(localTimeString);
+// Example output: "4:30:00 PM" (depending on the locale)
+```
+### Output:
+![image](https://github.com/user-attachments/assets/d4575b87-e935-424d-9db6-bb4707febe44)
+## 5.parse(): 
+- **Parses a string representation of a date and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.**
+```
+// const dateString = "2024-02-19T16:30:00Z";
+// const parsedDate = Date.parse(dateString);
+// console.log(parsedDate); // Example output: 1703254200000 (milliseconds)
+```
+### Output:
+![image](https://github.com/user-attachments/assets/b0224ee8-c6ad-43c1-a8a9-1767c8946b4f)
