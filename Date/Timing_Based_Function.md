@@ -3,6 +3,7 @@
 ## 1.setTimeout:
 - **The setTimeout function is used to execute a function or code block after a specified delay in milliseconds.**
 - **syntax:`setTimeout(delayedFunction, 2000)`**
+
 ![image](https://github.com/user-attachments/assets/cef19315-cec8-4d3f-bd51-88461cacd7f2)
 
 ```
