@@ -84,6 +84,8 @@ new Date(date string) creates a date object from a date string
 // console.log(date1);//////Output:=====>2024-01-05T00:00:00.000Z
 // console.log(date2);//////Output:=====>2024-01-04T23:00:00.000Z
 ```
+### In JavaScript, the first day of the week (day 0) is Sunday.
+- **day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)**
 ## getDate()
 >It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of local time.
 ```
@@ -167,4 +169,18 @@ console.log(date.getUTCMinutes())
 ```
 let date=new Date()
 console.log(date.getUTCMonth())
+```
+### Combined example of get() method
+```
+const currentDate = new Date();
+//// In a date object, the time is static.
+const year = currentDate.getFullYear();
+console.log(year)
+const month = currentDate.getMonth(); // 0-based index
+console.log(month)
+const date = currentDate.getDate();
+console.log(date)
+const day = currentDate.getDay();
+console.log(currentDate);
+console.log(day);
 ```
