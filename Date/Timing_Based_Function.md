@@ -19,6 +19,7 @@ setTimeout(() => delayedFunction(5), 2000);
 ## 2. setInterval:
 - **The setInterval function is used to repeatedly execute a function or code block at a specified interval in milliseconds.**
 - **Syntax:`setInterval(repeatedFunction, 1000)`**
+
 ![image](https://github.com/user-attachments/assets/debc246f-cc56-4ed9-880a-a034ec56659d)
 
 - **Example- mind game of counting seconds on mind and after every 5secs we need to draw a straight line on paper and it will continue till I told you to stop.**
