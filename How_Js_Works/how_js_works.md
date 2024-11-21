@@ -56,8 +56,8 @@
 - **For variable, It reserves space for them in memory and sets an initial value of undefined, and for functions it also reserves space but sets an initial value as a reference to the actual function in memory.**
 - **That's why we can call a function, but if we try to access a variable, we will get undefined.**
 
-//? Setting up the scope chain, which initially contains only the global scope.
+# Setting up the scope chain, which initially contains only the global scope.
 
-//! Execution Phase:
-//? After the creation phase, the actual code execution takes place. This is when the JavaScript engine goes through the code line by line.
-//? Variables are assigned their values, functions are executed, and the program's logic is carried out.
+## Execution Phase:
+- **After the creation phase, the actual code execution takes place. This is when the JavaScript engine goes through the code line by line.**
+- **Variables are assigned their values, functions are executed, and the program's logic is carried out.**
