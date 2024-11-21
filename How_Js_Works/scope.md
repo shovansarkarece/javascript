@@ -9,11 +9,11 @@
 - **Key Concept: The scope of a variable is determined by its position in the source code, specifically where it is declared.**
 - **Lexical scoping in JavaScript is like a set of rules that determines where a variable can be used in your code.**
 - **It follows the physical structure of your code, so if a variable is declared inside a function or block, it can usually be used only within that function or block.**
-
+```
 //  var a = 5;
 //  var b = 10;
 //  what will be the value of a?
-
+```
 # Scope Chaining:
 - **Scope chaining is the process by which JavaScript, when looking for the value of a variable, checks the current scope
 and then looks in the outer (enclosing) scopes until it finds the variable or reaches the global scope.**
