@@ -37,6 +37,12 @@
 - **In order to manage the execution contexts, the JavaScript engine uses a call stack.**
 - **The call stack is a data structure that keeps track of the currently executing functions in a program.**
 - **It operates on the Last In, First Out (LIFO) principle, meaning that the last function added to the stack is the first one to be executed and completed.**
+>![image](https://github.com/user-attachments/assets/3739b9df-3644-4091-bff5-3ccedb2fcdf1)
+>>![image](https://github.com/user-attachments/assets/569951f2-dd8e-4efb-a9b7-7e4d40d471a1)
+>>>![image](https://github.com/user-attachments/assets/524db53f-2b00-49d1-85b9-864ee263ae1f)
+>>>>![image](https://github.com/user-attachments/assets/ad8118f1-0bf0-488a-869c-e88065e7c566)
+>>>>>![image](https://github.com/user-attachments/assets/ecf3d79b-feb2-4036-9db9-3bfa071718a7)
+
 ### Heap Memory:
 - **The heap memory is where dynamically allocated memory resides.**
 - **This is where objects, closures, and other dynamically allocated data are stored.**
