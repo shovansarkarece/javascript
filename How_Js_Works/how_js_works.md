@@ -66,3 +66,46 @@
 ## Execution Phase:
 - **After the creation phase, the actual code execution takes place. This is when the JavaScript engine goes through the code line by line.**
 - **Variables are assigned their values, functions are executed, and the program's logic is carried out.**
+# Synchronous and Asynchronous in JS
+- **Synchronous code executes line by line, blocking further execution until each line is completed, while asynchronous code allows other code to continue executing while it waits for an asynchronous operation to complete.**
+#### Synchronous Code
+```
+// const fun2 = () => {
+//   console.log("fun2 starts and ends");
+// };
+
+// const fun1 = () => {
+//   console.log("fun1 is start");
+//   fun2();
+//   console.log("fun1 ends");
+// };
+
+// fun1();
+```
+### Output:
+```
+fun1 is start
+fun2 starts and ends
+fun1 ends
+```
+#### Asynchronous Code
+```
+const fun2 = () => {
+  setTimeout(() => {
+    console.log("fun2 starts and ends");
+  }, 2000);
+};
+
+const fun1 = () => {
+  console.log("fun1 is start");
+  fun2();
+  console.log("fun1 ends");
+};
+fun1();
+```
+### Output:
+```
+fun1 is start
+fun1 ends
+fun2 starts and ends
+```
