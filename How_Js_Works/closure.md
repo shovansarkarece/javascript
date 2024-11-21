@@ -1,4 +1,6 @@
 # Closure:
+![image](https://github.com/user-attachments/assets/51061f00-746f-40ae-97a5-d80b75bdcbb9)
+
 - **A closure is created when an inner function has access to the variables of its outer function, even after the outer function has finished executing.**
 - **when we are calling the closureFunction() it is actually going to call the innerFunction() but in our executionContext the outerFunction is already popped out.** 
 - **Still we can access the outerVariable value and how we are able to access it, is what closure all about ?**
