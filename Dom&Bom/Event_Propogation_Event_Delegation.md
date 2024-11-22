@@ -118,7 +118,9 @@
 </html>
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/e105ebfc-766a-46ee-a616-5dfa7aa72131)
+
+![image](https://github.com/user-attachments/assets/a784a264-3ceb-4aae-8eee-1c52a1b61f0b)
+
 
 # `event.stopPropagation()`:
 - **The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.**
