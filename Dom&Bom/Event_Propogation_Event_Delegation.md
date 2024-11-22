@@ -117,7 +117,8 @@
 
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/4c1a061c-22aa-40e2-88ef-cda149d955d0)
+![image](https://github.com/user-attachments/assets/e13fc207-ec7f-4ef8-b61f-de316ae4cc99)
+
 
 ## Target Phase:
 - **The event reaches the target element.**
