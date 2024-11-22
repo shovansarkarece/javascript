@@ -14,9 +14,6 @@
 ## Bubbling Phase:
 - **The event starts from the target element and bubbles up to the root of the DOM.**
 - **Handlers registered for the bubbling phase are executed.**
-
-# `event.stopPropagation()`:
-- **The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.**
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -111,25 +108,20 @@
             CurrentTarget: event.currentTarget,
           },
         ]);
-        event.stopPropagation();
       };
-
       //   By default is the bubbling phase
       document.getElementById("outer").addEventListener("click", callOuter);
       document.getElementById("middle").addEventListener("click", callMiddle);
       document.getElementById("inner").addEventListener("click", callInner);
-
-      // To achieve event capturing, you can use the third parameter of the addEventListener method, which specifies whether the event should be captured during the capturing phase. Setting it to true will activate the capturing phase.
-      // document
-      //   .getElementById("outer")
-      //   .addEventListener("click", callOuter);
-      // document
-      //   .getElementById("inner")
-      //   .addEventListener("click", callInner);
-      // document
-      //   .getElementById("middle")
-      //   .addEventListener("click", callMiddle);
     </script>
   </body>
 </html>
+```
+### Output:
+![image](https://github.com/user-attachments/assets/e105ebfc-766a-46ee-a616-5dfa7aa72131)
+
+# `event.stopPropagation()`:
+- **The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.**
+```
+
 ```
