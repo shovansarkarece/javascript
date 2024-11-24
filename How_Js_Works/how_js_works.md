@@ -28,7 +28,7 @@
 - **Once the code is compiled, the JavaScript engine executes it.**
 - **During execution, the engine creates execution contexts, manages the scope chain, handles variable assignments, and calls functions.**
 # Global Execution Context
-- **It is the default context created by the JavaScript engine before any code is executed.**
+- **It is the default context created by the JavaScript engine before any code is executed.The outermost execution context, created when a script is run, that is called global execution context**
 - **In a browser environment, the global execution context is associated with the window object.
 In Node.js, it is associated with the global object.**
 ![image](https://github.com/user-attachments/assets/6a22a090-bd4c-4d24-9463-ec42eabb5ffb)
