@@ -42,6 +42,7 @@ In Node.js, it is associated with the global object.**
 ![image](https://github.com/user-attachments/assets/b9a4aa3c-1242-4b5a-8d99-35ef262e573c)
 ### Another Example
 ![image](https://github.com/user-attachments/assets/9d5d462f-68be-46c7-8d2a-8ece52a2c900)
+![image](https://github.com/user-attachments/assets/fa3d807d-dc89-40b3-84a3-76665281ad50)
 
 
 ## More on inside execution phase
