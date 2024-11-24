@@ -38,6 +38,8 @@ In Node.js, it is associated with the global object.**
 - **the creation phase (where variables and functions are hoisted) and the execution phase (where the code is actually run).**
 - **The JavaScript engine uses a call stack to keep track of the execution context.**
 - **When a function is called, a new frame is added to the stack, and when the function completes, its frame is removed (LIFO - Last In, First Out).**
+### Example
+![image](https://github.com/user-attachments/assets/1c843b45-e451-4c55-a139-c95a1bed6fec)
 
 ## More on inside execution phase
 ### Call Stack
