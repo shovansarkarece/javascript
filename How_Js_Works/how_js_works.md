@@ -35,8 +35,13 @@ In Node.js, it is associated with the global object.**
 
 
 ### The execution context consists of two phases: 
+### Creation Phase:
 - **the creation phase (where variables and functions are hoisted) and the execution phase (where the code is actually run).**
 - **The JavaScript engine uses a call stack to keep track of the execution context.**
+- **The JavaScript engine sets up the global object and the this reference.**
+- **It allocates memory for functions and variables.**
+- **Hoisting occurs during this phase:**
+- **Variable declarations are hoisted with an initial value of `undefined`.Function declarations are hoisted with their full definitions.**
 - **When a function is called, a new frame is added to the stack, and when the function completes, its frame is removed (LIFO - Last In, First Out).**
 ### Example
 ![image](https://github.com/user-attachments/assets/b9a4aa3c-1242-4b5a-8d99-35ef262e573c)
@@ -46,13 +51,14 @@ In Node.js, it is associated with the global object.**
 ![image](https://github.com/user-attachments/assets/410191bf-804b-49b0-84b4-b8363927dcdc)
 ![image](https://github.com/user-attachments/assets/458d3ead-7604-4875-8b05-3ae7854b5c3d)
 
-
-
 ## More on inside execution phase
 ### Call Stack
 - **In order to manage the execution contexts, the JavaScript engine uses a call stack.**
 - **The call stack is a data structure that keeps track of the currently executing functions in a program.**
 - **It operates on the Last In, First Out (LIFO) principle, meaning that the last function added to the stack is the first one to be executed and completed.**
+- **The execution context stack, also called the call stack, manages the execution contexts in a Last In, First Out (LIFO) manner.**
+- **Global Context:Pushed onto the stack first.Remains at the bottom until the program ends.**
+- **Function Contexts:Created when a function is invoked.Pushed onto the stack.Removed after execution.**
 
 ![image](https://github.com/user-attachments/assets/3739b9df-3644-4091-bff5-3ccedb2fcdf1) ![image](https://github.com/user-attachments/assets/569951f2-dd8e-4efb-a9b7-7e4d40d471a1)
 ![image](https://github.com/user-attachments/assets/524db53f-2b00-49d1-85b9-864ee263ae1f) ![image](https://github.com/user-attachments/assets/ad8118f1-0bf0-488a-869c-e88065e7c566)
