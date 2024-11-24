@@ -40,7 +40,8 @@ In Node.js, it is associated with the global object.**
 - **When a function is called, a new frame is added to the stack, and when the function completes, its frame is removed (LIFO - Last In, First Out).**
 ### Example
 ![image](https://github.com/user-attachments/assets/b9a4aa3c-1242-4b5a-8d99-35ef262e573c)
-
+### Another Example
+![image](https://github.com/user-attachments/assets/9d5d462f-68be-46c7-8d2a-8ece52a2c900)
 
 
 ## More on inside execution phase
