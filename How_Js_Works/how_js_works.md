@@ -31,6 +31,8 @@
 - **It is the default context created by the JavaScript engine before any code is executed.**
 - **In a browser environment, the global execution context is associated with the window object.
 In Node.js, it is associated with the global object.**
+![image](https://github.com/user-attachments/assets/c3a21bfc-3db9-4023-972c-e79db3fffd69)
+
 ### The execution context consists of two phases: 
 - **the creation phase (where variables and functions are hoisted) and the execution phase (where the code is actually run).**
 - **The JavaScript engine uses a call stack to keep track of the execution context.**
