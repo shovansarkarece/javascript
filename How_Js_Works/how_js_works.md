@@ -61,7 +61,7 @@ In Node.js, it is associated with the global object.**
 - **Function Contexts:Created when a function is invoked.Pushed onto the stack.Removed after execution.**
 
 ![image](https://github.com/user-attachments/assets/4732f553-92dc-4e3b-9640-7d4099f214e3)
-
+### Basically stack will remove the element using LIFO(Last in first out) method.
 ![image](https://github.com/user-attachments/assets/3739b9df-3644-4091-bff5-3ccedb2fcdf1) ![image](https://github.com/user-attachments/assets/569951f2-dd8e-4efb-a9b7-7e4d40d471a1)
 ![image](https://github.com/user-attachments/assets/524db53f-2b00-49d1-85b9-864ee263ae1f) ![image](https://github.com/user-attachments/assets/ad8118f1-0bf0-488a-869c-e88065e7c566)
 ![image](https://github.com/user-attachments/assets/ecf3d79b-feb2-4036-9db9-3bfa071718a7)
