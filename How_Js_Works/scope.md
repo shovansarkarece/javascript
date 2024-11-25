@@ -50,6 +50,10 @@ and then looks in the outer (enclosing) scopes until it finds the variable or re
 # Block Scope:
 - **Variables: Variables declared with let and const inside a block (e.g., an if statement or a for loop) have block scope.**
 - **Access: Block-scoped variables are only accessible within the block where they are declared.**
+
+![image](https://github.com/user-attachments/assets/461b020f-8c19-4415-b2d9-60e5f1a936da)
+
+
 # Interview Question
 ```
 const globalVariable = "I'm a global variable";
