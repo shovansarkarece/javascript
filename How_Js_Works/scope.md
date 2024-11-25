@@ -5,14 +5,75 @@
 ## In JavaScript We have a Global Scope, Function Scope and Block Scope
 
 # Lexical Scoping:
-- **Lexical scoping is a way of managing variable access in JavaScript based on the physical structure of the code.**
-- **Key Concept: The scope of a variable is determined by its position in the source code, specifically where it is declared.**
+- **Lexical scope (or static scope) determines variable accessibility based on where functions are defined in the source code, not where they are called. Inner functions can access variables in their outer (parent) scopes.**
+- **Key Property: Functions remember the scope in which they were created, even if called outside that scope.**
 - **Lexical scoping in JavaScript is like a set of rules that determines where a variable can be used in your code.**
 - **It follows the physical structure of your code, so if a variable is declared inside a function or block, it can usually be used only within that function or block.**
+- **Lexical scope is the foundation of closures, where a function "closes over" variables in its parent scope, preserving them even after the parent function has executed.**
+- **Lexical Scope is the foundation for closures, allowing inner functions to "remember" variables from their parent scopes.**
+#### Example:
 ```
-//  var a = 5;
-//  var b = 10;
-//  what will be the value of a?
+function outerFunction() {
+  let outerVar = "I'm from the outer scope";
+
+  function innerFunction() {
+    console.log(outerVar); // Accessible due to lexical scope
+  }
+
+  return innerFunction;
+}
+
+const myInnerFunction = outerFunction();
+myInnerFunction(); // "I'm from the outer scope"
+
+```
+### Another Example
+```
+const username = 'Anurag'
+let userAge = 25
+var a = 50
+
+// function add() {
+//   const username = 'Akash'
+//   const x = 5
+//   const y = 8
+//   console.log(x + y)
+//   console.log(username)
+// }
+
+function subtract() {
+  const x = 15
+  const y = 18
+  const z = 28
+  // console.log(x - y)
+  // console.log(username)
+
+  function child() {
+  // debugger
+
+    const childName = 'Golu'
+    // console.log(childName);
+    // console.log(x,z);
+
+    if(true){
+      let num1 = 78
+      var num2 = 987
+      console.log(num1);
+      console.log(num2);
+    }
+    console.log(num2);
+
+    function grandChild() {
+      const grandChildName = 'Molu'
+      // console.log(grandChildName);
+    }
+    grandChild()
+  }
+
+
+  child()
+
+}
 ```
 # Scope Chaining:
 - **Scope chaining is the process by which JavaScript, when looking for the value of a variable, checks the current scope
@@ -50,9 +111,34 @@ and then looks in the outer (enclosing) scopes until it finds the variable or re
 # Block Scope:
 - **Variables: Variables declared with let and const inside a block (e.g., an if statement or a for loop) have block scope.**
 - **Access: Block-scoped variables are only accessible within the block where they are declared.**
+- **let and const are block scope**
+```
+const username = 'Anurag'
+let userAge = 25
+var a = 50
+function add() {
+  const username = 'Akash'
+  const x = 5
+  const y = 8
+  console.log(x + y)
+  console.log(username)
+}
+function subtract() {
+  const x = 15
+  const y = 18
+  console.log(x - y)
+  console.log(username)
+}
+add()
+subtract()
+console.log('Program Ended')
+```
+#### Graphical representation of above code
 
 ![image](https://github.com/user-attachments/assets/461b020f-8c19-4415-b2d9-60e5f1a936da)
 
+### Summary table of global scope, block scope,lexical scope and local scope
+![image](https://github.com/user-attachments/assets/c218c22a-696b-4715-ade6-05e65b650ef3)
 
 # Interview Question
 ```
