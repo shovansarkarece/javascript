@@ -59,6 +59,9 @@ In Node.js, it is associated with the global object.**
 - **The execution context stack, also called the call stack, manages the execution contexts in a Last In, First Out (LIFO) manner.**
 - **Global Context:Pushed onto the stack first.Remains at the bottom until the program ends.**
 - **Function Contexts:Created when a function is invoked.Pushed onto the stack.Removed after execution.**
+
+![image](https://github.com/user-attachments/assets/4732f553-92dc-4e3b-9640-7d4099f214e3)
+
 ![image](https://github.com/user-attachments/assets/6b0d4bd1-dbde-435c-93d1-0e8c1c68476c)
 
 ![image](https://github.com/user-attachments/assets/3739b9df-3644-4091-bff5-3ccedb2fcdf1) ![image](https://github.com/user-attachments/assets/569951f2-dd8e-4efb-a9b7-7e4d40d471a1)
