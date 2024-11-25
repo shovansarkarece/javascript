@@ -289,7 +289,40 @@ SJ emocleW
 // };
 // console.log(sum(10, 20));
 ```
-# Callback Function
+# Higher-order functions and callback function
+- **Higher-order functions and callback functions are closely related but are not the same thing. Here's a detailed explanation of both and how they interact:**
+## 1. Higher-Order Functions
+- **A higher-order function is a function that does one or both of the following:**
+- **Takes another function as an argument (a callback function).Returns a function as its output.**
+- **Higher-order functions provide flexibility in programming by allowing functions to operate on other functions.**
+
+### Example:
+```
+function higherOrderFunction(callback) {
+  callback(); // Calls the callback function
+}
+function sayHello() {
+  console.log("Hello!");
+}
+higherOrderFunction(sayHello); // Passes `sayHello` as a callback
+```
+#### Key Characteristics:
+- **Can take functions as arguments.Can return functions as values.**
+- **Examples in JavaScript: `map()`, `filter()`, `reduce()`, `setTimeout()`.**
+## 2. Callback Functions
+- **A callback function is a function that is passed as an argument to another function and is intended to be executed at a later time (either synchronously or asynchronously).**
+#### Example:
+```
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+function processUserInput(callback) {
+  const userName = "Alice";
+  callback(userName); // Executes the callback function with a value
+}
+processUserInput(greet); // Passes `greet` as the callback
+```
+
 ![image](https://github.com/user-attachments/assets/78730f12-6e58-4782-9d12-24ceb2606a22)
 ### Example-1
 ![image](https://github.com/user-attachments/assets/52e0cf26-8e03-4041-a3c5-67269e58787e)
@@ -318,6 +351,16 @@ test('suman',print,print2)
 // printing press
 // printing press 2
 ```
+#### Key Characteristics:
+- **Passed as an argument to another function.**
+- **Executed inside the higher-order function, either synchronously or asynchronously.**
+- **Common in asynchronous programming: `setTimeout()`, API calls, event listeners.**
+- **Are They the Same?No, they are not the same, but they are related:**
+- **A higher-order function is the function that accepts another function (a callback) as an argument or returns a function.**
+- **A callback function is the function that is passed to a higher-order function to be executed later.**
+### Analogy:
+- **Think of a higher-order function as a boss delegating tasks and a callback function as the worker performing those tasks.**
+
 # Scope in Function
 ### Function Global Scope
 ![image](https://github.com/user-attachments/assets/87f7d6b0-20e3-4cfd-a626-689e913ca16e)
