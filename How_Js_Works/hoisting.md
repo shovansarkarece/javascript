@@ -4,6 +4,7 @@
 - **When a function declaration is hoisted, its entire definition (including the body) is moved to the top of its containing scope during the creation phase.**
 - **This means that you can call the function before it's actually declared in the code, and it will still work as expected.**
 - **Very very Important:Hoisting is not working for let and const only when we use var then only it works**
+```
 var myVar;
 console.log(myVar);
 greet();
@@ -12,5 +13,5 @@ var myVar = 10;
 const greet = () => {
   console.log("Welcome, If you are reading this, Don't forget you are awesome");
 };
-
+```
 
