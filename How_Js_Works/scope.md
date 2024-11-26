@@ -86,6 +86,14 @@ and then looks in the outer (enclosing) scopes until it finds the variable or re
 # Global Variable vs. Local Variable:
 ## Global Variable: 
 - **A variable declared in the global scope is referred to as a global variable. It has global visibility and can be accessed from anywhere in the code.**
+```
+const username = 'Anurag'
+let userAge = 25
+var a = 50
+console.log(a)
+console.log(userAge)
+console.log(username)
+```
 ## Local Variable: 
 - **A variable declared within a function (function scope) or a block (block scope) is often referred to as a local variable. It has local visibility, limited to the function or block where it's declared.**
 ```
