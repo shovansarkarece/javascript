@@ -27,6 +27,12 @@ function greet(name) {
 }
 setTimeout(greet, 3000, "Alice");
 This will print "Hello, Alice!" to the console after 3 seconds.
+//////Example-4
+setTimeout(function(){
+console.log("Hi-1")
+},0)
+console.log("Hi-2")
+///Here Hi-2 will print first then Hi-1 will print because setTimeout() is an asynchronous function that's why it will be printed first then Hi-1 will print last.
 ```
 ### Output:
 ![image](https://github.com/user-attachments/assets/a8077eb4-3de1-4ab5-85fe-2f562129ad05)
