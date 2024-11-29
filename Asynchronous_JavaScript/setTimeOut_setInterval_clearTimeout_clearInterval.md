@@ -70,6 +70,8 @@ const timeoutId = setTimeout(() => {
 clearTimeout(timeoutId);
 /////In this example, the clearTimeout(timeoutId) prevents the scheduled function from executing.
 ```
+![image](https://github.com/user-attachments/assets/ab51c9a6-476f-4948-af30-2950b88c3b8e)
+
 ## 4.Clearing Interval with clearInterval:
 - **If you want to cancel a scheduled interval before it occurs, you can use the clearInterval function.**
 - **The global clearInterval() method cancels a timeout previously established by calling setInterval().**
