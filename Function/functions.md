@@ -368,3 +368,36 @@ test('suman',print,print2)
 ![image](https://github.com/user-attachments/assets/ca1dea07-2367-4017-9c1d-d5902c7ca882)
 ### Block Scope with let and const
 ![image](https://github.com/user-attachments/assets/4bd150f6-f8f6-400a-bd4b-0fd17247ca57)
+# Difference between Method and Functions 
+- **In JavaScript, functions and methods are related but distinct concepts. Here's a breakdown to clarify the difference:**
+## Function
+- **A function is a standalone block of code designed to perform a specific task.**
+- **It is not tied to any object and can be invoked directly.**
+- **Functions are declared using the function keyword, arrow functions (=>), or as anonymous functions.**
+### Example:
+```
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+// Invoking a function
+console.log(greet("Alice")); // Outputs: Hello, Alice!
+```
+### Method
+- **A method is a function that is a property of an object.**
+- **It is invoked on the object it belongs to, and typically operates on that object’s data.**
+- **Methods are defined as functions inside an object or class.**
+### Example:
+```
+const person = {
+    name: "Alice",
+    greet() {
+        return `Hello, ${this.name}!`;
+    }
+};
+
+// Invoking a method
+console.log(person.greet()); // Outputs: Hello, Alice!
+```
+### Differences:
+
+![image](https://github.com/user-attachments/assets/5b85ea8e-b02d-414b-b519-98192c091461)
