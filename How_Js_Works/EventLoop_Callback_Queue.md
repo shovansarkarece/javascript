@@ -52,10 +52,18 @@ Timeout
 - **Task Queue: Executes callbacks from Web APIs (e.g., setTimeout).**
 - **The Event Loop ensures that tasks and microtasks are executed in the correct order, maintaining JavaScript’s non-blocking nature.**
 ## Another Example
-
+```
+console.log('Start script...');
+setTimeout(() => {
+    task('Download a file.');
+}, 1000);
+console.log('Done!');
+```
+- **In our example, when calling the setTimeout() function, the JavaScript engine places it on the call stack, and the Web API creates a timer that expires in 1 second.**
 ![image](https://github.com/user-attachments/assets/09426d6c-4f4d-49c3-ab7f-6e55bca82d68)
 
 ![image](https://github.com/user-attachments/assets/0872bf1a-9473-4a5d-a5a9-ed425884a809)
+
 - **The event loop is a constantly running process that monitors both the callback queue and the call stack.**
 - **If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:**
 
