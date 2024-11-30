@@ -403,6 +403,10 @@ for (initialization; condition; iteration) {
 ```
 # Advanced Loops
 ## for_in loop
+- **Use for...in when you need to iterate over the keys or indices (e.g., object properties or array indices).**
+- **Purpose:The for...in loop is used to iterate over the keys or properties of an object (or the indices of an array).**
+- **Works With: Objects, arrays, and other enumerable properties.**
+- **What It Accesses: It iterates over the keys (or property names) in an object or the indices (or array indices) in an array.**
 ![image](https://github.com/user-attachments/assets/8eb2c06d-8cc3-45e0-bd7f-f2a1ddd10fdb)
 ### Example
 ```
@@ -433,7 +437,32 @@ camera: 20 MP
 ram: 2 GB
 rom: 16 GB
 ```
+### Another Example
+```
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 50,
+    eyeColor: 'blue',
+    city: 'Bangalore',
+}
+// for(const key in person) {
+//     console.log(key, ': ' ,person[key]);
+// }
+const personKeys = Object.keys(person)
+const personValues = Object.values(person)
+const personEntries = Object.entries(person)
+// for (const key of personKeys) {
+//     console.log(person[key]);
+// }
+```
+
 ## for_of  loop
+- **It simplifies iterating over iterable objects such as arrays, strings, and sets.**
+- **Purpose: The for...of loop is used to iterate over the values of an iterable (like an array, string, or other iterable objects).**
+- **Works With: Arrays, strings, maps, sets, and other iterable objects.**
+- **What It Accesses: It iterates directly over the values of the iterable, not the keys or indices.**
+- **Use for...of when you need to iterate over the values in an iterable (e.g., array elements, string characters).**
 ![image](https://github.com/user-attachments/assets/b233c5fd-eb4f-450a-8fdc-70c809dc67e1)
 ### Example
 ```
@@ -502,4 +531,26 @@ The given array is 10,20,30
 The given array is 10,20,30
      The arrays's index is 2
      The arrays's value is 30
+```
+### Example-3
+```
+const fruits = ['banana', 'apple', 'peach', 'mango', 'grapes']
+
+// for(const fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// fruits.forEach(function(fruit) {
+//     console.log(fruit);
+// })
+
+// fruits.forEach((fruit) => {
+//     console.log(fruit);
+// })
+
+// function abc(el) {
+//     console.log(el);
+// }
+
+// fruits.forEach(abc)
 ```
