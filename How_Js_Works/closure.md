@@ -35,3 +35,18 @@ const double = multiplier(2);
 console.log(double(5));
 ```
 ### Returning function with closure
+```
+function outer() {
+  const a = 4
+  function parent() {
+    const b = 6
+    return function() {
+      console.log(a + b)
+    }
+  }
+  return parent()
+}
+const add1 = outer()
+console.dir(add1)
+```
+![image](https://github.com/user-attachments/assets/eec221ac-e36d-427f-a928-4035252132ad)
