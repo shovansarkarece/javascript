@@ -288,6 +288,23 @@ SJ emocleW
 //   return a + b;
 // };
 // console.log(sum(10, 20));
+//////// Example-4
+// // Arrow Function Expression
+
+// const square = (num) => {
+//     return num * num
+// }
+//////// Example-5
+const square = num => num * num
+const add = (a, b) => a + b
+//////// Example-6
+const random = () => (
+    Math.floor(Math.random() * 10) + 1
+)
+//////// Example-6
+// setTimeout(() => {
+//     console.log('hiii');
+// }, 2000)
 ```
 # Higher-order functions and callback function
 - **Higher-order functions and callback functions are closely related but are not the same thing. Here's a detailed explanation of both and how they interact:**
