@@ -60,6 +60,7 @@ setTimeout(() => {
 console.log('Done!');
 ```
 - **In our example, when calling the setTimeout() function, the JavaScript engine places it on the call stack, and the Web API creates a timer that expires in 1 second.**
+
 ![image](https://github.com/user-attachments/assets/09426d6c-4f4d-49c3-ab7f-6e55bca82d68)
 
 ![image](https://github.com/user-attachments/assets/0872bf1a-9473-4a5d-a5a9-ed425884a809)
