@@ -51,3 +51,12 @@ Timeout
 - **Microtask Queue: Executes promises and other microtasks before tasks in the task queue.**
 - **Task Queue: Executes callbacks from Web APIs (e.g., setTimeout).**
 - **The Event Loop ensures that tasks and microtasks are executed in the correct order, maintaining JavaScript’s non-blocking nature.**
+## Another Example
+
+![image](https://github.com/user-attachments/assets/09426d6c-4f4d-49c3-ab7f-6e55bca82d68)
+
+![image](https://github.com/user-attachments/assets/0872bf1a-9473-4a5d-a5a9-ed425884a809)
+- **The event loop is a constantly running process that monitors both the callback queue and the call stack.**
+- **If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:**
+
+![image](https://github.com/user-attachments/assets/c0ce38cd-9bc6-4af2-ab4e-24115abca9da)
