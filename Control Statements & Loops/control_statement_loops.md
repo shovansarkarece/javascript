@@ -453,6 +453,19 @@ for(let value of arr){
 4
 5
 ```
+### Another Example
+```
+const fruits = ['banana', 'apple', 'peach', 'mango', 'grapes']
+// console.log('*');
+// for(const fruit of fruits) {
+//     console.log(fruit);
+// }
+// const user = 'Anurag Singh'
+// for(const letter of user) {
+//     console.log(letter);
+// }
+```
+
 ## for_Each  loop
 ![image](https://github.com/user-attachments/assets/03b12dab-a455-48d2-8bed-a99590d72600)
 ### Example-1
