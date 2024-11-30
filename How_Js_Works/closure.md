@@ -34,3 +34,4 @@ function multiplier(factor) {
 const double = multiplier(2);
 console.log(double(5));
 ```
+### Returning function with closure
