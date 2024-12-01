@@ -603,6 +603,7 @@ array.reduce(function callback(accumulator, currentValue, index, array) {
 - **`index (optional)`: The index of the current element being processed.**
 - **`array (optional)`: The array reduce was called upon.**
 - **`initialValue (optional)`: An initial value for the accumulator. If not provided, the first element of the array is used as the initial accumulator value.**
+### Example
 ```
 // const productPrice = [100, 200, 300, 400, 500];
 // const totalPrice = productPrice.reduce((accum, curElem) => {
@@ -613,6 +614,29 @@ array.reduce(function callback(accumulator, currentValue, index, array) {
 ### Output:
 ```
 1500
+```
+### Another Example
+```
+const nums = [1, 2, 3, 4, 5]
+const sum = nums.reduce((accumulator, current, i) => {
+    console.log(Index is ${i}, and element is ${current});
+    console.log(Accumulator is ${accumulator});
+    // return accumulator * current
+    return accumulator + current
+}, 0)
+```
+### Output:
+```
+Index is 0, and element is 1
+Accumulator is 0
+Index is 1, and element is 2
+Accumulator is 1
+Index is 2, and element is 3
+Accumulator is 3
+Index is 3, and element is 4
+Accumulator is 6
+Index is 4, and element is 5
+Accumulator is 10
 ```
 # Combined example of map(),filter() and reduce()
 ### When to Use:
