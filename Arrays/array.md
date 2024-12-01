@@ -377,7 +377,7 @@ console.log(doubleValue);
 - **The index of the current element.**
 ###`array (optional)`: The array filter() was called on.
 ###`thisArg (optional)`:Value to use as this when executing the callback.
-###Return Value:
+### Return Value:
 - **A new array containing the elements that satisfy the condition.**
 Examples:
 ### 1. Filtering numbers:
