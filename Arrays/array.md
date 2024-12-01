@@ -161,6 +161,25 @@ Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Windows and Ind
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Mac and Index is ==>3
 Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index is ==>4
 ```
+### Another Example
+```
+const months = ['January', 'February', 'March', 'April', 'May', 'December']
+
+const capitalMonths = months.forEach((month, index) => {
+    console.log(index + 1, month)
+    return month.toUpperCase()
+  })
+console.log(capitalMonths);
+```
+### Output:
+```
+1 January
+2 February
+3 March
+4 April
+5 May
+6 December
+```
 ### write a program to Multiply each element with 2
 ```
 const numbers = [1, 2, 3, 4, 5];
