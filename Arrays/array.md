@@ -675,7 +675,7 @@ console.log(sumOfSquares); // Output: 56
 - **The find() method is non-destructive and leaves the original array unchanged.**
 - **Once the find() method finds a matching element, it stops processing the rest of the array.**
 - **If you need the index, consider using the findIndex() method.**
-- **1.Finding an element in an array:**
+- 1.**Finding an element in an array:**
 ```
 let numbers = [10, 20, 30, 40];
 let result = numbers.find(num => num > 25);
