@@ -367,7 +367,7 @@ console.log(doubleValue);
 - **Does not mutate the original array.Unlike splice(), the filter() method creates a new array without altering the original array.**
 - **Returns an empty array if no elements match.**
 - **Syntax:`array.filter(callback(element, index, array), thisArg)`**
-##Parameters:
+## Parameters:
 ###`callback (required)`:
 - **A function that tests each element. It should return true to keep the element and false to exclude it.**
 - **The callback function has three arguments:**
@@ -755,6 +755,77 @@ console.log(res1);
 ### Output:
 ```
 25
+```
+# some()
+- **In JavaScript, the some() and every() methods are array methods that test elements of an array against a condition specified in a callback function. Here's how they work:**
+- **Purpose: Tests whether at least one element in the array passes the test implemented by the provided function.**
+- **Returns: A boolean (true or false).**
+- **Syntax:`array.some(callback(element, index, array), thisArg)`**
+### Parameters:
+- **callback: A function that is executed for each element in the array. It takes three arguments:**
+- **element: The current element being processed.**
+- **index (optional): The index of the current element.**
+- **array (optional): The array some() was called on.**
+- **thisArg (optional): An optional object to use as this inside the callback function.**
+### Example:
+```
+const numbers = [1, 2, 3, 4, 5];
+// Check if there is at least one number greater than 3
+const hasNumberGreaterThanThree = numbers.some(num => num > 3);
+console.log(hasNumberGreaterThanThree); // Output: true
+```
+# every()
+- **Purpose: Tests whether all elements in the array pass the test implemented by the provided function.**
+- **Returns: A boolean (true or false).**
+- **Syntax:`array.every(callback(element, index, array), thisArg)`
+### Parameters:
+- **callback: A function that is executed for each element in the array. It takes three arguments:**
+- **element: The current element being processed.**
+- **index (optional): The index of the current element.**
+- **array (optional): The array every() was called on.**
+- **thisArg (optional): An optional object to use as this inside the callback function.**
+### Example:
+```
+const numbers = [1, 2, 3, 4, 5];
+// Check if all numbers are less than 6
+const allLessThanSix = numbers.every(num => num < 6);
+console.log(allLessThanSix); // Output: true
+```
+### Key Differences
+- **Logic:**
+- **some() returns true if any element satisfies the condition.**
+- **every() returns true only if all elements satisfy the condition.**
+### Early Exit:
+- **Both methods stop iterating as soon as the result is determined:**
+- **some() stops on the first true.**
+- **every() stops on the first false.**
+- **Return Value:Both methods return a boolean value (true or false).**
+### Combined Example:
+```
+const numbers = [10, 15, 20, 25, 30];
+
+// Check if at least one number is even
+console.log(numbers.some(num => num % 2 === 0)); // Output: true
+
+// Check if all numbers are greater than 5
+console.log(numbers.every(num => num > 5)); // Output: true
+These methods are very useful for quickly testing array contents against specific conditions!
+```
+### Another Combined Example:
+```
+const evenNumbers = [0, 2, 10, 4, 61, 8]
+const result = evenNumbers.some((num, i) => {
+    if(num % 2 === 1) {
+        console.log(i);
+    }
+    return num % 2 === 1
+})
+console.log(result);
+// const result = evenNumbers.every((num) => {
+//     debugger
+//     return num % 2 === 0
+// })
+// console.log(result);
 ```
 # findIndex()
 - **findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.**
