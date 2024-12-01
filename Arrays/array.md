@@ -390,7 +390,7 @@ console.log(result);
 ```
 [30, 40, 50]
 ```
-### 2. Filtering strings:
+### 2.Filtering strings:
 ```
 const fruits = ["apple", "banana", "cherry", "date"];
 const result = fruits.filter(fruit => fruit.startsWith("b")); // Keep fruits starting with 'b'
@@ -400,7 +400,7 @@ console.log(result);
 ```
 ["banana"]
 ```
-### 3. Using index in the callback:
+### 3.Using index in the callback:
 ```
 const numbers = [5, 10, 15, 20, 25];
 const result = numbers.filter((num, index) => index % 2 === 0); // Keep elements at even indices
@@ -410,7 +410,7 @@ console.log(result);
 ```
 [5, 15, 25]
 ```
-### 4. Filtering objects in an array:
+### 4.Filtering objects in an array:
 ```
 const people = [
     { name: "Alice", age: 25 },
