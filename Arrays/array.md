@@ -1277,6 +1277,25 @@ console.log(numbers);
   1
 ]
 ```
+# Default Parameters
+- **Functions can define default values for parameters, which are used if no argument (or undefined) is passed.**
+### Example:
+```
+function greet(name = "Guest") {
+    console.log("Hello, " + name + "!");
+}
+
+greet();           // Output: Hello, Guest!
+greet("Alice");    // Output: Hello, Alice!
+
+function multiply(a, b = 1) {
+  return a * b
+}
+
+function rollADie(numberOfSides = 6) {
+  return Math.floor(Math.random() * numberOfSides) + 1
+}
+```
 # The arguments Object
 - **In non-arrow functions, arguments is an array-like object that contains all the arguments passed to the function.**
 - **It's useful when the number of arguments is not fixed or exceeds the defined parameters.**
