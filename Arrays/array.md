@@ -368,7 +368,7 @@ console.log(doubleValue);
 - **Returns an empty array if no elements match.**
 - **Syntax:`array.filter(callback(element, index, array), thisArg)`**
 ## Parameters:
-###`callback (required)`:
+### `callback (required)`:
 - **A function that tests each element. It should return true to keep the element and false to exclude it.**
 - **The callback function has three arguments:**
 ###`element`:
