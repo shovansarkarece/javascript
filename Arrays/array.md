@@ -1307,4 +1307,24 @@ function listArguments() {
 
 console.log(listArguments("a", "b", "c"));
 // Output: a, b, c
+
+function add1(){
+    let sum=0;
+    for(let i=0;i<arguments.length;i++){
+        sum = sum+arguments[i];
+    }
+    return sum;
+}
+console.log(add1(10,20,30,40,50))
+// Output:150
+
+const add2=function(){
+    let sum=0;
+    for(let i=0;i<arguments.length;i++){
+        sum = sum+arguments[i];
+    }
+    return sum;
+}
+console.log(add2(10,20,30,40,50))
+// Output:150
 ```
