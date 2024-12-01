@@ -164,7 +164,6 @@ Array is==> [Android,IOS,Windows,Mac,Web] Current Element is ==> Web and Index i
 ### Another Example
 ```
 const months = ['January', 'February', 'March', 'April', 'May', 'December']
-
 const capitalMonths = months.forEach((month, index) => {
     console.log(index + 1, month)
     return month.toUpperCase()
@@ -257,6 +256,32 @@ console.log(withIndex); // ["0: apple", "1: banana", "2: cherry"]
   'Index is 1: and Value is banana',
   'Index is 2: and Value is cherry'
 ]
+```
+### Another Example
+```
+const months = ['January', 'February', 'March', 'April', 'May', 'December']
+const capitalMonths = months.map((month, index, array) => {
+    console.log(index + 1, month)
+    console.log(array);
+    return month.toUpperCase()
+  })
+console.log(capitalMonths);
+```
+### Output:
+```
+1 January
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+2 February
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+3 March
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+4 April
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+5 May
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+6 December
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+[ 'JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'DECEMBER' ]
 ```
 ### Example of Using Object
 ```
@@ -497,6 +522,69 @@ return arr.indexOf(curElem) === index;
   1, 2, 3, 4, 6,
   5, 7, 8, 9
 ]
+```
+### Another Example
+```
+const months = ['January', 'February', 'March', 'April', 'May', 'December']
+const filteredMonths = months.filter((month, index, array) => {
+    console.log(month.toLocaleLowerCase().includes('m'))
+    console.log(array);
+    return month.toLocaleLowerCase().includes('m')
+  })
+console.log(filteredMonths);
+```
+### Output:
+```
+false
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+false
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+true
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+false
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+true
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+true
+[ 'January', 'February', 'March', 'April', 'May', 'December' ]
+[ 'March', 'May', 'December' ]
+```
+### Combined example of map() and filter() method
+```
+const students = [
+    {
+        name: 'Akash',
+        age: 21,
+    },
+    {
+        name: 'Adarsh',
+        age: 17,
+    },
+    {
+        name: 'Amir',
+        age: 18,
+    },
+    {
+        name: 'Raman',
+        age: 23,
+    },
+    {
+        name: 'Nidhi',
+        age: 16,
+    },
+]
+const adultStudents = students.filter((student) => {
+    return student.age >= 18
+}).map((student) => {
+    return student.name
+}).filter((student) => {
+    return student.includes('A')
+})
+console.log(adultStudents)
+```
+### Outpt:
+```
+[ 'Akash', 'Amir' ]
 ```
 # reduce() method
 - **The reduce method in JavaScript is used to accumulate or reduce an array to a single value.**
