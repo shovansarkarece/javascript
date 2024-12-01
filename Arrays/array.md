@@ -675,7 +675,7 @@ console.log(sumOfSquares); // Output: 56
 - **The find() method is non-destructive and leaves the original array unchanged.**
 - **Once the find() method finds a matching element, it stops processing the rest of the array.**
 - **If you need the index, consider using the findIndex() method.**
-- 1.**Finding an element in an array:**
+### 1.Finding an element in an array:
 ```
 let numbers = [10, 20, 30, 40];
 let result = numbers.find(num => num > 25);
@@ -697,7 +697,7 @@ console.log(result);
 ```
 7
 ```
-- **2.Using find() with objects:**
+### 2.Using find() with objects:**
 ```
 let users = [
   { id: 1, name: "Alice" },
@@ -711,7 +711,7 @@ console.log(user); // Output: { id: 2, name: "Bob" }
 ```
 { id: 2, name: 'Bob' }
 ```
-- **3. No match found:**
+### 3. No match found:**
 ```
 let numbers = [1, 2, 3, 4];
 let result = numbers.find(num => num > 5);
@@ -721,7 +721,7 @@ console.log(result); // Output: undefined
 ```
 undefined
 ```
-- **4. Using thisArg:**
+### 4. Using thisArg:**
 ```
 let obj = {
   threshold: 15
