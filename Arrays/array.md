@@ -1482,10 +1482,16 @@ function add() {
 const result = add(...nums1)
 console.log(result);
 //// Output:10
+const nums1 = [1, 2, 3, 4]
 function add(...nums) {
   return nums.reduce((acc, curr) => acc + curr)
 }
 const result = add(...nums1)
 console.log(result);
+//// Output:10
+const nums1 = [1, 2, 3, 4]
+// function add() {
+//   return Array.from(arguments).reduce((acc, curr) => acc + curr)
+// }
 //// Output:10
 ```
