@@ -1495,3 +1495,202 @@ const nums1 = [1, 2, 3, 4]
 // }
 //// Output:10
 ```
+### Destructuring in JavaScript 
+- **Destructuring in JavaScript is a convenient way to unpack values from arrays or properties from objects into distinct variables. It was introduced in ECMAScript 2015 (ES6) and provides a concise syntax for extracting data, improving readability and efficiency.**
+- **Destructuring simplifies code and is widely used in modern JavaScript programming!**
+
+### Array Destructuring
+- **We can extract values from an array and assign them to variables:**
+```
+const numbers = [1, 2, 3];
+
+// Destructuring assignment
+const [a, b, c] = numbers;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+/////Another Example
+const colors = ['red', 'green', 'yellow', 'pink', 'black', 'white']
+
+// const color1 = colors[0]
+// const color2 = colors[1]
+// const color3 = colors[2]
+/////Another way of array destructuring
+const [color1, color2, color3] = colors
+/////Another way of array destructuring
+// const [,,,color4] = colors
+/////Another way of array destructuring
+const { 3: color4, 5: color5 } = colors
+```
+### Skipping Values
+ - **We can skip elements by leaving a blank space:**
+```
+const numbers = [1, 2, 3, 4];
+
+const [first, , third] = numbers;
+
+console.log(first); // 1
+console.log(third); // 3
+```
+### Default Values
+- **If a value is undefined, you can specify a default:**
+```
+const numbers = [1];
+
+const [a, b = 10] = numbers;
+
+console.log(a); // 1
+console.log(b); // 10
+```
+# Object Destructuring
+- **For objects, you can extract properties by matching variable names to property names:**
+- **In case of object destructuring if there is no property available then we will get undefined.**
+```
+const person = { name: 'Alice', age: 25 };
+
+// Destructuring assignment
+const { name, age } = person;
+
+console.log(name); // Alice
+console.log(age); // 25
+////// Another Example
+const user = {
+  name: 'Anurag',
+  age: 25,
+  address: {
+    city: 'Bangalore',
+    state: 'Karnataka',
+  },
+}
+
+// const name = user.name
+// const age = user.age
+
+const { name, age } = user
+
+// const { name: username, age: userAge } = user
+
+// const { address: {city} } = user
+// const { address } = user
+// const { city } = address
+```
+# Renaming Variables
+- **You can rename variables during destructuring:**
+```
+const person = { name: 'Alice', age: 25 };
+
+const { name: fullName, age: years } = person;
+
+console.log(fullName); // Alice
+console.log(years); // 25
+```
+# Default Values
+- **Provide a default for missing properties:**
+```
+const person = { name: 'Alice' };
+
+const { name, age = 30 } = person;
+
+console.log(name); // Alice
+console.log(age); // 30
+```
+# Nested Destructuring
+- **We can destructure nested arrays or objects:**
+```
+const numbers = [1, [2, 3]];
+
+const [a, [b, c]] = numbers;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+```
+# Nested Objects
+```
+const person = { name: 'Alice', address: { city: 'Wonderland', zip: 12345 } };
+
+const { address: { city, zip } } = person;
+
+console.log(city); // Wonderland
+console.log(zip); // 12345
+```
+# Rest Pattern
+- **We can use the rest pattern to gather remaining elements or properties:**
+```
+const numbers = [1, 2, 3, 4];
+
+const [a, b, ...rest] = numbers;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(rest); // [3, 4]
+```
+# Objects
+```
+const person = { name: 'Alice', age: 25, profession: 'Engineer' };
+
+const { name, ...rest } = person;
+
+console.log(name); // Alice
+console.log(rest); // { age: 25, profession: 'Engineer' }
+```
+# Practical Applications
+### Function Arguments:
+```
+//////Object  Destructuring using Function 
+///// Example
+const user = {
+  name: 'Anurag',
+  age: 25,
+  address: {
+    city: 'Bangalore',
+    state: 'Karnataka',
+  },
+}
+// Function that destructures all properties
+function getUserDetails({ name, age, address: { city, state } }) {
+  return Name: ${name}, Age: ${age}, City: ${city}, State: ${state};
+}
+// Call the function
+console.log(getUserDetails(user));
+////// Output: "Name: Anurag, Age: 25, City: Bangalore, State: Karnataka"
+//////? If you need all properties but don't want to list them explicitly:
+function getUserDetails(user) {
+  const { name, age, address: { city, state } } = user;
+  return { name, age, city, state }; // Return as an object if needed
+}
+console.log(getUserDetails(user));
+////// Output: { name: 'Anurag', age: 25, city: 'Bangalore', state: 'Karnataka' }
+
+//////Array Destructuring using Function 
+function greet({ name, age }) {
+  console.log(`Hello, ${name}. You are ${age} years old.`);
+}
+
+const person = { name: 'Alice', age: 25 };
+greet(person); // Hello, Alice. You are 25 years old.
+
+const colors = ['red', 'green', 'yellow', 'pink', 'black', 'white']
+function printColor([a, b,,,,g]) {
+  console.log(a, b, g);
+}
+printColor(colors)
+
+const { 0:colour1,1:colour2,2:colour3,3:colour4,4:colour5,5:colour6 } = colors
+
+function printColor1({ 0:colour1,1:colour2,2:colour3,3:colour4,4:colour5,5:colour6 } = colors) {
+  console.log(Colour 1 is:${colour1} ,Colour 2 is:${colour2},Colour 3 is:${colour3},Colour 4 is:${colour4},Colour 5 is:${colour5},Colour 6 is:${colour6});
+}
+
+printColor1(colors)
+```
+# Swapping Variables:
+```
+let a = 1, b = 2;
+
+[a, b] = [b, a];
+
+console.log(a); // 2
+console.log(b); // 1
+```
