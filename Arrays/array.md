@@ -1412,6 +1412,7 @@ console.log(updatedUser);
 ```
 # Rest Parameter
 - **The rest operator (...) is used to collect multiple elements or properties into a single array or object. It is typically used in function parameters or destructuring assignments.**
+- **A rest parameter must be last in a parameter list.If in rest parameter we are passing nothing then it will return empty array[]**
 # Use Cases:
 ### Function Parameters: 
 - **Gather all remaining arguments into a single array.**
@@ -1462,4 +1463,29 @@ const [first, ...rest] = [1, 2, 3, 4];
 const newArray = [0, ...rest];
 console.log(newArray);
 // Output: [0, 2, 3, 4]
+
+function add(a, b, c, ...nums) {
+    console.log(a, b, c);
+    console.log('nums:', nums);
+}
+add(100,200,300,400,500,600,700,800,900)
+//// Output:
+100 200 300
+nums: [ 400, 500, 600, 700, 800, 900 ]
+```
+### Combined example of rest,spread and reduce
+```
+const nums1 = [1, 2, 3, 4]
+function add() {
+  return [...arguments].reduce((acc, curr) => acc + curr)
+}
+const result = add(...nums1)
+console.log(result);
+//// Output:10
+function add(...nums) {
+  return nums.reduce((acc, curr) => acc + curr)
+}
+const result = add(...nums1)
+console.log(result);
+//// Output:10
 ```
